@@ -2,9 +2,7 @@ name: Deploy to Vercel
 
 on:
   push:
-    branches:
-      - main
-      - master
+    branches: [ main, master ]
 
 jobs:
   deploy:
@@ -13,18 +11,30 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install & build frontend
+        run: |
+          cd frontend
+          npm ci
+          npm run build
+
       - name: Deploy to Vercel
         id: vercel
         uses: amondnet/vercel-action@v25
         with:
-          vercel-token:   ${{ secrets.VERCEL_TOKEN }}
-          vercel-org-id:  ${{ secrets.VERCEL_ORG_ID }}
+          vercel-token:      ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id:     ${{ secrets.VERCEL_ORG_ID }}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
-          vercel-args:    '--prod'
-
-      - name: Health check
-        # VERCEL_URL is automatically set by the action to the deployed hostname
+          working-directory: frontend
+          vercel-args:       '--prod --prebuilt'
+      
+      - name: Quick health check
         run: |
-          URL="https://$VERCEL_URL"
+          URL="https://${{ steps.vercel.outputs.url }}"
           echo "🌐 Testing $URL"
           curl -fsSL "$URL" || (echo "❌ Health check failed" && exit 1)
