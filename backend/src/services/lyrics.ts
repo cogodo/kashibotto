@@ -345,30 +345,81 @@ class LyricsService {
             logger.info('Attempting alternative lyrics fetching', { songUrl });
 
             // Try to fetch the page directly and parse it
-            // Add random delay to avoid rate limiting
-            await new Promise(resolve => setTimeout(resolve, Math.random() * 2000 + 1000));
-
-            const response = await axios.get(songUrl, {
-                headers: {
-                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-                    'Accept-Language': 'en-US,en;q=0.9,ja;q=0.8',
-                    'Accept-Encoding': 'gzip, deflate, br',
-                    'Cache-Control': 'no-cache',
-                    'Pragma': 'no-cache',
-                    'Sec-Ch-Ua': '"Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"',
-                    'Sec-Ch-Ua-Mobile': '?0',
-                    'Sec-Ch-Ua-Platform': '"Windows"',
-                    'Sec-Fetch-Dest': 'document',
-                    'Sec-Fetch-Mode': 'navigate',
-                    'Sec-Fetch-Site': 'none',
-                    'Sec-Fetch-User': '?1',
-                    'Upgrade-Insecure-Requests': '1',
-                    'Referer': 'https://www.google.com/',
+            // Multiple strategies to bypass anti-bot protection
+            const strategies = [
+                // Strategy 1: Mobile browser
+                {
+                    headers: {
+                        'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+                        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+                        'Accept-Language': 'en-US,en;q=0.5',
+                        'Accept-Encoding': 'gzip, deflate',
+                        'Connection': 'keep-alive',
+                        'Upgrade-Insecure-Requests': '1',
+                    }
                 },
-                timeout: 20000,
-                maxRedirects: 5
-            });
+                // Strategy 2: Firefox
+                {
+                    headers: {
+                        'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0',
+                        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
+                        'Accept-Language': 'en-US,en;q=0.5',
+                        'Accept-Encoding': 'gzip, deflate',
+                        'Connection': 'keep-alive',
+                        'Upgrade-Insecure-Requests': '1',
+                    }
+                },
+                // Strategy 3: Chrome with minimal headers
+                {
+                    headers: {
+                        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+                        'Accept-Language': 'en-US,en;q=0.9',
+                    }
+                }
+            ];
+
+            let response = null;
+            let lastError = null;
+
+            for (let i = 0; i < strategies.length; i++) {
+                try {
+                    // Add random delay between attempts
+                    if (i > 0) {
+                        await new Promise(resolve => setTimeout(resolve, Math.random() * 3000 + 2000));
+                    }
+
+                    logger.info(`Trying scraping strategy ${i + 1}`, { songUrl, strategy: i + 1 });
+
+                    response = await axios.get(songUrl, {
+                        headers: strategies[i].headers,
+                        timeout: 15000,
+                        maxRedirects: 3,
+                        validateStatus: (status) => status < 500 // Accept 4xx errors to handle them below
+                    });
+
+                    if (response.status === 200) {
+                        logger.info(`Scraping strategy ${i + 1} succeeded`, { status: response.status });
+                        break;
+                    } else if (response.status === 403 || response.status === 429) {
+                        logger.warn(`Strategy ${i + 1} blocked`, { status: response.status });
+                        lastError = new Error(`HTTP ${response.status}`);
+                        continue;
+                    }
+                } catch (error) {
+                    lastError = error;
+                    logger.warn(`Strategy ${i + 1} failed`, {
+                        error: (error as Error).message,
+                        attempt: i + 1,
+                        totalStrategies: strategies.length
+                    });
+                    continue;
+                }
+            }
+
+            if (!response || response.status !== 200) {
+                throw lastError || new Error('All scraping strategies failed');
+            }
 
             const html = response.data;
 

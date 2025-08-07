@@ -11,10 +11,11 @@ import { generalRateLimit } from './middleware/rateLimiter';
 
 const app = express();
 
-// Trust proxy configuration for production (needed for rate limiting with X-Forwarded-For headers)
-if (config.server.nodeEnv === 'production') {
+// Trust proxy configuration for deployed environments (needed for rate limiting with X-Forwarded-For headers)
+// Enable for both production and development since Render always uses proxies
+if (config.server.nodeEnv === 'production' || config.server.nodeEnv === 'development') {
     app.set('trust proxy', 1);
-    logger.info('Trust proxy enabled for production environment');
+    logger.info('Trust proxy enabled for deployed environment', { nodeEnv: config.server.nodeEnv });
 }
 
 // 1) CORS configuration - MUST come FIRST, before any routes or middleware
