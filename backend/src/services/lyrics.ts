@@ -179,26 +179,82 @@ class LyricsService {
 
     private async searchGenius(title: string, artist?: string): Promise<string | null> {
         try {
-            const query = artist ? `${title} ${artist}` : title;
-            logger.info('Searching Genius for song', { query });
+            // PRODUCTION FIX: Clean and optimize search query for better results
+            let cleanTitle = title.trim();
+            let cleanArtist = artist ? artist.trim() : '';
+
+            // Remove common problematic patterns that work locally but fail in production
+            cleanTitle = cleanTitle
+                .replace(/\([^)]*\)/g, '') // Remove content in parentheses like "(Daily Heaven and Hell)"
+                .replace(/\[[^\]]*\]/g, '') // Remove content in brackets
+                .replace(/\s+/g, ' ')       // Normalize spaces
+                .trim();
+
+            const query = cleanArtist ? `${cleanTitle} ${cleanArtist}` : cleanTitle;
+
+            logger.info('Searching Genius for song', {
+                originalTitle: title,
+                cleanedTitle: cleanTitle,
+                artist: cleanArtist,
+                finalQuery: query
+            });
 
             const geniusClient = await this.getGeniusClient();
 
             // Add proper error handling for the search
             let searches;
             try {
+                logger.info('Attempting Genius search', {
+                    query,
+                    queryLength: query.length,
+                    queryEncoded: encodeURIComponent(query),
+                    clientType: typeof geniusClient,
+                    hasSearchMethod: !!geniusClient.songs?.search
+                });
+
                 searches = await geniusClient.songs.search(query);
+
+                logger.info('Genius search completed', {
+                    query,
+                    resultsCount: searches ? searches.length : 0,
+                    firstResultTitle: searches?.[0]?.title,
+                    firstResultArtist: searches?.[0]?.artist?.name
+                });
+
             } catch (searchError) {
                 logger.error('Error during Genius search', {
                     query,
                     error: (searchError as Error).message,
-                    stack: (searchError as Error).stack
+                    stack: (searchError as Error).stack,
+                    errorName: (searchError as Error).name,
+                    clientType: typeof geniusClient
                 });
                 return null;
             }
 
             if (!searches || searches.length === 0) {
-                logger.debug('No songs found in Genius', { title, artist, query });
+                logger.warn('No songs found in Genius', {
+                    title,
+                    artist,
+                    query,
+                    suggestion: 'Query may be too complex or song not in database'
+                });
+
+                // DIAGNOSTIC: Try a simple test search to verify the client works
+                try {
+                    logger.info('Testing with simple query to verify client functionality');
+                    const testSearches = await geniusClient.songs.search("faded");
+                    logger.info('Test search results', {
+                        testQuery: "faded",
+                        testResultsCount: testSearches ? testSearches.length : 0,
+                        clientWorking: testSearches && testSearches.length > 0
+                    });
+                } catch (testError) {
+                    logger.error('Even simple test search failed', {
+                        testError: (testError as Error).message
+                    });
+                }
+
                 return null;
             }
 
