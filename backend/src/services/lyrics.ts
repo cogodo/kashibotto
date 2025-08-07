@@ -52,7 +52,14 @@ class LyricsService {
                     }
                 };
 
-                this.geniusClient = new Genius.Client(config.apis.genius.accessToken || undefined, clientConfig);
+                // PRODUCTION FIX: Try with no config first, then with config
+                try {
+                    this.geniusClient = new Genius.Client(config.apis.genius.accessToken || undefined);
+                    logger.info('Genius client initialized with basic config');
+                } catch (basicError) {
+                    logger.warn('Basic init failed, trying with config', { error: (basicError as Error).message });
+                    this.geniusClient = new Genius.Client(config.apis.genius.accessToken || undefined, clientConfig);
+                }
                 logger.info('Genius client initialized successfully', {
                     hasToken: !!config.apis.genius.accessToken,
                     environment: process.env.NODE_ENV,
@@ -74,11 +81,42 @@ class LyricsService {
                 if (process.env.NODE_ENV === 'production') {
                     logger.warn('Continuing without Genius client in production - lyrics functionality will be limited');
                     // Return a mock client that always returns null
+                    // Create direct API client as fallback
                     this.geniusClient = {
                         songs: {
-                            search: async () => {
-                                logger.warn('Genius client not available - returning empty results');
-                                return [];
+                            search: async (query: string) => {
+                                try {
+                                    logger.info('Using direct Genius API fallback', { query });
+
+                                    if (!config.apis.genius.accessToken) {
+                                        logger.warn('No Genius access token available');
+                                        return [];
+                                    }
+
+                                    const response = await axios.get(`https://api.genius.com/search?q=${encodeURIComponent(query)}`, {
+                                        headers: {
+                                            'Authorization': `Bearer ${config.apis.genius.accessToken}`,
+                                            'User-Agent': 'Mozilla/5.0 (compatible; KashibottoApp/1.0)',
+                                        },
+                                        timeout: 10000
+                                    });
+
+                                    const hits = response.data?.response?.hits || [];
+                                    return hits.slice(0, 5).map((hit: any) => ({
+                                        id: hit.result?.id,
+                                        title: hit.result?.title,
+                                        artist: { name: hit.result?.primary_artist?.name },
+                                        url: hit.result?.url,
+                                        lyrics: async () => {
+                                            return await this.fetchLyricsAlternative(hit.result?.url);
+                                        }
+                                    }));
+                                } catch (error) {
+                                    logger.error('Direct Genius API also failed', {
+                                        error: (error as Error).message
+                                    });
+                                    return [];
+                                }
                             }
                         }
                     };

@@ -7,10 +7,12 @@ services:
     rootDir: backend
     envVars:
       - key: NODE_ENV
-        value: production
+        value: development
       - key: CORS_ORIGIN
         value: https://cogodo.github.io,http://localhost:3000,http://localhost:5173
       - key: PORT
         value: 10000
       - key: DICTIONARY_STORAGE
         value: memory
+      - key: NODE_OPTIONS
+        value: --no-deprecation
