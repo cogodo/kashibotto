@@ -1,5 +1,5 @@
 {
-  "name": "kashibotto-backend",
+  "name": "kashibotto",
   "version": "1.0.0",
   "main": "dist/index.js",
   "scripts": {
