@@ -12,25 +12,17 @@ import { generalRateLimit } from './middleware/rateLimiter';
 const app = express();
 
 // CORS configuration - MUST come BEFORE Helmet
-const allowedOrigins = process.env.CORS_ORIGIN
-    ? process.env.CORS_ORIGIN.split(',').map(origin => origin.trim())
-    : ['https://cogodo.github.io', 'http://localhost:3000', 'http://localhost:5173'];
-
 app.use(cors({
-    origin: function (origin, callback) {
-        // Allow requests with no origin (like mobile apps or curl requests)
-        if (!origin) return callback(null, true);
-
-        if (allowedOrigins.indexOf(origin) !== -1) {
-            callback(null, true);
-        } else {
-            callback(new Error('Not allowed by CORS'));
-        }
-    },
+    origin: true, // Allow all origins temporarily for debugging
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
+    preflightContinue: false,
+    optionsSuccessStatus: 204
 }));
+
+// Handle OPTIONS requests explicitly
+app.options('*', cors());
 
 // Security middleware - AFTER CORS
 app.use(helmet({
@@ -66,6 +58,17 @@ app.get('/', (req, res) => {
         version: '1.0.0',
         status: 'running',
         timestamp: new Date().toISOString(),
+        corsEnabled: true,
+        corsOrigin: 'ALLOW_ALL_TEMPORARILY'
+    });
+});
+
+// Test CORS route
+app.get('/test-cors', (req, res) => {
+    res.json({
+        message: 'CORS test successful',
+        timestamp: new Date().toISOString(),
+        origin: req.headers.origin || 'no-origin'
     });
 });
 

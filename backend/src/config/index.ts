@@ -19,8 +19,7 @@ interface Config {
 }
 
 const requiredEnvVars = [
-    'PORT',
-    'CORS_ORIGIN'
+    'PORT'
 ];
 
 // Validate required environment variables
@@ -31,22 +30,26 @@ for (const envVar of requiredEnvVars) {
 }
 
 // Parse CORS origins - support both single string and comma-separated values
-const parseCorsOrigin = (corsOrigin: string): string | string[] => {
-    if (!corsOrigin) {
-        return ['http://localhost:3000', 'http://localhost:5173'];
+const parseCorsOrigin = (corsOrigin: string | undefined): string | string[] => {
+    // If no environment variable is set, use defaults
+    if (!corsOrigin || corsOrigin.trim() === '') {
+        return ['https://cogodo.github.io', 'http://localhost:3000', 'http://localhost:5173'];
     }
 
+    // If it contains commas, split into array
     if (corsOrigin.includes(',')) {
         return corsOrigin.split(',').map(origin => origin.trim()).filter(origin => origin.length > 0);
     }
-    return corsOrigin;
+
+    // Single origin
+    return corsOrigin.trim();
 };
 
 export const config: Config = {
     server: {
         port: parseInt(process.env.PORT || '3001'),
         nodeEnv: process.env.NODE_ENV || 'development',
-        corsOrigin: parseCorsOrigin(process.env.CORS_ORIGIN || 'http://localhost:3000,http://localhost:5173'),
+        corsOrigin: parseCorsOrigin(process.env.CORS_ORIGIN),
     },
     apis: {
         genius: {
