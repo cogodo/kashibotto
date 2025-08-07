@@ -1,8 +1,13 @@
 // API utility functions for handling base URL configuration
 
+// Determine the API base URL based on environment
+const API_BASE_URL = import.meta.env.PROD
+    ? 'https://kashibotto-backend.onrender.com' // Replace with your actual Render URL
+    : '';
+
 export const apiCall = async (endpoint: string, options?: RequestInit): Promise<Response> => {
-    // Use relative URLs - Vercel will handle the proxy configuration
-    return fetch(endpoint, {
+    const url = API_BASE_URL + endpoint;
+    return fetch(url, {
         ...options,
         headers: {
             'Content-Type': 'application/json',

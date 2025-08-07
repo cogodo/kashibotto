@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: kashibotto-backend
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    rootDir: backend
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: CORS_ORIGIN
+        value: https://cogodo.github.io
+      - key: PORT
+        value: 10000

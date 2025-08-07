@@ -3,9 +3,6 @@ import { config } from '../config';
 import { logger } from '../utils/logger';
 // ApiError class defined below
 
-// Use CommonJS require for genius-lyrics
-const Genius = require("genius-lyrics");
-
 interface GeniusHit {
     result: {
         id: number;
@@ -17,46 +14,21 @@ interface GeniusHit {
     };
 }
 
-// Simple lyrics fallback data for testing
-const SAMPLE_LYRICS = {
-    "君の名は": `まだこの世界は僕を騙そうとしている
-僕を諦めさせようとしてる
-まだこの世界は僕を止めようとしている
-僕を変えようとしている
-
-君の名前で目覚めたい
-君の名前で今を歌いたい
-どこかに響く声を辿り
-君に会いたい
-
-ただそれだけが真実で
-ただそれだけが全てで
-ただそれだけが僕らで
-君の名前で今を歌いたい`,
-    "前前前世": `やっと、やっと目を覚ましたかい？
-それなのになぜ眼に涙を溜めて
-そんなに怯えた顔をしている
-君の手をとり占うなら
-恋焦がれて鳴く蝉よりも
-死んだ方がマシと思える夏
-君の手をとり占うなら
-時の流れを遡って
-君の名前まで憶えてる
-
-前前前世から僕は君を探してる
-どこかであなたと巡り逢える運命を
-今世で初めて感じてる
-
-前前前世から僕は君を探してる
-どこかであなたと巡り逢える運命を
-今世で初めて感じてる`,
-};
 
 class LyricsService {
     private geniusClient: any;
+
     constructor() {
-        // Use Genius API key if available, otherwise scrape
-        this.geniusClient = new Genius.Client(config.apis.genius.accessToken || undefined);
+        // Initialize geniusClient as null - will be set up when needed
+        this.geniusClient = null;
+    }
+
+    private async getGeniusClient() {
+        if (!this.geniusClient) {
+            const Genius = await import('genius-lyrics');
+            this.geniusClient = new Genius.Client(config.apis.genius.accessToken || undefined);
+        }
+        return this.geniusClient;
     }
 
     private cleanLyrics(lyrics: string): string {
@@ -103,38 +75,14 @@ class LyricsService {
         return cleaned;
     }
 
-    private async searchFallbackSamples(title: string, artist?: string): Promise<string | null> {
-        // Simple fallback for testing - matches common Japanese songs
-        const searchKey = title.toLowerCase().trim();
-
-        for (const [key, lyrics] of Object.entries(SAMPLE_LYRICS)) {
-            if (key.toLowerCase().includes(searchKey) || searchKey.includes(key.toLowerCase())) {
-                logger.info('Found sample lyrics for testing', { title, artist });
-                return lyrics;
-            }
-        }
-
-        // Generate a simple placeholder for unknown songs
-        if (this.containsJapaneseText(title)) {
-            logger.info('Generating placeholder lyrics for Japanese title', { title, artist });
-            return `${title}
-歌詞がまだ見つかりません
-この曲の歌詞を知っている方は
-ぜひ教えてください
-
-Sample lyrics for: ${title}
-This is a demonstration of the lyrics processing system.
-Real lyrics would be fetched from external APIs.`;
-        }
-
-        return null;
-    }
+  
 
     private async searchGenius(title: string, artist?: string): Promise<string | null> {
         try {
             const query = artist ? `${title} ${artist}` : title;
             logger.info('Searching Genius for song', { query });
-            const searches = await this.geniusClient.songs.search(query);
+            const geniusClient = await this.getGeniusClient();
+            const searches = await geniusClient.songs.search(query);
             if (!searches || searches.length === 0) {
                 logger.debug('No songs found in Genius', { title, artist });
                 return null;
@@ -183,11 +131,7 @@ Real lyrics would be fetched from external APIs.`;
         let lyrics = await this.searchGenius(title, artist);
 
         // Fallback to sample/test lyrics
-        if (!lyrics) {
-            logger.debug('Falling back to sample lyrics for testing');
-            lyrics = await this.searchFallbackSamples(title, artist);
-        }
-
+        
         if (!lyrics) {
             const errorMessage = artist
                 ? `Lyrics not found for "${title}" by ${artist}. Try common songs like "君の名は" or "前前前世" for testing.`

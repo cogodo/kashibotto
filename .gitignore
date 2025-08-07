@@ -100,4 +100,6 @@ temp/
 .vercel
 
 # Local development
-.cursor/ 
+.cursor/
+
+# Note: docs/ folder is NOT ignored - it's needed for GitHub Pages deployment 

@@ -30,11 +30,19 @@ for (const envVar of requiredEnvVars) {
     }
 }
 
+// Parse CORS origins - support both single string and comma-separated values
+const parseCorsOrigin = (corsOrigin: string): string | string[] => {
+    if (corsOrigin.includes(',')) {
+        return corsOrigin.split(',').map(origin => origin.trim());
+    }
+    return corsOrigin;
+};
+
 export const config: Config = {
     server: {
         port: parseInt(process.env.PORT || '3001'),
         nodeEnv: process.env.NODE_ENV || 'development',
-        corsOrigin: process.env.CORS_ORIGIN || ['http://localhost:3000', 'http://localhost:5173'],
+        corsOrigin: parseCorsOrigin(process.env.CORS_ORIGIN || 'http://localhost:3000,http://localhost:5173'),
     },
     apis: {
         genius: {

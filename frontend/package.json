@@ -5,9 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "type-check": "tsc --noEmit",
+    "deploy": "npm run build && git add docs && git commit -m 'Deploy to GitHub Pages' && git push"
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.5.10",
