@@ -11,26 +11,43 @@ import { generalRateLimit } from './middleware/rateLimiter';
 
 const app = express();
 
-// CORS configuration - MUST come BEFORE Helmet
+// CORS configuration - MUST come FIRST
+const allowedOrigins = process.env.CORS_ORIGIN
+    ? process.env.CORS_ORIGIN.split(',').map(origin => origin.trim())
+    : [
+        'https://cogodo.github.io',
+        'http://localhost:3000',
+        'http://localhost:5173'
+    ];
+
 app.use(cors({
-    origin: true, // Allow all origins temporarily for debugging
-    credentials: true,
+    origin: function (origin, callback) {
+        // Allow requests with no origin (like mobile apps or curl requests)
+        if (!origin) return callback(null, true);
+
+        if (allowedOrigins.indexOf(origin) !== -1) {
+            callback(null, true);
+        } else {
+            callback(new Error('Not allowed by CORS'));
+        }
+    },
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
+    credentials: false, // Set to false since we're not using cookies
     preflightContinue: false,
     optionsSuccessStatus: 204
 }));
 
-// Handle OPTIONS requests explicitly
+// Ensure you explicitly handle OPTIONS for every path
 app.options('*', cors());
 
-// Security middleware - AFTER CORS
-app.use(helmet({
-    crossOriginResourcePolicy: { policy: "cross-origin" },
-    crossOriginEmbedderPolicy: false
-}));
+// Security middleware - AFTER CORS (TEMPORARILY DISABLED)
+// app.use(helmet({
+//     crossOriginResourcePolicy: { policy: "cross-origin" },
+//     crossOriginEmbedderPolicy: false
+// }));
 
-// Request logging
+// Request logging - AFTER CORS
 if (config.server.nodeEnv !== 'test') {
     app.use(morgan('combined', {
         stream: {
@@ -41,12 +58,17 @@ if (config.server.nodeEnv !== 'test') {
     }));
 }
 
-// Body parsing middleware
+// Body parsing middleware - AFTER CORS
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 
-// General rate limiting
-app.use(generalRateLimit);
+// General rate limiting - AFTER CORS, but skip OPTIONS
+app.use((req, res, next) => {
+    if (req.method === 'OPTIONS') {
+        return next(); // Skip rate limiting for OPTIONS
+    }
+    return generalRateLimit(req, res, next);
+});
 
 // API routes
 app.use('/api', apiRouter);
