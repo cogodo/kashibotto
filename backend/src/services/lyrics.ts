@@ -42,30 +42,23 @@ class LyricsService {
                     throw new Error('Genius library not properly loaded - missing Client class');
                 }
 
-                // Configure the client with proper headers and options to avoid being blocked
+                // Configure the client with minimal config to avoid undici issues in production
                 const clientConfig = {
                     requestOptions: {
                         headers: {
                             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-                            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-                            'Accept-Language': 'en-US,en;q=0.5',
-                            'Accept-Encoding': 'gzip, deflate, br',
-                            'DNT': '1',
-                            'Connection': 'keep-alive',
-                            'Upgrade-Insecure-Requests': '1',
-                            'Sec-Fetch-Dest': 'document',
-                            'Sec-Fetch-Mode': 'navigate',
-                            'Sec-Fetch-Site': 'none',
-                            'Cache-Control': 'max-age=0',
-                        },
-                        // Add timeout to prevent hanging requests
-                        bodyTimeout: 15000,
-                        headersTimeout: 15000,
+                        }
+                        // Remove bodyTimeout and headersTimeout as they cause undici issues in production
                     }
                 };
 
                 this.geniusClient = new Genius.Client(config.apis.genius.accessToken || undefined, clientConfig);
-                logger.info('Genius client initialized successfully');
+                logger.info('Genius client initialized successfully', {
+                    hasToken: !!config.apis.genius.accessToken,
+                    environment: process.env.NODE_ENV,
+                    nodeVersion: process.version,
+                    platform: process.platform
+                });
             } catch (error) {
                 logger.error('Failed to initialize Genius client', {
                     error: (error as Error).message,
@@ -315,8 +308,13 @@ class LyricsService {
             }
 
             if (lyrics) {
-                // Clean up HTML tags
+                // Clean up HTML tags while preserving spaces
+                // Replace closing tags with spaces to preserve word boundaries
+                lyrics = lyrics.replace(/<\/[^>]*>/g, ' ');
+                // Remove opening tags
                 lyrics = lyrics.replace(/<[^>]*>/g, '');
+
+                // Clean up HTML entities
                 lyrics = lyrics.replace(/&amp;/g, '&');
                 lyrics = lyrics.replace(/&lt;/g, '<');
                 lyrics = lyrics.replace(/&gt;/g, '>');
@@ -326,7 +324,10 @@ class LyricsService {
 
                 // Clean up extra whitespace and normalize line breaks
                 lyrics = lyrics.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
-                lyrics = lyrics.replace(/\n\s*\n/g, '\n').trim();
+                // Normalize multiple spaces to single spaces but preserve spaces between words
+                lyrics = lyrics.replace(/[ \t]+/g, ' ');
+                // Only remove excessive empty lines (3+ consecutive), preserve spacing
+                lyrics = lyrics.replace(/\n\s*\n\s*\n+/g, '\n\n').trim();
 
                 if (lyrics.length > 0) {
                     logger.info('Successfully fetched lyrics using alternative method', {

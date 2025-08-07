@@ -103,9 +103,9 @@ class DictionaryService {
     private readonly maxRetries = 3;
     private readonly retryDelay = 1000; // Reduced from 3000ms to 1000ms for faster retries
     private readonly batchSize = 8; // Increased batch size for better efficiency  
-    private readonly batchDelay = 300; // Reduced from 500ms to 300ms for faster processing
+    private readonly batchDelay = 100; // Reduced to 100ms for much faster processing
     private lastRequestTime = 0;
-    private readonly minRequestInterval = 200; // Reduced from 500ms to 200ms - Jisho has no official rate limits
+    private readonly minRequestInterval = 100; // Reduced to 100ms - Jisho can handle faster requests
 
     // Storage backend
     private storage: StorageBackend;

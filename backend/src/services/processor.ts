@@ -5,6 +5,14 @@ import { ApiError } from './lyrics';
 import { MorphemeData, ProcessedLyrics, Segment } from '../types';
 
 class ProcessorService {
+    // Function to detect if text is romanized/English (no Japanese characters)
+    private isRomanizedText(text: string): boolean {
+        // Check if text contains only Latin characters, numbers, punctuation, and spaces
+        // If it has no Japanese characters (Hiragana, Katakana, Kanji), it's likely romanized/English
+        const japaneseRegex = /[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FAF]/;
+        return !japaneseRegex.test(text) && text.trim().length > 0;
+    }
+
     // Function to connect segments ending with っ to the next segment when it starts with verb endings
     private connectSmallTsuSegments(segments: Segment[]): Segment[] {
         if (!segments || segments.length < 2) return segments;
@@ -109,9 +117,16 @@ class ProcessorService {
                             translation = morpheme.surface;
                         }
 
-                        // Create segment
+                        // Create segment with trailing space for romanized text
+                        let segmentText = morpheme.surface;
+
+                        // Add trailing space to romanized/English segments to preserve word boundaries
+                        if (this.isRomanizedText(segmentText)) {
+                            segmentText = segmentText + ' ';
+                        }
+
                         const segment: Segment = {
-                            text: morpheme.surface,
+                            text: segmentText,
                             reading: morpheme.reading || morpheme.surface,
                             translation: translation,
                             dictionary: dictionaryData ? [dictionaryData.definitions[0] || 'No definition available'] : undefined,
@@ -125,9 +140,16 @@ class ProcessorService {
                             error: (error as Error).message,
                         });
 
-                        // Create basic segment on error
+                        // Create basic segment on error with trailing space for romanized text
+                        let fallbackText = morpheme.surface;
+
+                        // Add trailing space to romanized/English segments to preserve word boundaries
+                        if (this.isRomanizedText(fallbackText)) {
+                            fallbackText = fallbackText + ' ';
+                        }
+
                         const fallbackSegment: Segment = {
-                            text: morpheme.surface,
+                            text: fallbackText,
                             reading: morpheme.reading || morpheme.surface,
                             translation: morpheme.surface, // Use surface form as fallback
                             dictionary: dictionaryData ? [dictionaryData.definitions[0] || 'No definition available'] : undefined,
@@ -141,10 +163,7 @@ class ProcessorService {
                 const connectedSegments = this.connectSmallTsuSegments(lineSegments);
                 processedLines.push(connectedSegments);
 
-                // Small delay between lines to avoid overwhelming APIs
-                if (segmentedLines.length > 3 && i < segmentedLines.length - 1) {
-                    await new Promise(resolve => setTimeout(resolve, 100));
-                }
+                // No delay needed - dictionary lookups are already batched and throttled efficiently
             }
 
             const result: ProcessedLyrics = {

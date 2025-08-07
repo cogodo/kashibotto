@@ -80,8 +80,11 @@ const containsJapaneseText = (text: string): boolean => {
 
 // Function to check if text is a section header (Verse, Chorus, etc.)
 const isSectionHeader = (text: string): boolean => {
-  const sectionRegex = /^(Verse|Chorus|Refrain|Bridge|Intro|Outro|Pre-chorus|Post-chorus|Interlude)(\s*\d*)?$/i;
-  return sectionRegex.test(text.trim());
+  const trimmedText = text.trim();
+
+  // Single comprehensive regex that matches all section headers including numbered verses
+  const sectionRegex = /^(Verse|Chorus|Refrain|Bridge|Intro|Outro|Pre-chorus|Post-chorus|Interlude)(\s+\d+|\s*\d*)?$/i;
+  return sectionRegex.test(trimmedText);
 };
 
 const Tooltip: React.FC<TooltipProps> = ({ segment, children }) => {
@@ -568,10 +571,25 @@ const App: React.FC = () => {
                     // Empty line for spacing between verses
                     <div className="h-6"></div>
                   ) : (
-                    // Check if this line is a section header
-                    line.length === 1 && isSectionHeader(line[0].text) ? (
+                    // Check if this line is a section header (hardcoded fix for segmented headers like "Verse 1")
+                    (() => {
+                      // Try single segment first
+                      if (line.length === 1 && isSectionHeader(line[0].text)) {
+                        return true;
+                      }
+
+                      // Hardcoded fix: check if line starts with section words and has 2-3 segments (like "Verse" + "1")
+                      if (line.length >= 2 && line.length <= 3) {
+                        const combinedText = line.map(seg => seg.text).join('').trim();
+                        if (isSectionHeader(combinedText)) {
+                          return true;
+                        }
+                      }
+
+                      return false;
+                    })() ? (
                       <div className="section-header">
-                        {line[0].text}
+                        {line.map(seg => seg.text).join('')}
                       </div>
                     ) : (
                       line.map((segment, segmentIndex) => {

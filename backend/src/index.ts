@@ -11,6 +11,12 @@ import { generalRateLimit } from './middleware/rateLimiter';
 
 const app = express();
 
+// Trust proxy configuration for production (needed for rate limiting with X-Forwarded-For headers)
+if (config.server.nodeEnv === 'production') {
+    app.set('trust proxy', 1);
+    logger.info('Trust proxy enabled for production environment');
+}
+
 // 1) CORS configuration - MUST come FIRST, before any routes or middleware
 app.use(cors({
     origin: 'https://cogodo.github.io',

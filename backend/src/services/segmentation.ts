@@ -175,10 +175,7 @@ class SegmentationService {
                 const segments = await this.segmentText(line);
                 segmentedLines.push(segments);
 
-                // OPTIMIZED: Reduced delay since no API calls in segmentation
-                if (i < lines.length - 1) {
-                    await new Promise(resolve => setTimeout(resolve, 50));
-                }
+                // No delay needed - MeCab segmentation is local and fast
             } catch (error) {
                 logger.error(`Failed to segment line ${i + 1}`, {
                     line,

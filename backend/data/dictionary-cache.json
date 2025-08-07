@@ -20800,7 +20800,317 @@
         "いくえ"
       ],
       "timestamp": 1754588068945
+    },
+    "絡まり": {
+      "word": "絡まり",
+      "definitions": [
+        "entanglement"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "からまり"
+      ],
+      "timestamp": 1754588404254
+    },
+    "あう": {
+      "word": "あう",
+      "definitions": [
+        "to meet",
+        "to encounter",
+        "to see"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'u' ending",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "あう"
+      ],
+      "timestamp": 1754588404752
+    },
+    "飾ら": {
+      "word": "飾ら",
+      "definitions": [
+        "ornamental plate"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "かざりざら"
+      ],
+      "timestamp": 1754588405060
+    },
+    "惹き": {
+      "word": "惹き",
+      "definitions": [
+        "to cause",
+        "to induce",
+        "to bring about",
+        "to provoke"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'su' ending",
+        "Transitive verb"
+      ],
+      "readings": [
+        "ひきおこす"
+      ],
+      "timestamp": 1754588405254
+    },
+    "惑わ": {
+      "word": "惑わ",
+      "definitions": [
+        "to bewilder",
+        "to perplex",
+        "to puzzle",
+        "to delude",
+        "to mislead",
+        "to deceive"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'su' ending",
+        "Transitive verb"
+      ],
+      "readings": [
+        "まどわす"
+      ],
+      "timestamp": 1754588405455
+    },
+    "夢見心地": {
+      "word": "夢見心地",
+      "definitions": [
+        "dreamy state of mind"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ゆめみごこち"
+      ],
+      "timestamp": 1754588405737
+    },
+    "溶け": {
+      "word": "溶け",
+      "definitions": [
+        "to melt",
+        "to thaw",
+        "to fuse"
+      ],
+      "partOfSpeech": [
+        "Ichidan verb",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "とける"
+      ],
+      "timestamp": 1754588406999
+    },
+    "月夜": {
+      "word": "月夜",
+      "definitions": [
+        "moonlit night"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "つきよ"
+      ],
+      "timestamp": 1754588407619
+    },
+    "誘わ": {
+      "word": "誘わ",
+      "definitions": [
+        "to invite",
+        "to ask (someone to do)",
+        "to call (for)",
+        "to take (someone) along"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'u' ending",
+        "Transitive verb"
+      ],
+      "readings": [
+        "さそう"
+      ],
+      "timestamp": 1754588407951
+    },
+    "接し": {
+      "word": "接し",
+      "definitions": [
+        "to touch",
+        "to come in contact with",
+        "to border on",
+        "to adjoin",
+        "to be adjacent",
+        "to be close"
+      ],
+      "partOfSpeech": [
+        "Ichidan verb",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "せっしる"
+      ],
+      "timestamp": 1754588408257
+    },
+    "出会っ": {
+      "word": "出会っ",
+      "definitions": [
+        "meeting",
+        "rendezvous",
+        "encounter"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "であい"
+      ],
+      "timestamp": 1754588408837
+    },
+    "集っ": {
+      "word": "集っ",
+      "definitions": [
+        "to gather",
+        "to collect",
+        "to assemble"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'ru' ending",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "あつまる"
+      ],
+      "timestamp": 1754588409171
+    },
+    "置い": {
+      "word": "置い",
+      "definitions": [
+        "leaving someone behind",
+        "abandoning someone",
+        "marooning someone"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "おいてきぼり"
+      ],
+      "timestamp": 1754588411477
+    },
+    "迷わ": {
+      "word": "迷わ",
+      "definitions": [
+        "to puzzle",
+        "to perplex",
+        "to bewilder",
+        "to delude",
+        "to mislead",
+        "to fascinate"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'su' ending",
+        "Transitive verb"
+      ],
+      "readings": [
+        "まよわす"
+      ],
+      "timestamp": 1754588411927
+    },
+    "降り": {
+      "word": "降り",
+      "definitions": [
+        "down-train",
+        "train heading toward the ending point of its route"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "くだり"
+      ],
+      "timestamp": 1754588412148
+    },
+    "開い": {
+      "word": "開い",
+      "definitions": [
+        "dumbfounded",
+        "speechless",
+        "flabbergasted",
+        "openmouthed (with surprise)"
+      ],
+      "partOfSpeech": [
+        "Expressions (phrases, clauses, etc.)",
+        "I-adjective (keiyoushi)"
+      ],
+      "readings": [
+        "あいたくちがふさがらない"
+      ],
+      "timestamp": 1754588412603
+    },
+    "生者": {
+      "word": "生者",
+      "definitions": [
+        "living person",
+        "the living"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "せいしゃ"
+      ],
+      "timestamp": 1754588414102
+    },
+    "飲み込ま": {
+      "word": "飲み込ま",
+      "definitions": [
+        "to swallow",
+        "to gulp down"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'mu' ending",
+        "Transitive verb"
+      ],
+      "readings": [
+        "のみこむ"
+      ],
+      "timestamp": 1754588414344
+    },
+    "終わら": {
+      "word": "終わら",
+      "definitions": [
+        "Unfinished Tales"
+      ],
+      "partOfSpeech": [
+        "Wikipedia definition"
+      ],
+      "readings": [
+        "終わらざりし物語"
+      ],
+      "timestamp": 1754588417715
+    },
+    "捧げよ": {
+      "word": "捧げよ",
+      "definitions": [
+        "to lift up",
+        "to hold up",
+        "to hold above eye level"
+      ],
+      "partOfSpeech": [
+        "Nidan verb (lower class) with 'gu' ending (archaic)",
+        "Transitive verb"
+      ],
+      "readings": [
+        "ささぐ"
+      ],
+      "timestamp": 1754588418024
     }
   },
-  "lastUpdated": 1754588068945
+  "lastUpdated": 1754588418024
 }
