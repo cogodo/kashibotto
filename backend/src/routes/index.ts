@@ -2,7 +2,6 @@ import { Router } from 'express';
 import { lyricsRouter } from './lyrics';
 import { processRouter } from './process';
 import searchRouter from './search';
-import { debugRouter } from './debug';
 
 const router = Router();
 
@@ -19,6 +18,5 @@ router.get('/health', (req, res) => {
 router.use('/lyrics', lyricsRouter);
 router.use('/process', processRouter);
 router.use('/search', searchRouter);
-router.use('/debug', debugRouter);
 
 export { router as apiRouter };

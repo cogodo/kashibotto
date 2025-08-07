@@ -35,7 +35,7 @@ class LyricsService {
     private async getGeniusClient() {
         if (!this.geniusClient) {
             try {
-                const Genius = await import('genius-lyrics');
+                const Genius = await import('genius-lyrics-axios');
 
                 // Check if the library is properly loaded
                 if (!Genius || !Genius.Client) {
@@ -55,7 +55,7 @@ class LyricsService {
                 // PRODUCTION FIX: Try with no config first, then with config
                 try {
                     this.geniusClient = new Genius.Client(config.apis.genius.accessToken || undefined);
-                    logger.info('Genius client initialized with basic config');
+                    logger.info('Genius client initialized with axios-based package');
                 } catch (basicError) {
                     logger.warn('Basic init failed, trying with config', { error: (basicError as Error).message });
                     this.geniusClient = new Genius.Client(config.apis.genius.accessToken || undefined, clientConfig);

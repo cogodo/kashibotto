@@ -2,7 +2,7 @@ services:
   - type: web
     name: kashibotto
     env: node
-    buildCommand: npm install && npm run build
+    buildCommand: nvm use 20 && npm install && npm run build
     startCommand: npm start
     rootDir: backend
     envVars:
