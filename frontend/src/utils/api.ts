@@ -1,7 +1,7 @@
 // API utility functions for handling base URL configuration
 
 // Determine the API base URL based on environment
-const API_BASE_URL = import.meta.env.PROD
+const API_BASE_URL = import.meta.env.PROD === true
     ? 'https://kashibotto.onrender.com' // Updated Render URL
     : '';
 
