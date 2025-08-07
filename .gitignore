@@ -96,9 +96,6 @@ public
 tmp/
 temp/
 
-# Vercel
-.vercel
-
 # Local development
 .cursor/
 

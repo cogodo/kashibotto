@@ -17,7 +17,6 @@
         "install:all": "npm install"
     },
     "dependencies": {
-        "@vercel/node": "^3.0.0",
         "axios": "^1.11.0",
         "genius-lyrics": "^4.4.7"
     },

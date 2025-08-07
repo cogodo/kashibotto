@@ -19,13 +19,12 @@
         "emitDecoratorMetadata": true
     },
     "include": [
-        "api/**/*"
+        "backend/**/*"
     ],
     "exclude": [
         "node_modules",
         "dist",
         "**/*.test.ts",
-        "frontend/**/*",
-        "backend/**/*"
+        "frontend/**/*"
     ]
 }

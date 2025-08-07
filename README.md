@@ -76,7 +76,7 @@ VITE_API_BASE_URL=http://localhost:3001
 kashibotto/
 ├── frontend/                 # React + Vite frontend
 │   ├── src/
-│   └── dist/                # Build output
+│   └── docs/                # Build output for GitHub Pages
 ├── backend/                  # Node.js + Express backend
 │   ├── src/
 │   └── dist/                # Build output
@@ -187,16 +187,22 @@ npm start                # Start production server
 - **Hot Reload**: Both frontend and backend support hot reloading
 - **Logs**: Check terminal output for debugging information
 
-## 🚀 Deployment (Personal Use)
+## 🚀 Deployment
 
-For deployment to Vercel:
+This application is configured for deployment to:
+- **Backend**: Render (Node.js service)
+- **Frontend**: GitHub Pages
+
+See `DEPLOYMENT.md` for detailed deployment instructions.
+
+### Quick Deployment Commands
 
 ```bash
-# Get Vercel info (first time only)
-./get-vercel-info.sh
+# Build frontend for GitHub Pages
+cd frontend && npm run build
 
-# Deploy to Vercel
-./deploy.sh
+# Deploy to GitHub Pages
+cd frontend && npm run deploy
 ```
 
 Happy coding! 🚀
