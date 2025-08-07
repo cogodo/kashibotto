@@ -181,6 +181,7 @@ const DarkModeToggle: React.FC = () => {
 
 const App: React.FC = () => {
   const [title, setTitle] = useState('');
+  const [selectedArtist, setSelectedArtist] = useState<string>('');
 
   const [processedLyrics, setProcessedLyrics] = useState<ProcessedLyrics | null>(null);
   const [loading, setLoading] = useState(false);
@@ -195,6 +196,7 @@ const App: React.FC = () => {
   // Debounced search function
   const handleTitleChange = (value: string) => {
     setTitle(value);
+    setSelectedArtist(''); // Clear selected artist when user types
 
     if (debounceRef.current) {
       clearTimeout(debounceRef.current);
@@ -220,7 +222,9 @@ const App: React.FC = () => {
   };
 
   const handleSelectSuggestion = (suggestion: SearchSuggestion) => {
-    setTitle(suggestion.full_title);
+    // Use the title field directly (it's already clean)
+    setTitle(suggestion.title);
+    setSelectedArtist(suggestion.artist || '');
     setShowSuggestions(false);
     setSearchSuggestions([]);
   };
@@ -247,7 +251,7 @@ const App: React.FC = () => {
     setProcessedLyrics(null);
 
     try {
-      const lyricsData = await getLyrics(title);
+      const lyricsData = await getLyrics(title, selectedArtist);
       const lyrics = lyricsData.lyrics;
 
       const processedData = await processLyrics(lyrics);
@@ -399,8 +403,8 @@ const App: React.FC = () => {
                               onClick={() => handleSelectSuggestion(suggestion)}
                               className="w-full px-4 py-4 text-left transition-colors duration-200 first:rounded-t-2xl last:rounded-b-2xl border-b border-gray-300/20 dark:border-gray-700/20 last:border-b-0"
                             >
-                              <div className="font-bold text-lg text-gray-900 dark:text-white">{suggestion.full_title}</div>
-                              <div className="text-gray-600 dark:text-gray-400 text-base">{suggestion.artist}</div>
+                              <div className="font-bold text-lg text-gray-900 dark:text-white">{suggestion.title}</div>
+                              <div className="text-gray-600 dark:text-gray-400 text-base">by {suggestion.artist}</div>
                             </motion.button>
                           ))}
                         </motion.div>
@@ -449,6 +453,7 @@ const App: React.FC = () => {
                 onClick={() => {
                   setProcessedLyrics(null);
                   setTitle('');
+                  setSelectedArtist('');
                   setError(null);
                 }}
                 className="flex items-center space-x-2 px-4 py-2 text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200 font-medium"
@@ -468,6 +473,11 @@ const App: React.FC = () => {
               <h2 className="text-5xl font-display font-bold mb-4 gradient-text">
                 {title}
               </h2>
+              {selectedArtist && (
+                <p className="text-2xl text-gray-600 dark:text-gray-400 font-body mb-4">
+                  by {selectedArtist}
+                </p>
+              )}
               <p className="text-xl text-gray-700 dark:text-gray-300 font-body">
                 Hover or click on Japanese text to see readings, translations, and definitions
               </p>

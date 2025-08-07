@@ -24,8 +24,13 @@ export const searchSongs = async (query: string): Promise<any> => {
     return response.json();
 };
 
-export const getLyrics = async (song: string): Promise<{ lyrics: string }> => {
-    const response = await apiCall(`/api/lyrics?song=${encodeURIComponent(song)}`);
+export const getLyrics = async (song: string, artist?: string): Promise<{ lyrics: string }> => {
+    const params = new URLSearchParams();
+    params.append('song', song);
+    if (artist) {
+        params.append('artist', artist);
+    }
+    const response = await apiCall(`/api/lyrics?${params.toString()}`);
     if (!response.ok) {
         throw new Error('Failed to fetch lyrics');
     }
