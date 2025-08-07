@@ -9,6 +9,6 @@ services:
       - key: NODE_ENV
         value: production
       - key: CORS_ORIGIN
-        value: https://cogodo.github.io
+        value: https://cogodo.github.io,http://localhost:3000,http://localhost:5173
       - key: PORT
         value: 10000

@@ -32,8 +32,12 @@ for (const envVar of requiredEnvVars) {
 
 // Parse CORS origins - support both single string and comma-separated values
 const parseCorsOrigin = (corsOrigin: string): string | string[] => {
+    if (!corsOrigin) {
+        return ['http://localhost:3000', 'http://localhost:5173'];
+    }
+
     if (corsOrigin.includes(',')) {
-        return corsOrigin.split(',').map(origin => origin.trim());
+        return corsOrigin.split(',').map(origin => origin.trim()).filter(origin => origin.length > 0);
     }
     return corsOrigin;
 };
