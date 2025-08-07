@@ -1,5 +1,0 @@
-# Disable Jekyll processing for GitHub Pages
-# This tells GitHub Pages to serve this directory as static files only
-plugins: []
-markdown: kramdown
-highlighter: rouge

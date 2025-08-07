@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: kashibotto-backend
+    name: kashibotto
     env: node
     buildCommand: npm install && npm run build
     startCommand: npm start

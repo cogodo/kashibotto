@@ -2,7 +2,7 @@
 
 // Determine the API base URL based on environment
 const API_BASE_URL = import.meta.env.PROD
-    ? 'https://kashibotto-backend.onrender.com' // Replace with your actual Render URL
+    ? 'https://kashibotto.onrender.com' // Updated Render URL
     : '';
 
 export const apiCall = async (endpoint: string, options?: RequestInit): Promise<Response> => {
