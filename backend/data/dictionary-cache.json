@@ -20323,7 +20323,484 @@
         "かんしゅう"
       ],
       "timestamp": 1754585244810
+    },
+    "一緒": {
+      "word": "一緒",
+      "definitions": [
+        "(doing) together"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "いっしょ"
+      ],
+      "timestamp": 1754588059974
+    },
+    "あぜ道": {
+      "word": "あぜ道",
+      "definitions": [
+        "(raised) footpath between rice fields",
+        "ridge between rice fields"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "あぜみち"
+      ],
+      "timestamp": 1754588060025
+    },
+    "うさぎ": {
+      "word": "うさぎ",
+      "definitions": [
+        "rabbit",
+        "hare",
+        "coney",
+        "cony",
+        "lagomorph (esp. leporids)"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "うさぎ"
+      ],
+      "timestamp": 1754588060122
+    },
+    "見上げ": {
+      "word": "見上げ",
+      "definitions": [
+        "to look up at",
+        "to raise one's eyes"
+      ],
+      "partOfSpeech": [
+        "Ichidan verb",
+        "Transitive verb"
+      ],
+      "readings": [
+        "みあげる"
+      ],
+      "timestamp": 1754588060261
+    },
+    "砂": {
+      "word": "砂",
+      "definitions": [
+        "sand",
+        "grit"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "すな"
+      ],
+      "timestamp": 1754588060685
+    },
+    "崩し": {
+      "word": "崩し",
+      "definitions": [
+        "simplification (character, hair-style, etc.)"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "くずし"
+      ],
+      "timestamp": 1754588060835
+    },
+    "城": {
+      "word": "城",
+      "definitions": [
+        "castle"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "しろ"
+      ],
+      "timestamp": 1754588060882
+    },
+    "波打ち際": {
+      "word": "波打ち際",
+      "definitions": [
+        "water's edge",
+        "beach",
+        "foreshore"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "なみうちぎわ"
+      ],
+      "timestamp": 1754588060898
+    },
+    "幼く": {
+      "word": "幼く",
+      "definitions": [
+        "neoteny"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ようけいせいじゅく"
+      ],
+      "timestamp": 1754588061364
+    },
+    "足跡": {
+      "word": "足跡",
+      "definitions": [
+        "footprints"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "あしあと"
+      ],
+      "timestamp": 1754588061461
+    },
+    "小さく": {
+      "word": "小さく",
+      "definitions": [
+        "tenant farming"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "こさく"
+      ],
+      "timestamp": 1754588062211
+    },
+    "ふたり": {
+      "word": "ふたり",
+      "definitions": [
+        "two persons",
+        "two people",
+        "pair",
+        "couple"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ふたり"
+      ],
+      "timestamp": 1754588062378
+    },
+    "家": {
+      "word": "家",
+      "definitions": [
+        "house",
+        "residence",
+        "dwelling",
+        "home"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "いえ"
+      ],
+      "timestamp": 1754588062813
+    },
+    "離れる": {
+      "word": "離れる",
+      "definitions": [
+        "to be separated",
+        "to be apart",
+        "to be distant"
+      ],
+      "partOfSpeech": [
+        "Ichidan verb",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "はなれる"
+      ],
+      "timestamp": 1754588062881
+    },
+    "程": {
+      "word": "程",
+      "definitions": [
+        "extent",
+        "degree",
+        "measure"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Adverb (fukushi)"
+      ],
+      "readings": [
+        "ほど"
+      ],
+      "timestamp": 1754588062918
+    },
+    "秘密": {
+      "word": "秘密",
+      "definitions": [
+        "secret",
+        "secrecy",
+        "confidentiality",
+        "privacy"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Na-adjective (keiyodoshi)",
+        "Noun which may take the genitive case particle 'no'"
+      ],
+      "readings": [
+        "ひみつ"
+      ],
+      "timestamp": 1754588062982
+    },
+    "夕暮れ": {
+      "word": "夕暮れ",
+      "definitions": [
+        "evening",
+        "dusk",
+        "twilight"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ゆうぐれ"
+      ],
+      "timestamp": 1754588063677
+    },
+    "ぼく": {
+      "word": "ぼく",
+      "definitions": [
+        "I",
+        "me"
+      ],
+      "partOfSpeech": [
+        "Pronoun"
+      ],
+      "readings": [
+        "ぼく"
+      ],
+      "timestamp": 1754588064076
+    },
+    "生まれ変わっ": {
+      "word": "生まれ変わっ",
+      "definitions": [
+        "to be born again",
+        "to make a fresh start in life"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'ru' ending",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "うまれかわる"
+      ],
+      "timestamp": 1754588064430
+    },
+    "逢える": {
+      "word": "逢える",
+      "definitions": [
+        "No definition available"
+      ],
+      "partOfSpeech": [
+        "unknown"
+      ],
+      "readings": [
+        "逢える"
+      ],
+      "timestamp": 1754588064593
+    },
+    "出": {
+      "word": "出",
+      "definitions": [
+        "coming out",
+        "going out",
+        "outflow",
+        "efflux",
+        "rising (of the Sun or the Moon)"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Noun, used as a suffix"
+      ],
+      "readings": [
+        "で"
+      ],
+      "timestamp": 1754588064744
+    },
+    "帰っ": {
+      "word": "帰っ",
+      "definitions": [
+        "to return",
+        "to come back"
+      ],
+      "partOfSpeech": [
+        "Expressions (phrases, clauses, etc.)",
+        "Kuru verb - special class"
+      ],
+      "readings": [
+        "かえってくる"
+      ],
+      "timestamp": 1754588065201
+    },
+    "抱き合っ": {
+      "word": "抱き合っ",
+      "definitions": [
+        "to embrace each other"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'u' ending",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "だきあう"
+      ],
+      "timestamp": 1754588065275
+    },
+    "言わ": {
+      "word": "言わ",
+      "definitions": [
+        "so to speak",
+        "so to call it",
+        "as it were"
+      ],
+      "partOfSpeech": [
+        "Adverb (fukushi)"
+      ],
+      "readings": [
+        "いわば"
+      ],
+      "timestamp": 1754588066078
+    },
+    "会い": {
+      "word": "会い",
+      "definitions": [
+        "Aitai Lonely Christmas"
+      ],
+      "partOfSpeech": [
+        "Wikipedia definition"
+      ],
+      "readings": [
+        "会いたいロンリークリスマス"
+      ],
+      "timestamp": 1754588066615
+    },
+    "会え": {
+      "word": "会え",
+      "definitions": [
+        "Aenai Nagai Nichiyōbi"
+      ],
+      "partOfSpeech": [
+        "Wikipedia definition"
+      ],
+      "readings": [
+        "会えない長い日曜日"
+      ],
+      "timestamp": 1754588066960
+    },
+    "欠ける": {
+      "word": "欠ける",
+      "definitions": [
+        "to chip",
+        "to be chipped",
+        "to break (off)",
+        "to be damaged"
+      ],
+      "partOfSpeech": [
+        "Ichidan verb",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "かける"
+      ],
+      "timestamp": 1754588067159
+    },
+    "想い出": {
+      "word": "想い出",
+      "definitions": [
+        "memories",
+        "recollections",
+        "reminiscence"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "おもいで"
+      ],
+      "timestamp": 1754588067229
+    },
+    "満ち": {
+      "word": "満ち",
+      "definitions": [
+        "to fill",
+        "to become full (of)",
+        "to be filled (with)",
+        "to brim (with)"
+      ],
+      "partOfSpeech": [
+        "Ichidan verb",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "みちる"
+      ],
+      "timestamp": 1754588068282
+    },
+    "想っ": {
+      "word": "想っ",
+      "definitions": [
+        "to think",
+        "to consider",
+        "to believe",
+        "to reckon"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'u' ending",
+        "Transitive verb"
+      ],
+      "readings": [
+        "おもう"
+      ],
+      "timestamp": 1754588068611
+    },
+    "重ね": {
+      "word": "重ね",
+      "definitions": [
+        "pile",
+        "heap",
+        "layers (e.g. of clothing)",
+        "set (e.g. of boxes)",
+        "course (e.g. of stones)"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "かさね"
+      ],
+      "timestamp": 1754588068830
+    },
+    "幾重": {
+      "word": "幾重",
+      "definitions": [
+        "piling up",
+        "multiple layers"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "いくえ"
+      ],
+      "timestamp": 1754588068945
     }
   },
-  "lastUpdated": 1754585244810
+  "lastUpdated": 1754588068945
 }
