@@ -206,3 +206,48 @@ cd frontend && npm run deploy
 ```
 
 Happy coding! 🚀
+
+## Dictionary Storage Configuration
+
+The dictionary cache can be configured to use different storage backends based on your deployment environment:
+
+### Environment Variables
+
+- `DICTIONARY_STORAGE`: Controls how the dictionary cache is stored
+  - `file` (default for development): Uses local file system storage
+  - `memory` (default for production): Uses in-memory storage (cache lost on restart)
+  - `auto`: Automatically chooses based on NODE_ENV
+
+### Deployment Considerations
+
+**For Local Development:**
+- Uses file system storage by default
+- Cache persists between restarts
+- Cache file stored in `backend/data/dictionary-cache.json`
+
+**For Production (Render, Heroku, etc.):**
+- Uses memory-only storage by default
+- Cache is lost on each restart/redeploy
+- Faster startup, no file system dependencies
+- Consider using a database for persistent storage in production
+
+### Adding Persistent Storage
+
+For production deployments where you want persistent cache storage, you can:
+
+1. **Use a database**: Implement a new `DatabaseStorage` class that implements the `StorageBackend` interface
+2. **Use Redis**: Add Redis integration for fast, persistent caching
+3. **Use cloud storage**: Implement storage using services like AWS S3 or Google Cloud Storage
+
+Example database implementation:
+```typescript
+class DatabaseStorage implements StorageBackend {
+    async load(): Promise<DictionaryCache> {
+        // Load from database
+    }
+    
+    async save(cache: DictionaryCache): Promise<void> {
+        // Save to database
+    }
+}
+```

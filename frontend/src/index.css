@@ -350,16 +350,17 @@
 .section-header {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #059669;
   margin: 1.5rem 0 1rem 0;
   text-align: center;
   font-family: 'Oswald', sans-serif;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-}
-
-.dark .section-header {
-  color: #34d399;
+  background: linear-gradient(to right, #00BFAE, #00E5FF 25%, #3F51B5 50%, #E91E63 75%, #00BFAE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 3s ease-in-out infinite;
+  background-size: 200% 100%;
 }
 
 /* Dark mode transitions */

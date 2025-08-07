@@ -26,6 +26,52 @@ interface TooltipProps {
   children: React.ReactNode;
 }
 
+// Function to convert katakana to hiragana
+// Converts characters in the katakana range (U+30A0-U+30FF) to hiragana (U+3040-U+309F)
+const katakanaToHiragana = (text: string): string => {
+  return text.replace(/[\u30A0-\u30FF]/g, (char) => {
+    const code = char.charCodeAt(0);
+    if (code >= 0x30A0 && code <= 0x30FF) {
+      return String.fromCharCode(code - 0x60);
+    }
+    return char;
+  });
+};
+
+// Function to copy text to clipboard
+const copyToClipboard = async (text: string): Promise<boolean> => {
+  try {
+    // Modern browsers with secure context
+    if (navigator.clipboard && window.isSecureContext) {
+      await navigator.clipboard.writeText(text);
+      return true;
+    } else {
+      // Fallback for older browsers or non-secure contexts
+      const textArea = document.createElement('textarea');
+      textArea.value = text;
+      textArea.style.position = 'fixed';
+      textArea.style.left = '-999999px';
+      textArea.style.top = '-999999px';
+      textArea.style.opacity = '0';
+      document.body.appendChild(textArea);
+      textArea.focus();
+      textArea.select();
+
+      try {
+        const result = document.execCommand('copy');
+        document.body.removeChild(textArea);
+        return result;
+      } catch (err) {
+        document.body.removeChild(textArea);
+        return false;
+      }
+    }
+  } catch (error) {
+    console.error('Failed to copy text:', error);
+    return false;
+  }
+};
+
 // Function to check if text contains Japanese characters
 const containsJapaneseText = (text: string): boolean => {
   const japaneseRegex = /[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FAF]/;
@@ -40,6 +86,15 @@ const isSectionHeader = (text: string): boolean => {
 
 const Tooltip: React.FC<TooltipProps> = ({ segment, children }) => {
   const [isVisible, setIsVisible] = useState(false);
+  const [showCopiedPopup, setShowCopiedPopup] = useState(false);
+
+  const handleClick = async () => {
+    const success = await copyToClipboard(segment.text);
+    if (success) {
+      setShowCopiedPopup(true);
+      setTimeout(() => setShowCopiedPopup(false), 2000);
+    }
+  };
 
   return (
     <div className="relative inline-block">
@@ -47,7 +102,7 @@ const Tooltip: React.FC<TooltipProps> = ({ segment, children }) => {
         className="cursor-pointer transition-all duration-200 hover:scale-105 hover:rotate-1"
         onMouseEnter={() => setIsVisible(true)}
         onMouseLeave={() => setIsVisible(false)}
-        onClick={() => setIsVisible(!isVisible)}
+        onClick={handleClick}
       >
         {children}
       </span>
@@ -64,13 +119,30 @@ const Tooltip: React.FC<TooltipProps> = ({ segment, children }) => {
             <div className="tooltip-glass min-w-[280px]">
               <div className="space-y-3">
                 <div className="font-display text-primary-400 text-lg font-bold">
-                  {segment.reading}
+                  {katakanaToHiragana(segment.reading)}
                 </div>
                 <div className="text-white text-base font-medium">
                   {segment.translation}
                 </div>
               </div>
               <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-gray-600/50"></div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Copied popup */}
+      <AnimatePresence>
+        {showCopiedPopup && (
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8, y: 20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.8, y: -20 }}
+            transition={{ duration: 0.3 }}
+            className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 z-50"
+          >
+            <div className="bg-primary-500/80 backdrop-blur-sm text-white px-2 py-1 rounded-md shadow-lg text-sm font-medium">
+              Copied!
             </div>
           </motion.div>
         )}

@@ -12,3 +12,5 @@ services:
         value: https://cogodo.github.io,http://localhost:3000,http://localhost:5173
       - key: PORT
         value: 10000
+      - key: DICTIONARY_STORAGE
+        value: memory

@@ -22,6 +22,33 @@ interface GeniusSearchResponse {
     };
 }
 
+interface SearchSuggestion {
+    id: number;
+    title: string;
+    artist: string;
+    full_title: string;
+}
+
+// Function to filter out romanized and translation results
+const filterRomanizedResults = (suggestions: SearchSuggestion[]): SearchSuggestion[] => {
+    return suggestions.filter(suggestion => {
+        const title = suggestion.title.toLowerCase();
+        const artist = suggestion.artist.toLowerCase();
+        const fullTitle = suggestion.full_title.toLowerCase();
+
+        // Check if any of the fields contain "romanized" or "translation"
+        const hasRomanized = title.includes('romanized') ||
+            artist.includes('romanized') ||
+            fullTitle.includes('romanized');
+
+        const hasTranslation = title.includes('translation') ||
+            artist.includes('translation') ||
+            fullTitle.includes('translation');
+
+        return !hasRomanized && !hasTranslation;
+    });
+};
+
 // GET /api/search - Live search for songs
 router.get('/', async (req: Request, res: Response) => {
     try {
@@ -54,16 +81,20 @@ router.get('/', async (req: Request, res: Response) => {
                 });
 
                 const data: GeniusSearchResponse = response.data;
-                const suggestions = data.response.hits.slice(0, 8).map(hit => ({
+                const rawSuggestions = data.response.hits.slice(0, 12).map(hit => ({
                     id: hit.result.id,
                     title: hit.result.title,
                     artist: hit.result.primary_artist.name,
                     full_title: hit.result.full_title
                 }));
 
+                // Filter out romanized results
+                const suggestions = filterRomanizedResults(rawSuggestions).slice(0, 8);
+
                 logger.info('Live search completed', {
                     query,
-                    resultsCount: suggestions.length
+                    rawResultsCount: rawSuggestions.length,
+                    filteredResultsCount: suggestions.length
                 });
 
                 return res.json({ suggestions });
@@ -92,12 +123,16 @@ router.get('/', async (req: Request, res: Response) => {
             song.artist.toLowerCase().includes(query.toLowerCase())
         );
 
+        // Filter out romanized results from mock suggestions as well
+        const filteredMockSuggestions = filterRomanizedResults(mockSuggestions);
+
         logger.info('Live search using mock data', {
             query,
-            resultsCount: mockSuggestions.length
+            rawResultsCount: mockSuggestions.length,
+            filteredResultsCount: filteredMockSuggestions.length
         });
 
-        res.json({ suggestions: mockSuggestions });
+        res.json({ suggestions: filteredMockSuggestions });
 
     } catch (error) {
         logger.error('Live search failed', {

@@ -5,6 +5,61 @@ import { ApiError } from './lyrics';
 import { MorphemeData, ProcessedLyrics, Segment } from '../types';
 
 class ProcessorService {
+    // Function to connect segments ending with っ to the next segment when it starts with verb endings
+    private connectSmallTsuSegments(segments: Segment[]): Segment[] {
+        if (!segments || segments.length < 2) return segments;
+
+        const connectedSegments: Segment[] = [];
+        let i = 0;
+
+        while (i < segments.length) {
+            const currentSegment = segments[i];
+
+            // Check if current segment ends with っ and there's a next segment
+            if (currentSegment.text.endsWith('っ') && i + 1 < segments.length) {
+                const nextSegment = segments[i + 1];
+
+                // Check if the next segment starts with common verb endings that make sense with っ
+                // Focus on the most common cases: te-form, ta-form, and other verb conjugations
+                const verbEndings = [
+                    'て', 'た', 'だ',  // te-form, ta-form, da-form (most common)
+                    'で', 'ど',        // de-form, do-form
+                    'に', 'の', 'は', 'が', 'を',  // particles that often follow verb forms
+                    'つつ', 'ながら', 'たり', 'り',  // verb continuative forms
+                    'う', 'よう', 'まい', 'ず', 'ぬ',  // volitional, negative forms
+                    'ね', 'な', 'よ', 'わ', 'さ'   // sentence endings
+                ];
+
+                const shouldConnect = verbEndings.some(ending => nextSegment.text.startsWith(ending));
+
+                if (shouldConnect) {
+                    // Connect the segments
+                    const connectedSegment: Segment = {
+                        text: currentSegment.text + nextSegment.text,
+                        reading: currentSegment.reading + nextSegment.reading,
+                        translation: currentSegment.translation + ' ' + nextSegment.translation,
+                        dictionary: [
+                            ...(currentSegment.dictionary || []),
+                            ...(nextSegment.dictionary || [])
+                        ]
+                    };
+
+                    connectedSegments.push(connectedSegment);
+                    i += 2; // Skip the next segment since we've combined it
+                } else {
+                    // Don't connect, just add the current segment
+                    connectedSegments.push(currentSegment);
+                    i += 1;
+                }
+            } else {
+                connectedSegments.push(currentSegment);
+                i += 1;
+            }
+        }
+
+        return connectedSegments;
+    }
+
     async processLyrics(lyrics: string): Promise<ProcessedLyrics> {
         if (!lyrics?.trim()) {
             throw new ApiError('Lyrics are required for processing', 'INVALID_INPUT');
@@ -82,7 +137,9 @@ class ProcessorService {
                     }
                 }
 
-                processedLines.push(lineSegments);
+                // Step 2c: Connect segments ending with っ to the next segment
+                const connectedSegments = this.connectSmallTsuSegments(lineSegments);
+                processedLines.push(connectedSegments);
 
                 // Small delay between lines to avoid overwhelming APIs
                 if (segmentedLines.length > 3 && i < segmentedLines.length - 1) {

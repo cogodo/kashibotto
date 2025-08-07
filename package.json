@@ -15,6 +15,7 @@
         "build:frontend": "npm run --workspace=frontend build",
         "build:backend": "npm run --workspace=backend build",
         "start:backend": "npm --workspace=backend run start",
+        "start:frontend": "npm --workspace=frontend run start",
         "install:all": "npm install"
     },
     "dependencies": {

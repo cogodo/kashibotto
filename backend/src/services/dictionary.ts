@@ -23,6 +23,81 @@ interface DictionaryCache {
     lastUpdated: number;
 }
 
+// Storage interface for different backends
+interface StorageBackend {
+    load(): Promise<DictionaryCache>;
+    save(cache: DictionaryCache): Promise<void>;
+}
+
+// File system storage (for local development)
+class FileSystemStorage implements StorageBackend {
+    private readonly cacheFilePath: string;
+
+    constructor() {
+        this.cacheFilePath = path.join(process.cwd(), 'data', 'dictionary-cache.json');
+    }
+
+    async load(): Promise<DictionaryCache> {
+        try {
+            // Ensure data directory exists
+            const dataDir = path.dirname(this.cacheFilePath);
+            if (!fs.existsSync(dataDir)) {
+                fs.mkdirSync(dataDir, { recursive: true });
+                logger.info('Created data directory for dictionary cache');
+            }
+
+            if (fs.existsSync(this.cacheFilePath)) {
+                const cacheData = fs.readFileSync(this.cacheFilePath, 'utf8');
+                const cache = JSON.parse(cacheData);
+                logger.info('Loaded dictionary cache from file', {
+                    entryCount: Object.keys(cache.entries).length,
+                    lastUpdated: new Date(cache.lastUpdated).toISOString()
+                });
+                return cache;
+            } else {
+                logger.info('No existing dictionary cache found, starting fresh');
+                return { entries: {}, lastUpdated: Date.now() };
+            }
+        } catch (error) {
+            logger.error('Failed to load dictionary cache from file', { error: (error as Error).message });
+            return { entries: {}, lastUpdated: Date.now() };
+        }
+    }
+
+    async save(cache: DictionaryCache): Promise<void> {
+        try {
+            cache.lastUpdated = Date.now();
+            const cacheData = JSON.stringify(cache, null, 2);
+            fs.writeFileSync(this.cacheFilePath, cacheData, 'utf8');
+            logger.info('Saved dictionary cache to file', {
+                entryCount: Object.keys(cache.entries).length,
+                lastUpdated: new Date(cache.lastUpdated).toISOString(),
+                filePath: this.cacheFilePath
+            });
+        } catch (error) {
+            logger.error('Failed to save dictionary cache to file', { error: (error as Error).message });
+        }
+    }
+}
+
+// Memory-only storage (for production when no persistent storage is available)
+class MemoryOnlyStorage implements StorageBackend {
+    private cache: DictionaryCache = { entries: {}, lastUpdated: Date.now() };
+
+    async load(): Promise<DictionaryCache> {
+        logger.info('Using memory-only storage for dictionary cache');
+        return this.cache;
+    }
+
+    async save(cache: DictionaryCache): Promise<void> {
+        this.cache = cache;
+        logger.info('Updated memory-only dictionary cache', {
+            entryCount: Object.keys(cache.entries).length,
+            lastUpdated: new Date(cache.lastUpdated).toISOString()
+        });
+    }
+}
+
 class DictionaryService {
     private readonly baseUrl = 'https://jisho.org/api/v1/search/words';
     private readonly maxRetries = 3;
@@ -32,11 +107,22 @@ class DictionaryService {
     private lastRequestTime = 0;
     private readonly minRequestInterval = 200; // Reduced from 500ms to 200ms - Jisho has no official rate limits
 
-    // Cache file path
-    private readonly cacheFilePath = path.join(process.cwd(), 'data', 'dictionary-cache.json');
+    // Storage backend
+    private storage: StorageBackend;
     private cache: DictionaryCache = { entries: {}, lastUpdated: Date.now() };
 
     constructor() {
+        // Choose storage backend based on environment
+        const storageType = process.env.DICTIONARY_STORAGE || 'auto';
+
+        if (storageType === 'file' || (storageType === 'auto' && process.env.NODE_ENV !== 'production')) {
+            this.storage = new FileSystemStorage();
+            logger.info('Using file system storage for dictionary cache');
+        } else {
+            this.storage = new MemoryOnlyStorage();
+            logger.info('Using memory-only storage for dictionary cache (cache will be lost on restart)');
+        }
+
         this.loadCache();
     }
 
@@ -55,28 +141,11 @@ class DictionaryService {
     }
 
     /**
-     * Load cache from file
+     * Load cache from storage backend
      */
-    private loadCache(): void {
+    private async loadCache(): Promise<void> {
         try {
-            // Ensure data directory exists
-            const dataDir = path.dirname(this.cacheFilePath);
-            if (!fs.existsSync(dataDir)) {
-                fs.mkdirSync(dataDir, { recursive: true });
-                logger.info('Created data directory for dictionary cache');
-            }
-
-            if (fs.existsSync(this.cacheFilePath)) {
-                const cacheData = fs.readFileSync(this.cacheFilePath, 'utf8');
-                this.cache = JSON.parse(cacheData);
-                logger.info('Loaded dictionary cache', {
-                    entryCount: Object.keys(this.cache.entries).length,
-                    lastUpdated: new Date(this.cache.lastUpdated).toISOString()
-                });
-            } else {
-                logger.info('No existing dictionary cache found, starting fresh');
-                this.cache = { entries: {}, lastUpdated: Date.now() };
-            }
+            this.cache = await this.storage.load();
         } catch (error) {
             logger.error('Failed to load dictionary cache', { error: (error as Error).message });
             this.cache = { entries: {}, lastUpdated: Date.now() };
@@ -84,18 +153,11 @@ class DictionaryService {
     }
 
     /**
-     * Save cache to file
+     * Save cache to storage backend
      */
     private async saveCache(): Promise<void> {
         try {
-            this.cache.lastUpdated = Date.now();
-            const cacheData = JSON.stringify(this.cache, null, 2);
-            fs.writeFileSync(this.cacheFilePath, cacheData, 'utf8');
-            logger.info('Saved dictionary cache', {
-                entryCount: Object.keys(this.cache.entries).length,
-                lastUpdated: new Date(this.cache.lastUpdated).toISOString(),
-                filePath: this.cacheFilePath
-            });
+            await this.storage.save(this.cache);
         } catch (error) {
             logger.error('Failed to save dictionary cache', { error: (error as Error).message });
         }
@@ -124,18 +186,16 @@ class DictionaryService {
             const cacheSize = Object.keys(this.cache.entries).length;
             logger.info('Added word to cache', {
                 word,
-                cacheSize,
-                filePath: this.cacheFilePath
+                cacheSize
             });
 
             // Save cache immediately for testing (can be changed to every N entries later)
-            logger.info('Saving cache to file immediately', {
-                entryCount: cacheSize,
-                filePath: this.cacheFilePath
+            logger.info('Saving cache to storage immediately', {
+                entryCount: cacheSize
             });
             try {
                 await this.saveCache();
-                logger.info('Successfully saved cache to file');
+                logger.info('Successfully saved cache to storage');
             } catch (saveError) {
                 logger.error('Failed to save cache', { error: (saveError as Error).message });
             }

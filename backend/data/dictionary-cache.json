@@ -12766,7 +12766,7564 @@
         "にほんじん"
       ],
       "timestamp": 1754445371825
+    },
+    "子": {
+      "word": "子",
+      "definitions": [
+        "child",
+        "kid",
+        "teenager",
+        "youngster",
+        "young (non-adult) person"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Noun, used as a suffix"
+      ],
+      "readings": [
+        "こ"
+      ],
+      "timestamp": 1754581433937
+    },
+    "あの": {
+      "word": "あの",
+      "definitions": [
+        "that",
+        "those",
+        "the"
+      ],
+      "partOfSpeech": [
+        "Pre-noun adjectival (rentaishi)"
+      ],
+      "readings": [
+        "あの"
+      ],
+      "timestamp": 1754581434170
+    },
+    "拭え": {
+      "word": "拭え",
+      "definitions": [
+        "No definition available"
+      ],
+      "partOfSpeech": [
+        "unknown"
+      ],
+      "readings": [
+        "拭え"
+      ],
+      "timestamp": 1754581434576
+    },
+    "何": {
+      "word": "何",
+      "definitions": [
+        "what"
+      ],
+      "partOfSpeech": [
+        "Pronoun"
+      ],
+      "readings": [
+        "なに"
+      ],
+      "timestamp": 1754581435445
+    },
+    "百": {
+      "word": "百",
+      "definitions": [
+        "hundred",
+        "100"
+      ],
+      "partOfSpeech": [
+        "Numeric"
+      ],
+      "readings": [
+        "ひゃく"
+      ],
+      "timestamp": 1754581435340
+    },
+    "気持ち": {
+      "word": "気持ち",
+      "definitions": [
+        "feeling",
+        "sensation",
+        "mood",
+        "state of mind"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "きもち"
+      ],
+      "timestamp": 1754581435725
+    },
+    "のに": {
+      "word": "のに",
+      "definitions": [
+        "although",
+        "despite",
+        "even though",
+        "and yet"
+      ],
+      "partOfSpeech": [
+        "Particle"
+      ],
+      "readings": [
+        "のに"
+      ],
+      "timestamp": 1754581435831
+    },
+    "負け": {
+      "word": "負け",
+      "definitions": [
+        "defeat",
+        "loss",
+        "losing (a game)"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "まけ"
+      ],
+      "timestamp": 1754581435891
+    },
+    "サイズ": {
+      "word": "サイズ",
+      "definitions": [
+        "size"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "サイズ"
+      ],
+      "timestamp": 1754581435894
+    },
+    "センチ": {
+      "word": "センチ",
+      "definitions": [
+        "centimeter",
+        "centimetre"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "センチ"
+      ],
+      "timestamp": 1754581436554
+    },
+    "チ": {
+      "word": "チ",
+      "definitions": [
+        "a little",
+        "a bit",
+        "slightly"
+      ],
+      "partOfSpeech": [
+        "Adverb (fukushi)"
+      ],
+      "readings": [
+        "ちょっと"
+      ],
+      "timestamp": 1754581437131
+    },
+    "コ": {
+      "word": "コ",
+      "definitions": [
+        "counter for (small) things or pieces"
+      ],
+      "partOfSpeech": [
+        "Counter"
+      ],
+      "readings": [
+        "こ"
+      ],
+      "timestamp": 1754581437304
+    },
+    "選ん": {
+      "word": "選ん",
+      "definitions": [
+        "selection",
+        "choice",
+        "choosing",
+        "picking",
+        "election"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Noun, used as a suffix"
+      ],
+      "readings": [
+        "せん"
+      ],
+      "timestamp": 1754581437706
+    },
+    "ソーセージ": {
+      "word": "ソーセージ",
+      "definitions": [
+        "sausage"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ソーセージ"
+      ],
+      "timestamp": 1754581437757
+    },
+    "届か": {
+      "word": "届か",
+      "definitions": [
+        "unfulfilled wish"
+      ],
+      "partOfSpeech": [
+        "Expressions (phrases, clauses, etc.)",
+        "Noun"
+      ],
+      "readings": [
+        "とどかぬねがい"
+      ],
+      "timestamp": 1754581438090
+    },
+    "砕け": {
+      "word": "砕け",
+      "definitions": [
+        "breaking (into pieces)",
+        "shattering"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "くだけ"
+      ],
+      "timestamp": 1754581438305
+    },
+    "メンタル": {
+      "word": "メンタル",
+      "definitions": [
+        "mental"
+      ],
+      "partOfSpeech": [
+        "Na-adjective (keiyodoshi)"
+      ],
+      "readings": [
+        "メンタル"
+      ],
+      "timestamp": 1754581438608
+    },
+    "かけれ": {
+      "word": "かけれ",
+      "definitions": [
+        "to hang up (e.g. a coat, a picture on the wall)",
+        "to let hang",
+        "to suspend (from)",
+        "to hoist (e.g. sail)",
+        "to raise (e.g. flag)"
+      ],
+      "partOfSpeech": [
+        "Ichidan verb",
+        "Transitive verb"
+      ],
+      "readings": [
+        "かける"
+      ],
+      "timestamp": 1754581439084
+    },
+    "よかっ": {
+      "word": "よかっ",
+      "definitions": [
+        "if you like"
+      ],
+      "partOfSpeech": [
+        "Expressions (phrases, clauses, etc.)"
+      ],
+      "readings": [
+        "よかったら"
+      ],
+      "timestamp": 1754581440272
+    },
+    "太けれ": {
+      "word": "太けれ",
+      "definitions": [
+        "fat",
+        "thick"
+      ],
+      "partOfSpeech": [
+        "I-adjective (keiyoushi)"
+      ],
+      "readings": [
+        "ふとい"
+      ],
+      "timestamp": 1754581440495
+    },
+    "だけど": {
+      "word": "だけど",
+      "definitions": [
+        "but",
+        "however",
+        "although"
+      ],
+      "partOfSpeech": [
+        "Conjunction"
+      ],
+      "readings": [
+        "だけど"
+      ],
+      "timestamp": 1754581440669
+    },
+    "広かっ": {
+      "word": "広かっ",
+      "definitions": [
+        "spacious",
+        "vast",
+        "wide"
+      ],
+      "partOfSpeech": [
+        "I-adjective (keiyoushi)"
+      ],
+      "readings": [
+        "ひろい"
+      ],
+      "timestamp": 1754581440983
+    },
+    "じ": {
+      "word": "じ",
+      "definitions": [
+        "character (esp. kanji)",
+        "letter",
+        "written text"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "じ"
+      ],
+      "timestamp": 1754581444046
+    },
+    "笑っ": {
+      "word": "笑っ",
+      "definitions": [
+        "Laughing Eye and Weeping Eye"
+      ],
+      "partOfSpeech": [
+        "Wikipedia definition"
+      ],
+      "readings": [
+        "笑っている目と泣いている目"
+      ],
+      "timestamp": 1754582364520
+    },
+    "どうして": {
+      "word": "どうして",
+      "definitions": [
+        "how",
+        "in what way",
+        "by what means"
+      ],
+      "partOfSpeech": [
+        "Adverb (fukushi)"
+      ],
+      "readings": [
+        "どうして"
+      ],
+      "timestamp": 1754582364735
+    },
+    "ねえ": {
+      "word": "ねえ",
+      "definitions": [
+        "older sister"
+      ],
+      "partOfSpeech": [
+        "Noun, used as a suffix"
+      ],
+      "readings": [
+        "ねえ"
+      ],
+      "timestamp": 1754582364954
+    },
+    "消え": {
+      "word": "消え",
+      "definitions": [
+        "to disappear",
+        "to vanish",
+        "to go out of sight",
+        "to go away",
+        "to become lost"
+      ],
+      "partOfSpeech": [
+        "Ichidan verb",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "きえる"
+      ],
+      "timestamp": 1754582365181
+    },
+    "愛し": {
+      "word": "愛し",
+      "definitions": [
+        "lovely",
+        "beloved",
+        "sweet",
+        "adorable"
+      ],
+      "partOfSpeech": [
+        "'shiku' adjective (archaic)"
+      ],
+      "readings": [
+        "はし"
+      ],
+      "timestamp": 1754582365849
+    },
+    "真夏": {
+      "word": "真夏",
+      "definitions": [
+        "middle of summer",
+        "height of summer",
+        "midsummer"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "まなつ"
+      ],
+      "timestamp": 1754582366170
+    },
+    "降っ": {
+      "word": "降っ",
+      "definitions": [
+        "humbly"
+      ],
+      "partOfSpeech": [
+        "Conjunction"
+      ],
+      "readings": [
+        "くだって"
+      ],
+      "timestamp": 1754582366305
+    },
+    "儚い": {
+      "word": "儚い",
+      "definitions": [
+        "fleeting",
+        "transient",
+        "short-lived",
+        "momentary",
+        "ephemeral",
+        "fickle",
+        "vain"
+      ],
+      "partOfSpeech": [
+        "I-adjective (keiyoushi)"
+      ],
+      "readings": [
+        "はかない"
+      ],
+      "timestamp": 1754582366347
+    },
+    "雪": {
+      "word": "雪",
+      "definitions": [
+        "snow",
+        "snowfall"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ゆき"
+      ],
+      "timestamp": 1754582366438
+    },
+    "奇跡": {
+      "word": "奇跡",
+      "definitions": [
+        "miracle",
+        "wonder",
+        "marvel"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Noun which may take the genitive case particle 'no'"
+      ],
+      "readings": [
+        "きせき"
+      ],
+      "timestamp": 1754582366505
+    },
+    "出会わ": {
+      "word": "出会わ",
+      "definitions": [
+        "to meet (by chance)",
+        "to come across",
+        "to run across",
+        "to encounter",
+        "to happen upon"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'u' ending",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "であう"
+      ],
+      "timestamp": 1754582366863
+    },
+    "なけれ": {
+      "word": "なけれ",
+      "definitions": [
+        "if (it) doesn't exist",
+        "if there is no ...",
+        "if (one) doesn't have ..."
+      ],
+      "partOfSpeech": [
+        "Expressions (phrases, clauses, etc.)"
+      ],
+      "readings": [
+        "なければ"
+      ],
+      "timestamp": 1754582367128
+    },
+    "胸": {
+      "word": "胸",
+      "definitions": [
+        "chest",
+        "breast"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "むね"
+      ],
+      "timestamp": 1754582367359
+    },
+    "締め付ける": {
+      "word": "締め付ける",
+      "definitions": [
+        "to tighten",
+        "to fasten tight",
+        "to constrict",
+        "to compress"
+      ],
+      "partOfSpeech": [
+        "Ichidan verb",
+        "Transitive verb"
+      ],
+      "readings": [
+        "しめつける"
+      ],
+      "timestamp": 1754582368643
+    },
+    "出会え": {
+      "word": "出会え",
+      "definitions": [
+        "No definition available"
+      ],
+      "partOfSpeech": [
+        "unknown"
+      ],
+      "readings": [
+        "出会え"
+      ],
+      "timestamp": 1754582368885
+    },
+    "強": {
+      "word": "強",
+      "definitions": [
+        "a little over",
+        "a little more than"
+      ],
+      "partOfSpeech": [
+        "Suffix"
+      ],
+      "readings": [
+        "きょう"
+      ],
+      "timestamp": 1754582369064
+    },
+    "知ら": {
+      "word": "知ら",
+      "definitions": [
+        "to notify",
+        "to advise",
+        "to inform"
+      ],
+      "partOfSpeech": [
+        "Ichidan verb",
+        "Transitive verb"
+      ],
+      "readings": [
+        "しらせる"
+      ],
+      "timestamp": 1754582369191
+    },
+    "部屋": {
+      "word": "部屋",
+      "definitions": [
+        "room",
+        "chamber"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "へや"
+      ],
+      "timestamp": 1754582369509
+    },
+    "隅": {
+      "word": "隅",
+      "definitions": [
+        "corner",
+        "nook",
+        "recess"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Noun, used as a suffix"
+      ],
+      "readings": [
+        "すみ"
+      ],
+      "timestamp": 1754582369667
+    },
+    "なに": {
+      "word": "なに",
+      "definitions": [
+        "what"
+      ],
+      "partOfSpeech": [
+        "Pronoun"
+      ],
+      "readings": [
+        "なに"
+      ],
+      "timestamp": 1754582370246
+    },
+    "など": {
+      "word": "など",
+      "definitions": [
+        "et cetera",
+        "etc.",
+        "and the like",
+        "and so forth"
+      ],
+      "partOfSpeech": [
+        "Particle"
+      ],
+      "readings": [
+        "など"
+      ],
+      "timestamp": 1754582370261
+    },
+    "触れ": {
+      "word": "触れ",
+      "definitions": [
+        "proclamation",
+        "official notice"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ふれ"
+      ],
+      "timestamp": 1754582370303
+    },
+    "いら": {
+      "word": "いら",
+      "definitions": [
+        "scarbreast tuskfin (Choerodon azurio)"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "いら"
+      ],
+      "timestamp": 1754582370308
+    },
+    "季節": {
+      "word": "季節",
+      "definitions": [
+        "season",
+        "time of year"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Noun which may take the genitive case particle 'no'"
+      ],
+      "readings": [
+        "きせつ"
+      ],
+      "timestamp": 1754582371087
+    },
+    "名": {
+      "word": "名",
+      "definitions": [
+        "name",
+        "given name"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "な"
+      ],
+      "timestamp": 1754582371342
+    },
+    "ずっと": {
+      "word": "ずっと",
+      "definitions": [
+        "continuously",
+        "the whole time",
+        "all the way",
+        "throughout"
+      ],
+      "partOfSpeech": [
+        "Adverb (fukushi)"
+      ],
+      "readings": [
+        "ずっと"
+      ],
+      "timestamp": 1754582373026
+    },
+    "咲い": {
+      "word": "咲い",
+      "definitions": [
+        "laugh",
+        "laughter"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "わらい"
+      ],
+      "timestamp": 1754582373648
+    },
+    "真冬": {
+      "word": "真冬",
+      "definitions": [
+        "midwinter",
+        "dead of winter"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "まふゆ"
+      ],
+      "timestamp": 1754582373678
+    },
+    "記憶": {
+      "word": "記憶",
+      "definitions": [
+        "memory",
+        "recollection",
+        "remembrance"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Suru verb",
+        "Transitive verb"
+      ],
+      "readings": [
+        "きおく"
+      ],
+      "timestamp": 1754582373734
+    },
+    "寂しく": {
+      "word": "寂しく",
+      "definitions": [
+        "lonely",
+        "lonesome",
+        "solitary",
+        "desolate"
+      ],
+      "partOfSpeech": [
+        "I-adjective (keiyoushi)"
+      ],
+      "readings": [
+        "さびしい"
+      ],
+      "timestamp": 1754582374036
+    },
+    "止まら": {
+      "word": "止まら",
+      "definitions": [
+        "Hic-cup Pup"
+      ],
+      "partOfSpeech": [
+        "Wikipedia definition"
+      ],
+      "readings": [
+        "止まらないシャックリ"
+      ],
+      "timestamp": 1754582374261
+    },
+    "贈り": {
+      "word": "贈り",
+      "definitions": [
+        "present",
+        "gift"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "おくりもの"
+      ],
+      "timestamp": 1754582374498
+    },
+    "笑え": {
+      "word": "笑え",
+      "definitions": [
+        "to laugh",
+        "to break into laughter",
+        "to be made to laugh"
+      ],
+      "partOfSpeech": [
+        "Ichidan verb",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "わらえる"
+      ],
+      "timestamp": 1754582374927
+    },
+    "はじめて": {
+      "word": "はじめて",
+      "definitions": [
+        "for the first time"
+      ],
+      "partOfSpeech": [
+        "Adverb (fukushi)",
+        "Noun which may take the genitive case particle 'no'"
+      ],
+      "readings": [
+        "はじめて"
+      ],
+      "timestamp": 1754582374950
+    },
+    "包ま": {
+      "word": "包ま",
+      "definitions": [
+        "to be wrapped up (e.g. in a blanket)",
+        "to cover oneself"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'ru' ending",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "くるまる"
+      ],
+      "timestamp": 1754582375759
+    },
+    "わたし": {
+      "word": "わたし",
+      "definitions": [
+        "I",
+        "me"
+      ],
+      "partOfSpeech": [
+        "Pronoun"
+      ],
+      "readings": [
+        "わたし"
+      ],
+      "timestamp": 1754582376149
+    },
+    "もしも": {
+      "word": "もしも",
+      "definitions": [
+        "if",
+        "in case",
+        "supposing"
+      ],
+      "partOfSpeech": [
+        "Adverb (fukushi)"
+      ],
+      "readings": [
+        "もしも"
+      ],
+      "timestamp": 1754582376456
+    },
+    "ひとつ": {
+      "word": "ひとつ",
+      "definitions": [
+        "one"
+      ],
+      "partOfSpeech": [
+        "Numeric"
+      ],
+      "readings": [
+        "ひとつ"
+      ],
+      "timestamp": 1754582376745
+    },
+    "願い": {
+      "word": "願い",
+      "definitions": [
+        "desire",
+        "wish",
+        "hope"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ねがい"
+      ],
+      "timestamp": 1754582376757
+    },
+    "叶う": {
+      "word": "叶う",
+      "definitions": [
+        "to come true (of a wish, prayer, etc.)",
+        "to be realized",
+        "to be fulfilled"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'u' ending"
+      ],
+      "readings": [
+        "かなう"
+      ],
+      "timestamp": 1754582376764
+    },
+    "もう一度": {
+      "word": "もう一度",
+      "definitions": [
+        "once more",
+        "again"
+      ],
+      "partOfSpeech": [
+        "Expressions (phrases, clauses, etc.)",
+        "Adverb (fukushi)"
+      ],
+      "readings": [
+        "もういちど"
+      ],
+      "timestamp": 1754582376813
+    },
+    "ほしい": {
+      "word": "ほしい",
+      "definitions": [
+        "wanting (to have)",
+        "desiring",
+        "wishing for"
+      ],
+      "partOfSpeech": [
+        "I-adjective (keiyoushi)"
+      ],
+      "readings": [
+        "ほしい"
+      ],
+      "timestamp": 1754582376825
+    },
+    "良かっ": {
+      "word": "良かっ",
+      "definitions": [
+        "if you like"
+      ],
+      "partOfSpeech": [
+        "Expressions (phrases, clauses, etc.)"
+      ],
+      "readings": [
+        "よかったら"
+      ],
+      "timestamp": 1754582377036
+    },
+    "感じ": {
+      "word": "感じ",
+      "definitions": [
+        "feeling",
+        "sense",
+        "impression"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "かんじ"
+      ],
+      "timestamp": 1754582377229
+    },
+    "照らさ": {
+      "word": "照らさ",
+      "definitions": [
+        "to shine on",
+        "to illuminate"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'su' ending",
+        "Transitive verb"
+      ],
+      "readings": [
+        "てらす"
+      ],
+      "timestamp": 1754582377269
+    },
+    "朝日": {
+      "word": "朝日",
+      "definitions": [
+        "morning sun"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "あさひ"
+      ],
+      "timestamp": 1754582377442
+    },
+    "閉じれ": {
+      "word": "閉じれ",
+      "definitions": [
+        "to close (e.g. book, eyes, meeting, etc.)",
+        "to shut"
+      ],
+      "partOfSpeech": [
+        "Ichidan verb",
+        "Transitive verb",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "とじる"
+      ],
+      "timestamp": 1754582378046
+    },
+    "そこ": {
+      "word": "そこ",
+      "definitions": [
+        "there (place relatively near listener)"
+      ],
+      "partOfSpeech": [
+        "Pronoun"
+      ],
+      "readings": [
+        "そこ"
+      ],
+      "timestamp": 1754582378397
+    },
+    "ファイト": {
+      "word": "ファイト",
+      "definitions": [
+        "fight"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ファイト"
+      ],
+      "timestamp": 1754583997408
+    },
+    "インファイト": {
+      "word": "インファイト",
+      "definitions": [
+        "infighting",
+        "inside fighting",
+        "fighting at close range"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "インファイト"
+      ],
+      "timestamp": 1754583997604
+    },
+    "革命": {
+      "word": "革命",
+      "definitions": [
+        "revolution"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "かくめい"
+      ],
+      "timestamp": 1754583997977
+    },
+    "じっと": {
+      "word": "じっと",
+      "definitions": [
+        "motionlessly (e.g. stand, wait)",
+        "(be) still"
+      ],
+      "partOfSpeech": [
+        "Adverb (fukushi)",
+        "Suru verb"
+      ],
+      "readings": [
+        "じっと"
+      ],
+      "timestamp": 1754583998186
+    },
+    "待つ": {
+      "word": "待つ",
+      "definitions": [
+        "to wait"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'tsu' ending",
+        "Transitive verb",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "まつ"
+      ],
+      "timestamp": 1754583999581
+    },
+    "踏み込ん": {
+      "word": "踏み込ん",
+      "definitions": [
+        "to step into (e.g. someone else's territory)",
+        "to break into",
+        "to raid"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'mu' ending"
+      ],
+      "readings": [
+        "ふみこむ"
+      ],
+      "timestamp": 1754583999778
+    },
+    "成功": {
+      "word": "成功",
+      "definitions": [
+        "success",
+        "achievement"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Suru verb",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "せいこう"
+      ],
+      "timestamp": 1754584000127
+    },
+    "どんな": {
+      "word": "どんな",
+      "definitions": [
+        "what kind of",
+        "what sort of",
+        "what"
+      ],
+      "partOfSpeech": [
+        "Pre-noun adjectival (rentaishi)"
+      ],
+      "readings": [
+        "どんな"
+      ],
+      "timestamp": 1754584000186
+    },
+    "全て": {
+      "word": "全て",
+      "definitions": [
+        "everything",
+        "all",
+        "the whole"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Noun which may take the genitive case particle 'no'"
+      ],
+      "readings": [
+        "すべて"
+      ],
+      "timestamp": 1754584000335
+    },
+    "失敗": {
+      "word": "失敗",
+      "definitions": [
+        "failure",
+        "mistake",
+        "blunder"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Suru verb",
+        "Transitive verb",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "しっぱい"
+      ],
+      "timestamp": 1754584000372
+    },
+    "そのまま": {
+      "word": "そのまま",
+      "definitions": [
+        "without change",
+        "as is"
+      ],
+      "partOfSpeech": [
+        "Adverb (fukushi)",
+        "Noun which may take the genitive case particle 'no'",
+        "Noun"
+      ],
+      "readings": [
+        "そのまま"
+      ],
+      "timestamp": 1754584000555
+    },
+    "スーツ": {
+      "word": "スーツ",
+      "definitions": [
+        "suit (clothing)"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "スーツ"
+      ],
+      "timestamp": 1754584001053
+    },
+    "ワーク": {
+      "word": "ワーク",
+      "definitions": [
+        "work"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ワーク"
+      ],
+      "timestamp": 1754584001123
+    },
+    "パンツ": {
+      "word": "パンツ",
+      "definitions": [
+        "underpants",
+        "pants",
+        "briefs",
+        "panties",
+        "shorts",
+        "knickers"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "パンツ"
+      ],
+      "timestamp": 1754584001173
+    },
+    "こそ": {
+      "word": "こそ",
+      "definitions": [
+        "it is ... that ...",
+        "precisely",
+        "in particular",
+        "definitely",
+        "for sure",
+        "only (when, after, because, etc.)"
+      ],
+      "partOfSpeech": [
+        "Particle"
+      ],
+      "readings": [
+        "こそ"
+      ],
+      "timestamp": 1754584001193
+    },
+    "勲章": {
+      "word": "勲章",
+      "definitions": [
+        "decoration",
+        "order",
+        "medal"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "くんしょう"
+      ],
+      "timestamp": 1754584001231
+    },
+    "くたびれ": {
+      "word": "くたびれ",
+      "definitions": [
+        "to get tired",
+        "to become exhausted",
+        "to grow weary"
+      ],
+      "partOfSpeech": [
+        "Ichidan verb",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "くたびれる"
+      ],
+      "timestamp": 1754584001900
+    },
+    "擦り切れ": {
+      "word": "擦り切れ",
+      "definitions": [
+        "to wear out"
+      ],
+      "partOfSpeech": [
+        "Ichidan verb",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "すりきれる"
+      ],
+      "timestamp": 1754584002148
+    },
+    "チークダンス": {
+      "word": "チークダンス",
+      "definitions": [
+        "cheek-to-cheek dancing"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "チークダンス"
+      ],
+      "timestamp": 1754584002330
+    },
+    "分": {
+      "word": "分",
+      "definitions": [
+        "part",
+        "portion",
+        "share"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Noun, used as a suffix"
+      ],
+      "readings": [
+        "ぶん"
+      ],
+      "timestamp": 1754584002600
+    },
+    "夢み": {
+      "word": "夢み",
+      "definitions": [
+        "to dream (of)"
+      ],
+      "partOfSpeech": [
+        "Ichidan verb",
+        "Transitive verb"
+      ],
+      "readings": [
+        "ゆめみる"
+      ],
+      "timestamp": 1754584003786
+    },
+    "掴み取り": {
+      "word": "掴み取り",
+      "definitions": [
+        "grabbing a handful (of)",
+        "grabbing as much as one can in one handful"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Suru verb",
+        "Transitive verb"
+      ],
+      "readings": [
+        "つかみどり"
+      ],
+      "timestamp": 1754584004032
+    },
+    "チャンス": {
+      "word": "チャンス",
+      "definitions": [
+        "chance",
+        "opportunity"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "チャンス"
+      ],
+      "timestamp": 1754584004212
+    },
+    "ビッグ": {
+      "word": "ビッグ",
+      "definitions": [
+        "big"
+      ],
+      "partOfSpeech": [
+        "Na-adjective (keiyodoshi)"
+      ],
+      "readings": [
+        "ビッグ"
+      ],
+      "timestamp": 1754584004285
+    },
+    "簡単": {
+      "word": "簡単",
+      "definitions": [
+        "simple",
+        "easy",
+        "uncomplicated"
+      ],
+      "partOfSpeech": [
+        "Na-adjective (keiyodoshi)",
+        "Noun"
+      ],
+      "readings": [
+        "かんたん"
+      ],
+      "timestamp": 1754584004666
+    },
+    "ページ": {
+      "word": "ページ",
+      "definitions": [
+        "page"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Counter"
+      ],
+      "readings": [
+        "ページ"
+      ],
+      "timestamp": 1754584005193
+    },
+    "終わり": {
+      "word": "終わり",
+      "definitions": [
+        "end",
+        "ending",
+        "close",
+        "conclusion"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "おわり"
+      ],
+      "timestamp": 1754584005202
+    },
+    "あと": {
+      "word": "あと",
+      "definitions": [
+        "trace",
+        "tracks",
+        "mark",
+        "sign"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "あと"
+      ],
+      "timestamp": 1754584005277
+    },
+    "だろ": {
+      "word": "だろ",
+      "definitions": [
+        "seems",
+        "I think",
+        "I guess",
+        "I wonder",
+        "I hope"
+      ],
+      "partOfSpeech": [
+        "Expressions (phrases, clauses, etc.)"
+      ],
+      "readings": [
+        "だろう"
+      ],
+      "timestamp": 1754584005336
+    },
+    "ストーリー": {
+      "word": "ストーリー",
+      "definitions": [
+        "story",
+        "tale",
+        "legend"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ストーリー"
+      ],
+      "timestamp": 1754584006137
+    },
+    "アドバンテージ": {
+      "word": "アドバンテージ",
+      "definitions": [
+        "advantage"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "アドバンテージ"
+      ],
+      "timestamp": 1754584006536
+    },
+    "超える": {
+      "word": "超える",
+      "definitions": [
+        "to cross over",
+        "to cross",
+        "to pass through",
+        "to pass over (out of)",
+        "to go beyond",
+        "to go past"
+      ],
+      "partOfSpeech": [
+        "Ichidan verb",
+        "Transitive verb"
+      ],
+      "readings": [
+        "こえる"
+      ],
+      "timestamp": 1754584006553
+    },
+    "いくつ": {
+      "word": "いくつ",
+      "definitions": [
+        "how many"
+      ],
+      "partOfSpeech": [
+        "Adverb (fukushi)"
+      ],
+      "readings": [
+        "いくつ"
+      ],
+      "timestamp": 1754584007608
+    },
+    "スタンス": {
+      "word": "スタンス",
+      "definitions": [
+        "stance",
+        "attitude",
+        "standpoint"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "スタンス"
+      ],
+      "timestamp": 1754584008110
+    },
+    "常に": {
+      "word": "常に",
+      "definitions": [
+        "always",
+        "constantly"
+      ],
+      "partOfSpeech": [
+        "Adverb (fukushi)"
+      ],
+      "readings": [
+        "つねに"
+      ],
+      "timestamp": 1754584008975
+    },
+    "派手": {
+      "word": "派手",
+      "definitions": [
+        "showy",
+        "loud",
+        "flashy",
+        "gaudy"
+      ],
+      "partOfSpeech": [
+        "Na-adjective (keiyodoshi)",
+        "Noun"
+      ],
+      "readings": [
+        "はで"
+      ],
+      "timestamp": 1754584009275
+    },
+    "転ん": {
+      "word": "転ん",
+      "definitions": [
+        "all's grist that comes to his mill",
+        "turn everything to good account",
+        "turn anything to profit"
+      ],
+      "partOfSpeech": [
+        "Expressions (phrases, clauses, etc.)",
+        "I-adjective (keiyoushi)"
+      ],
+      "readings": [
+        "ころんでもただはおきない"
+      ],
+      "timestamp": 1754584009446
+    },
+    "だら": {
+      "word": "だら",
+      "definitions": [
+        "if",
+        "when",
+        "after"
+      ],
+      "partOfSpeech": [
+        "Particle",
+        "Conjunction"
+      ],
+      "readings": [
+        "たら"
+      ],
+      "timestamp": 1754584009458
+    },
+    "イソジン": {
+      "word": "イソジン",
+      "definitions": [
+        "Isodine (iodine based disinfectant)"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "イソジン"
+      ],
+      "timestamp": 1754584009478
+    },
+    "塗っ": {
+      "word": "塗っ",
+      "definitions": [
+        "to paint",
+        "to spread",
+        "to plaster",
+        "to apply (cream, lotion)",
+        "to smear",
+        "to lacquer",
+        "to varnish",
+        "to put up (wallpaper)"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'ru' ending",
+        "Transitive verb"
+      ],
+      "readings": [
+        "ぬる"
+      ],
+      "timestamp": 1754584009525
+    },
+    "だらけ": {
+      "word": "だらけ",
+      "definitions": [
+        "full of (e.g. mistakes)",
+        "riddled with"
+      ],
+      "partOfSpeech": [
+        "Noun, used as a suffix"
+      ],
+      "readings": [
+        "だらけ"
+      ],
+      "timestamp": 1754584009722
+    },
+    "持ち": {
+      "word": "持ち",
+      "definitions": [
+        "having",
+        "holding",
+        "possessing",
+        "owning",
+        "using",
+        "holder",
+        "owner",
+        "user"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Noun, used as a suffix"
+      ],
+      "readings": [
+        "もち"
+      ],
+      "timestamp": 1754584010023
+    },
+    "自尊心": {
+      "word": "自尊心",
+      "definitions": [
+        "self-esteem",
+        "self-respect",
+        "self-importance",
+        "conceit",
+        "pride"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "じそんしん"
+      ],
+      "timestamp": 1754584010559
+    },
+    "境地": {
+      "word": "境地",
+      "definitions": [
+        "state (of mind)",
+        "mental state",
+        "emotional condition"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "きょうち"
+      ],
+      "timestamp": 1754584011016
+    },
+    "新": {
+      "word": "新",
+      "definitions": [
+        "new",
+        "neo-"
+      ],
+      "partOfSpeech": [
+        "Prefix"
+      ],
+      "readings": [
+        "しん"
+      ],
+      "timestamp": 1754584011049
+    },
+    "目指す": {
+      "word": "目指す",
+      "definitions": [
+        "to aim at (for, to do, to become)",
+        "to try for",
+        "to have an eye on"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'su' ending",
+        "Transitive verb"
+      ],
+      "readings": [
+        "めざす"
+      ],
+      "timestamp": 1754584011052
+    },
+    "自分": {
+      "word": "自分",
+      "definitions": [
+        "myself",
+        "yourself",
+        "oneself",
+        "himself",
+        "herself"
+      ],
+      "partOfSpeech": [
+        "Pronoun"
+      ],
+      "readings": [
+        "じぶん"
+      ],
+      "timestamp": 1754584011056
+    },
+    "導火": {
+      "word": "導火",
+      "definitions": [
+        "fuse"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "どうかせん"
+      ],
+      "timestamp": 1754584011445
+    },
+    "着火": {
+      "word": "着火",
+      "definitions": [
+        "ignition",
+        "catching fire",
+        "setting on fire"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Suru verb",
+        "Transitive verb",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "ちゃっか"
+      ],
+      "timestamp": 1754584011692
+    },
+    "火": {
+      "word": "火",
+      "definitions": [
+        "fire",
+        "flame",
+        "blaze"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ひ"
+      ],
+      "timestamp": 1754584011712
+    },
+    "つけ": {
+      "word": "つけ",
+      "definitions": [
+        "bill",
+        "bill of sale",
+        "payment invoice"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "つけ"
+      ],
+      "timestamp": 1754584011896
+    },
+    "どうか": {
+      "word": "どうか",
+      "definitions": [
+        "copper coin"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "どうか"
+      ],
+      "timestamp": 1754584012216
+    },
+    "打ち込む": {
+      "word": "打ち込む",
+      "definitions": [
+        "to drive in (a nail, stake, etc.)",
+        "to hammer in"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'mu' ending",
+        "Transitive verb"
+      ],
+      "readings": [
+        "うちこむ"
+      ],
+      "timestamp": 1754584012337
+    },
+    "恐れ": {
+      "word": "恐れ",
+      "definitions": [
+        "fear",
+        "horror",
+        "anxiety",
+        "concern",
+        "uneasiness",
+        "reverence"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "おそれ"
+      ],
+      "timestamp": 1754584012537
+    },
+    "突破": {
+      "word": "突破",
+      "definitions": [
+        "breaking through",
+        "breakthrough",
+        "penetration"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Suru verb",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "とっぱ"
+      ],
+      "timestamp": 1754584012817
+    },
+    "点": {
+      "word": "点",
+      "definitions": [
+        "dot",
+        "spot",
+        "point",
+        "speck",
+        "mark"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "てん"
+      ],
+      "timestamp": 1754584012852
+    },
+    "ジエンド": {
+      "word": "ジエンド",
+      "definitions": [
+        "the end"
+      ],
+      "partOfSpeech": [
+        "Expressions (phrases, clauses, etc.)",
+        "Noun"
+      ],
+      "readings": [
+        "ジ・エンド"
+      ],
+      "timestamp": 1754584013248
+    },
+    "即": {
+      "word": "即",
+      "definitions": [
+        "instantly",
+        "immediately",
+        "at once"
+      ],
+      "partOfSpeech": [
+        "Adverb (fukushi)",
+        "Prefix"
+      ],
+      "readings": [
+        "そく"
+      ],
+      "timestamp": 1754584014140
+    },
+    "ガチ": {
+      "word": "ガチ",
+      "definitions": [
+        "serious",
+        "earnest",
+        "honest",
+        "real",
+        "legit"
+      ],
+      "partOfSpeech": [
+        "Na-adjective (keiyodoshi)"
+      ],
+      "readings": [
+        "がち"
+      ],
+      "timestamp": 1754584015115
+    },
+    "勝ち": {
+      "word": "勝ち",
+      "definitions": [
+        "win",
+        "victory"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "かち"
+      ],
+      "timestamp": 1754584015371
+    },
+    "フリー": {
+      "word": "フリー",
+      "definitions": [
+        "free (of restraint, controls, etc.)"
+      ],
+      "partOfSpeech": [
+        "Na-adjective (keiyodoshi)",
+        "Noun"
+      ],
+      "readings": [
+        "フリー"
+      ],
+      "timestamp": 1754584015603
+    },
+    "スタイル": {
+      "word": "スタイル",
+      "definitions": [
+        "(one's) figure",
+        "build",
+        "physique",
+        "shape"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "スタイル"
+      ],
+      "timestamp": 1754584015775
+    },
+    "奴": {
+      "word": "奴",
+      "definitions": [
+        "fellow",
+        "guy",
+        "chap"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "やつ"
+      ],
+      "timestamp": 1754584016206
+    },
+    "ナイ": {
+      "word": "ナイ",
+      "definitions": [
+        "knife"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ナイフ"
+      ],
+      "timestamp": 1754584016738
+    },
+    "そこら": {
+      "word": "そこら",
+      "definitions": [
+        "around there",
+        "that area"
+      ],
+      "partOfSpeech": [
+        "Pronoun"
+      ],
+      "readings": [
+        "そこら"
+      ],
+      "timestamp": 1754584017019
+    },
+    "緊張": {
+      "word": "緊張",
+      "definitions": [
+        "tension",
+        "strain",
+        "nervousness",
+        "stress"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Suru verb",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "きんちょう"
+      ],
+      "timestamp": 1754584017409
+    },
+    "感": {
+      "word": "感",
+      "definitions": [
+        "feeling",
+        "sensation",
+        "emotion",
+        "admiration",
+        "impression"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Noun, used as a suffix"
+      ],
+      "readings": [
+        "かん"
+      ],
+      "timestamp": 1754584018810
+    },
+    "だす": {
+      "word": "だす",
+      "definitions": [
+        "to take out",
+        "to get out"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'su' ending",
+        "Transitive verb"
+      ],
+      "readings": [
+        "だす"
+      ],
+      "timestamp": 1754584018983
+    },
+    "武器": {
+      "word": "武器",
+      "definitions": [
+        "weapon",
+        "arms",
+        "ordnance"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ぶき"
+      ],
+      "timestamp": 1754584019272
+    },
+    "矛": {
+      "word": "矛",
+      "definitions": [
+        "long-handled Chinese spear",
+        "lance",
+        "pike"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ほこ"
+      ],
+      "timestamp": 1754584019439
+    },
+    "捨てる": {
+      "word": "捨てる",
+      "definitions": [
+        "to throw away",
+        "to cast away",
+        "to dump",
+        "to discard"
+      ],
+      "partOfSpeech": [
+        "Ichidan verb",
+        "Transitive verb"
+      ],
+      "readings": [
+        "すてる"
+      ],
+      "timestamp": 1754584020452
+    },
+    "自身": {
+      "word": "自身",
+      "definitions": [
+        "(one's) self",
+        "oneself",
+        "yourself",
+        "himself",
+        "herself"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Noun, used as a suffix"
+      ],
+      "readings": [
+        "じしん"
+      ],
+      "timestamp": 1754584020714
+    },
+    "研ぎ澄まし": {
+      "word": "研ぎ澄まし",
+      "definitions": [
+        "to sharpen",
+        "to grind",
+        "to whet",
+        "to hone",
+        "to make keen"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'su' ending",
+        "Transitive verb"
+      ],
+      "readings": [
+        "とぎすます"
+      ],
+      "timestamp": 1754584020811
+    },
+    "刀": {
+      "word": "刀",
+      "definitions": [
+        "sword (esp. Japanese single-edged)",
+        "katana"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "かたな"
+      ],
+      "timestamp": 1754584020915
+    },
+    "絶対": {
+      "word": "絶対",
+      "definitions": [
+        "absolutely",
+        "definitely",
+        "unconditionally"
+      ],
+      "partOfSpeech": [
+        "Adverb (fukushi)"
+      ],
+      "readings": [
+        "ぜったい"
+      ],
+      "timestamp": 1754584021207
+    },
+    "ぁ": {
+      "word": "ぁ",
+      "definitions": [
+        "No definition available"
+      ],
+      "partOfSpeech": [
+        "unknown"
+      ],
+      "readings": [
+        "ぁ"
+      ],
+      "timestamp": 1754584021314
+    },
+    "勝っ": {
+      "word": "勝っ",
+      "definitions": [
+        "do not let your guard down after a victory",
+        "tighten the strings of your helmet after winning"
+      ],
+      "partOfSpeech": [
+        "Expressions (phrases, clauses, etc.)"
+      ],
+      "readings": [
+        "かってかぶとのおをしめよ"
+      ],
+      "timestamp": 1754584021322
+    },
+    "ブーム": {
+      "word": "ブーム",
+      "definitions": [
+        "boom",
+        "craze",
+        "fad"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Noun, used as a suffix"
+      ],
+      "readings": [
+        "ブーム"
+      ],
+      "timestamp": 1754584021691
+    },
+    "殺し": {
+      "word": "殺し",
+      "definitions": [
+        "murder",
+        "killing",
+        "murderer"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ころし"
+      ],
+      "timestamp": 1754584021888
+    },
+    "死ん": {
+      "word": "死ん",
+      "definitions": [
+        "playing dead",
+        "feigning death",
+        "playing possum"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Suru verb"
+      ],
+      "readings": [
+        "しんだふり"
+      ],
+      "timestamp": 1754584022999
+    },
+    "終わっ": {
+      "word": "終わっ",
+      "definitions": [
+        "to be completed",
+        "to be finished"
+      ],
+      "partOfSpeech": [
+        "Expressions (phrases, clauses, etc.)",
+        "Ichidan verb"
+      ],
+      "readings": [
+        "おわっている"
+      ],
+      "timestamp": 1754584023232
+    },
+    "文化": {
+      "word": "文化",
+      "definitions": [
+        "culture",
+        "civilization",
+        "civilisation"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ぶんか"
+      ],
+      "timestamp": 1754584023579
+    },
+    "残る": {
+      "word": "残る",
+      "definitions": [
+        "to remain",
+        "to be left"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'ru' ending",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "のこる"
+      ],
+      "timestamp": 1754584024455
+    },
+    "鳴り": {
+      "word": "鳴り",
+      "definitions": [
+        "ringing",
+        "sound"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "なり"
+      ],
+      "timestamp": 1754584024877
+    },
+    "止ま": {
+      "word": "止ま",
+      "definitions": [
+        "to stop (moving)",
+        "to come to a stop"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'ru' ending",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "とまる"
+      ],
+      "timestamp": 1754584025050
+    },
+    "踏みつける": {
+      "word": "踏みつける",
+      "definitions": [
+        "to trample down",
+        "to tread on"
+      ],
+      "partOfSpeech": [
+        "Ichidan verb",
+        "Transitive verb"
+      ],
+      "readings": [
+        "ふみつける"
+      ],
+      "timestamp": 1754584025093
+    },
+    "ビート": {
+      "word": "ビート",
+      "definitions": [
+        "beet"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ビート"
+      ],
+      "timestamp": 1754584025109
+    },
+    "ぬ": {
+      "word": "ぬ",
+      "definitions": [
+        "not"
+      ],
+      "partOfSpeech": [
+        "Auxiliary verb",
+        "Suffix"
+      ],
+      "readings": [
+        "ぬ"
+      ],
+      "timestamp": 1754584025527
+    },
+    "すら": {
+      "word": "すら",
+      "definitions": [
+        "even"
+      ],
+      "partOfSpeech": [
+        "Particle"
+      ],
+      "readings": [
+        "すら"
+      ],
+      "timestamp": 1754584025876
+    },
+    "糧": {
+      "word": "糧",
+      "definitions": [
+        "food",
+        "provisions"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "かて"
+      ],
+      "timestamp": 1754584026038
+    },
+    "てん": {
+      "word": "てん",
+      "definitions": [
+        "dot",
+        "spot",
+        "point",
+        "speck",
+        "mark"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "てん"
+      ],
+      "timestamp": 1754584026758
+    },
+    "今度": {
+      "word": "今度",
+      "definitions": [
+        "this time",
+        "now"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Adverb (fukushi)"
+      ],
+      "readings": [
+        "こんど"
+      ],
+      "timestamp": 1754584027006
+    },
+    "やん": {
+      "word": "やん",
+      "definitions": [
+        "suffix for familiar person"
+      ],
+      "partOfSpeech": [
+        "Noun, used as a suffix"
+      ],
+      "readings": [
+        "やん"
+      ],
+      "timestamp": 1754584027245
+    },
+    "ここ": {
+      "word": "ここ",
+      "definitions": [
+        "individual",
+        "one by one",
+        "separate",
+        "each"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Noun which may take the genitive case particle 'no'"
+      ],
+      "readings": [
+        "ここ"
+      ],
+      "timestamp": 1754584027568
+    },
+    "引い": {
+      "word": "引い",
+      "definitions": [
+        "retirement"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Suru verb",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "いんたい"
+      ],
+      "timestamp": 1754584027777
+    },
+    "導い": {
+      "word": "導い",
+      "definitions": [
+        "conduit taxation"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "どうかんかぜい"
+      ],
+      "timestamp": 1754584027993
+    },
+    "未来": {
+      "word": "未来",
+      "definitions": [
+        "(distant) future"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "みらい"
+      ],
+      "timestamp": 1754584028255
+    },
+    "たる": {
+      "word": "たる",
+      "definitions": [
+        "to be sufficient",
+        "to be enough"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'ru' ending",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "たる"
+      ],
+      "timestamp": 1754584028269
+    },
+    "崖": {
+      "word": "崖",
+      "definitions": [
+        "cliff",
+        "precipice"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "がけ"
+      ],
+      "timestamp": 1754584029199
+    },
+    "浴びる": {
+      "word": "浴びる",
+      "definitions": [
+        "to dash over oneself (e.g. water)",
+        "to take (e.g. shower)",
+        "to bask in (e.g. the sun)",
+        "to bathe in",
+        "to be flooded with (e.g. light)",
+        "to be covered in"
+      ],
+      "partOfSpeech": [
+        "Ichidan verb",
+        "Transitive verb"
+      ],
+      "readings": [
+        "あびる"
+      ],
+      "timestamp": 1754584029381
+    },
+    "風": {
+      "word": "風",
+      "definitions": [
+        "wind",
+        "breeze",
+        "draught",
+        "draft"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "かぜ"
+      ],
+      "timestamp": 1754584029463
+    },
+    "っ": {
+      "word": "っ",
+      "definitions": [
+        "you said",
+        "he said",
+        "she said",
+        "they said"
+      ],
+      "partOfSpeech": [
+        "Particle"
+      ],
+      "readings": [
+        "って"
+      ],
+      "timestamp": 1754584029572
+    },
+    "次に": {
+      "word": "次に",
+      "definitions": [
+        "next",
+        "then",
+        "after that"
+      ],
+      "partOfSpeech": [
+        "Conjunction"
+      ],
+      "readings": [
+        "つぎに"
+      ],
+      "timestamp": 1754584029766
+    },
+    "立ち向かえ": {
+      "word": "立ち向かえ",
+      "definitions": [
+        "No definition available"
+      ],
+      "partOfSpeech": [
+        "unknown"
+      ],
+      "readings": [
+        "立ち向かえ"
+      ],
+      "timestamp": 1754584031092
+    },
+    "向かい風": {
+      "word": "向かい風",
+      "definitions": [
+        "headwind",
+        "head wind"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "むかいかぜ"
+      ],
+      "timestamp": 1754584031383
+    },
+    "追い風": {
+      "word": "追い風",
+      "definitions": [
+        "tailwind",
+        "fair wind",
+        "favorable wind (favourable)"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "おいかぜ"
+      ],
+      "timestamp": 1754584031572
+    },
+    "浮かび上がる": {
+      "word": "浮かび上がる",
+      "definitions": [
+        "to rise to the surface"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'ru' ending",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "うかびあがる"
+      ],
+      "timestamp": 1754584031581
+    },
+    "吹く": {
+      "word": "吹く",
+      "definitions": [
+        "to blow (of the wind)"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'ku' ending",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "ふく"
+      ],
+      "timestamp": 1754584031588
+    },
+    "分から": {
+      "word": "分から",
+      "definitions": [
+        "obstinate person",
+        "blockhead"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "わからずや"
+      ],
+      "timestamp": 1754584031811
+    },
+    "必ず": {
+      "word": "必ず",
+      "definitions": [
+        "always",
+        "without exception",
+        "necessarily",
+        "certainly",
+        "without fail",
+        "positively",
+        "invariably"
+      ],
+      "partOfSpeech": [
+        "Adverb (fukushi)"
+      ],
+      "readings": [
+        "かならず"
+      ],
+      "timestamp": 1754584031994
+    },
+    "少なから": {
+      "word": "少なから",
+      "definitions": [
+        "considerably",
+        "not a little",
+        "in no small numbers"
+      ],
+      "partOfSpeech": [
+        "Adverb (fukushi)"
+      ],
+      "readings": [
+        "すくなからず"
+      ],
+      "timestamp": 1754584035165
+    },
+    "期待": {
+      "word": "期待",
+      "definitions": [
+        "expectation",
+        "anticipation",
+        "hope"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Suru verb",
+        "Transitive verb",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "きたい"
+      ],
+      "timestamp": 1754584035444
+    },
+    "汗": {
+      "word": "汗",
+      "definitions": [
+        "sweat",
+        "perspiration"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "あせ"
+      ],
+      "timestamp": 1754584035689
+    },
+    "握っ": {
+      "word": "握っ",
+      "definitions": [
+        "to clasp",
+        "to grasp",
+        "to grip",
+        "to clutch"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'ru' ending",
+        "Transitive verb"
+      ],
+      "readings": [
+        "にぎる"
+      ],
+      "timestamp": 1754584035876
+    },
+    "立つ": {
+      "word": "立つ",
+      "definitions": [
+        "to stand (up)",
+        "to rise",
+        "to get to one's feet",
+        "to stand on end (e.g. of hairs)",
+        "to stick up"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'tsu' ending",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "たつ"
+      ],
+      "timestamp": 1754584036001
+    },
+    "背負っ": {
+      "word": "背負っ",
+      "definitions": [
+        "to be conceited",
+        "to be stuck up",
+        "to be full of oneself",
+        "to be cocky"
+      ],
+      "partOfSpeech": [
+        "Expressions (phrases, clauses, etc.)",
+        "Ichidan verb"
+      ],
+      "readings": [
+        "しょってる"
+      ],
+      "timestamp": 1754584036043
+    },
+    "責任": {
+      "word": "責任",
+      "definitions": [
+        "duty",
+        "responsibility (incl. supervision of staff)"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "せきにん"
+      ],
+      "timestamp": 1754584036096
+    },
+    "打席": {
+      "word": "打席",
+      "definitions": [
+        "batter's box",
+        "one's turn at bat"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "だせき"
+      ],
+      "timestamp": 1754584036129
+    },
+    "悩め": {
+      "word": "悩め",
+      "definitions": [
+        "worried",
+        "troubled",
+        "afflicted"
+      ],
+      "partOfSpeech": [
+        "Expressions (phrases, clauses, etc.)",
+        "Pre-noun adjectival (rentaishi)"
+      ],
+      "readings": [
+        "なやめる"
+      ],
+      "timestamp": 1754584036339
+    },
+    "浮かん": {
+      "word": "浮かん",
+      "definitions": [
+        "to float",
+        "to be suspended"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'bu' ending",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "うかぶ"
+      ],
+      "timestamp": 1754584036564
+    },
+    "眺め": {
+      "word": "眺め",
+      "definitions": [
+        "scene",
+        "view",
+        "prospect",
+        "outlook"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ながめ"
+      ],
+      "timestamp": 1754584036750
+    },
+    "俯瞰": {
+      "word": "俯瞰",
+      "definitions": [
+        "overlooking",
+        "looking down at",
+        "having an overhead view",
+        "having a bird's-eye view",
+        "having a high-angle view"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Suru verb",
+        "Transitive verb"
+      ],
+      "readings": [
+        "ふかん"
+      ],
+      "timestamp": 1754584037812
+    },
+    "考えろ": {
+      "word": "考えろ",
+      "definitions": [
+        "to think (about, of)",
+        "to think over",
+        "to ponder",
+        "to contemplate",
+        "to reflect (on)",
+        "to meditate (on)"
+      ],
+      "partOfSpeech": [
+        "Ichidan verb",
+        "Transitive verb"
+      ],
+      "readings": [
+        "かんがえる"
+      ],
+      "timestamp": 1754584038074
+    },
+    "イメージ": {
+      "word": "イメージ",
+      "definitions": [
+        "image (in one's mind)",
+        "impression",
+        "imagining",
+        "mental image",
+        "(forming a) mental picture"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Suru verb",
+        "Transitive verb"
+      ],
+      "readings": [
+        "イメージ"
+      ],
+      "timestamp": 1754584038371
+    },
+    "なさい": {
+      "word": "なさい",
+      "definitions": [
+        "do ..."
+      ],
+      "partOfSpeech": [
+        "Expressions (phrases, clauses, etc.)"
+      ],
+      "readings": [
+        "なさい"
+      ],
+      "timestamp": 1754584038499
+    },
+    "しな": {
+      "word": "しな",
+      "definitions": [
+        "article",
+        "item",
+        "thing",
+        "goods",
+        "stock"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "しな"
+      ],
+      "timestamp": 1754584038608
+    },
+    "覚悟": {
+      "word": "覚悟",
+      "definitions": [
+        "readiness",
+        "(mental) preparedness"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Suru verb",
+        "Transitive verb"
+      ],
+      "readings": [
+        "かくご"
+      ],
+      "timestamp": 1754584039564
+    },
+    "逃げ道": {
+      "word": "逃げ道",
+      "definitions": [
+        "way out",
+        "means to escape",
+        "escape route"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "にげみち"
+      ],
+      "timestamp": 1754584039803
+    },
+    "無き": {
+      "word": "無き",
+      "definitions": [
+        "-less",
+        "lacking",
+        "non-existing"
+      ],
+      "partOfSpeech": [
+        "Suffix",
+        "Pre-noun adjectival (rentaishi)"
+      ],
+      "readings": [
+        "なき"
+      ],
+      "timestamp": 1754584040111
+    },
+    "さらし": {
+      "word": "さらし",
+      "definitions": [
+        "bleaching",
+        "soaking"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "さらし"
+      ],
+      "timestamp": 1754584040318
+    },
+    "生き恥": {
+      "word": "生き恥",
+      "definitions": [
+        "dishonor during one's life",
+        "shame experienced during one's life"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "いきはじ"
+      ],
+      "timestamp": 1754584041321
+    },
+    "ゼロ": {
+      "word": "ゼロ",
+      "definitions": [
+        "zero",
+        "0",
+        "nought",
+        "nil"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ゼロ"
+      ],
+      "timestamp": 1754584041583
+    },
+    "学べ": {
+      "word": "学べ",
+      "definitions": [
+        "No definition available"
+      ],
+      "partOfSpeech": [
+        "unknown"
+      ],
+      "readings": [
+        "学べ"
+      ],
+      "timestamp": 1754584041818
+    },
+    "ドン底": {
+      "word": "ドン底",
+      "definitions": [
+        "very bottom",
+        "rock bottom"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "どんぞこ"
+      ],
+      "timestamp": 1754584042052
+    },
+    "下がら": {
+      "word": "下がら",
+      "definitions": [
+        "to come down",
+        "to go down",
+        "to fall",
+        "to drop",
+        "to sink",
+        "to get lower"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'ru' ending",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "さがる"
+      ],
+      "timestamp": 1754584043385
+    },
+    "自制心": {
+      "word": "自制心",
+      "definitions": [
+        "self-control",
+        "self-restraint"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "じせいしん"
+      ],
+      "timestamp": 1754584044485
+    },
+    "バース": {
+      "word": "バース",
+      "definitions": [
+        "berth"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "バース"
+      ],
+      "timestamp": 1754584044651
+    },
+    "信念": {
+      "word": "信念",
+      "definitions": [
+        "belief",
+        "faith",
+        "conviction"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "しんねん"
+      ],
+      "timestamp": 1754584044682
+    },
+    "吐く": {
+      "word": "吐く",
+      "definitions": [
+        "to breathe out",
+        "to breathe"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'ku' ending",
+        "Transitive verb"
+      ],
+      "readings": [
+        "つく"
+      ],
+      "timestamp": 1754584044694
+    },
+    "人選": {
+      "word": "人選",
+      "definitions": [
+        "personnel selection"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Suru verb",
+        "Transitive verb",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "じんせん"
+      ],
+      "timestamp": 1754584044700
+    },
+    "のみ": {
+      "word": "のみ",
+      "definitions": [
+        "only",
+        "nothing but"
+      ],
+      "partOfSpeech": [
+        "Suffix",
+        "Particle"
+      ],
+      "readings": [
+        "のみ"
+      ],
+      "timestamp": 1754584044708
+    },
+    "やつ": {
+      "word": "やつ",
+      "definitions": [
+        "fellow",
+        "guy",
+        "chap"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "やつ"
+      ],
+      "timestamp": 1754584044715
+    },
+    "傾": {
+      "word": "傾",
+      "definitions": [
+        "slanting",
+        "tilted",
+        "sloping",
+        "diagonal",
+        "oblique"
+      ],
+      "partOfSpeech": [
+        "Noun which may take the genitive case particle 'no'",
+        "Na-adjective (keiyodoshi)",
+        "Noun"
+      ],
+      "readings": [
+        "ななめ"
+      ],
+      "timestamp": 1754584044931
+    },
+    "集める": {
+      "word": "集める",
+      "definitions": [
+        "to collect",
+        "to assemble",
+        "to gather"
+      ],
+      "partOfSpeech": [
+        "Ichidan verb",
+        "Transitive verb"
+      ],
+      "readings": [
+        "あつめる"
+      ],
+      "timestamp": 1754584045115
+    },
+    "メッセージ": {
+      "word": "メッセージ",
+      "definitions": [
+        "message"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "メッセージ"
+      ],
+      "timestamp": 1754584045122
+    },
+    "性": {
+      "word": "性",
+      "definitions": [
+        "nature (of a person)"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "せい"
+      ],
+      "timestamp": 1754584045185
+    },
+    "全員": {
+      "word": "全員",
+      "definitions": [
+        "all members",
+        "all hands",
+        "everyone",
+        "everybody",
+        "whole crew"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Adverb (fukushi)"
+      ],
+      "readings": [
+        "ぜんいん"
+      ],
+      "timestamp": 1754584045203
+    },
+    "姿勢": {
+      "word": "姿勢",
+      "definitions": [
+        "posture",
+        "pose",
+        "position",
+        "stance",
+        "carriage (of the body)"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "しせい"
+      ],
+      "timestamp": 1754584045209
+    },
+    "視線": {
+      "word": "視線",
+      "definitions": [
+        "one's line of sight",
+        "one's gaze",
+        "one's eyes (looking)",
+        "glance",
+        "gaze",
+        "look"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "しせん"
+      ],
+      "timestamp": 1754584045218
+    },
+    "精神": {
+      "word": "精神",
+      "definitions": [
+        "mind",
+        "spirit",
+        "soul",
+        "heart",
+        "ethos"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "せいしん"
+      ],
+      "timestamp": 1754584048345
+    },
+    "用意": {
+      "word": "用意",
+      "definitions": [
+        "preparation",
+        "arrangements",
+        "provision",
+        "getting ready",
+        "laying out (e.g. a meal)"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Suru verb",
+        "Transitive verb"
+      ],
+      "readings": [
+        "ようい"
+      ],
+      "timestamp": 1754584048590
+    },
+    "ステージ": {
+      "word": "ステージ",
+      "definitions": [
+        "stage (platform)"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ステージ"
+      ],
+      "timestamp": 1754584048755
+    },
+    "登り": {
+      "word": "登り",
+      "definitions": [
+        "ascent",
+        "climbing",
+        "ascending (path)",
+        "climb"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "のぼり"
+      ],
+      "timestamp": 1754584048780
+    },
+    "容赦": {
+      "word": "容赦",
+      "definitions": [
+        "pardon",
+        "forgiveness",
+        "tolerance",
+        "overlooking"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Suru verb",
+        "Transitive verb"
+      ],
+      "readings": [
+        "ようしゃ"
+      ],
+      "timestamp": 1754584048934
+    },
+    "上げる": {
+      "word": "上げる",
+      "definitions": [
+        "to raise",
+        "to elevate"
+      ],
+      "partOfSpeech": [
+        "Ichidan verb",
+        "Transitive verb"
+      ],
+      "readings": [
+        "あげる"
+      ],
+      "timestamp": 1754584049155
+    },
+    "ボルテージ": {
+      "word": "ボルテージ",
+      "definitions": [
+        "voltage"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ボルテージ"
+      ],
+      "timestamp": 1754584050378
+    },
+    "獲物": {
+      "word": "獲物",
+      "definitions": [
+        "prey",
+        "catch",
+        "kill",
+        "game"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "えもの"
+      ],
+      "timestamp": 1754584050635
+    },
+    "提示": {
+      "word": "提示",
+      "definitions": [
+        "presentation (of a passport, ID, etc.)",
+        "showing",
+        "production (e.g. of documents)"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Suru verb",
+        "Transitive verb"
+      ],
+      "readings": [
+        "ていじ"
+      ],
+      "timestamp": 1754584050666
+    },
+    "貪る": {
+      "word": "貪る",
+      "definitions": [
+        "to covet",
+        "to crave",
+        "to be greedy for",
+        "to hunger for",
+        "to lust insatiably for"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'ru' ending",
+        "Transitive verb"
+      ],
+      "readings": [
+        "むさぼる"
+      ],
+      "timestamp": 1754584050692
+    },
+    "様": {
+      "word": "様",
+      "definitions": [
+        "appearing ...",
+        "looking ..."
+      ],
+      "partOfSpeech": [
+        "Noun, used as a suffix",
+        "Noun"
+      ],
+      "readings": [
+        "よう"
+      ],
+      "timestamp": 1754584050813
+    },
+    "維持": {
+      "word": "維持",
+      "definitions": [
+        "maintenance",
+        "preservation",
+        "improvement"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Suru verb",
+        "Transitive verb"
+      ],
+      "readings": [
+        "いじ"
+      ],
+      "timestamp": 1754584051121
+    },
+    "持っ": {
+      "word": "持っ",
+      "definitions": [
+        "to take (something) along",
+        "to bring with one",
+        "to carry (something) away",
+        "to bear"
+      ],
+      "partOfSpeech": [
+        "Expressions (phrases, clauses, etc.)",
+        "Godan verb - Iku/Yuku special class"
+      ],
+      "readings": [
+        "もっていく"
+      ],
+      "timestamp": 1754584051287
+    },
+    "意地": {
+      "word": "意地",
+      "definitions": [
+        "stubbornness",
+        "obstinacy",
+        "willpower",
+        "pride"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Noun which may take the genitive case particle 'no'"
+      ],
+      "readings": [
+        "いじ"
+      ],
+      "timestamp": 1754584051301
+    },
+    "捨て": {
+      "word": "捨て",
+      "definitions": [
+        "to throw away",
+        "to cast away",
+        "to dump",
+        "to discard"
+      ],
+      "partOfSpeech": [
+        "Ichidan verb",
+        "Transitive verb"
+      ],
+      "readings": [
+        "すてる"
+      ],
+      "timestamp": 1754584051459
+    },
+    "足": {
+      "word": "足",
+      "definitions": [
+        "foot",
+        "paw",
+        "arm (of an octopus, squid, etc.)"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "あし"
+      ],
+      "timestamp": 1754584051830
+    },
+    "価値": {
+      "word": "価値",
+      "definitions": [
+        "value",
+        "worth",
+        "merit"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "かち"
+      ],
+      "timestamp": 1754584052154
+    },
+    "動かし": {
+      "word": "動かし",
+      "definitions": [
+        "unshakable",
+        "immovable",
+        "undeniable"
+      ],
+      "partOfSpeech": [
+        "I-adjective (keiyoushi)"
+      ],
+      "readings": [
+        "うごかしがたい"
+      ],
+      "timestamp": 1754584053049
+    },
+    "追い求め": {
+      "word": "追い求め",
+      "definitions": [
+        "to pursue"
+      ],
+      "partOfSpeech": [
+        "Ichidan verb",
+        "Transitive verb"
+      ],
+      "readings": [
+        "おいもとめる"
+      ],
+      "timestamp": 1754584053307
+    },
+    "街": {
+      "word": "街",
+      "definitions": [
+        "town",
+        "block",
+        "neighbourhood",
+        "neighborhood"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "まち"
+      ],
+      "timestamp": 1754584053475
+    },
+    "都会": {
+      "word": "都会",
+      "definitions": [
+        "city"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Noun which may take the genitive case particle 'no'"
+      ],
+      "readings": [
+        "とかい"
+      ],
+      "timestamp": 1754584053528
+    },
+    "地元": {
+      "word": "地元",
+      "definitions": [
+        "home area",
+        "home town"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "じもと"
+      ],
+      "timestamp": 1754584053686
+    },
+    "出る": {
+      "word": "出る",
+      "definitions": [
+        "to leave",
+        "to exit",
+        "to go out",
+        "to come out",
+        "to get out"
+      ],
+      "partOfSpeech": [
+        "Ichidan verb",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "でる"
+      ],
+      "timestamp": 1754584053923
+    },
+    "探し": {
+      "word": "探し",
+      "definitions": [
+        "to search about for",
+        "to hunt around for",
+        "to look high and low for",
+        "to look everywhere for"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'ru' ending",
+        "Transitive verb"
+      ],
+      "readings": [
+        "さがしまわる"
+      ],
+      "timestamp": 1754584055184
+    },
+    "だが": {
+      "word": "だが",
+      "definitions": [
+        "but",
+        "however",
+        "(and) yet",
+        "nevertheless",
+        "still",
+        "for all that"
+      ],
+      "partOfSpeech": [
+        "Conjunction"
+      ],
+      "readings": [
+        "だが"
+      ],
+      "timestamp": 1754584055392
+    },
+    "書い": {
+      "word": "書い",
+      "definitions": [
+        "to write down"
+      ],
+      "partOfSpeech": [
+        "Expressions (phrases, clauses, etc.)",
+        "Godan verb with 'ku' ending"
+      ],
+      "readings": [
+        "かいとく"
+      ],
+      "timestamp": 1754584055610
+    },
+    "詩": {
+      "word": "詩",
+      "definitions": [
+        "poem",
+        "poetry",
+        "verse"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "し"
+      ],
+      "timestamp": 1754584055630
+    },
+    "ないがしろ": {
+      "word": "ないがしろ",
+      "definitions": [
+        "(a) slight",
+        "disrespect",
+        "making light (of)",
+        "neglect"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Na-adjective (keiyodoshi)"
+      ],
+      "readings": [
+        "ないがしろ"
+      ],
+      "timestamp": 1754584055701
+    },
+    "描い": {
+      "word": "描い",
+      "definitions": [
+        "to draw",
+        "to paint",
+        "to sketch"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'ku' ending",
+        "Transitive verb"
+      ],
+      "readings": [
+        "えがく"
+      ],
+      "timestamp": 1754584055901
+    },
+    "ビジョン": {
+      "word": "ビジョン",
+      "definitions": [
+        "vision"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ビジョン"
+      ],
+      "timestamp": 1754584056108
+    },
+    "ベルト": {
+      "word": "ベルト",
+      "definitions": [
+        "belt (worn around the waist)"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ベルト"
+      ],
+      "timestamp": 1754584056659
+    },
+    "くし": {
+      "word": "くし",
+      "definitions": [
+        "comb"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "くし"
+      ],
+      "timestamp": 1754584056728
+    },
+    "キツ": {
+      "word": "キツ",
+      "definitions": [
+        "fox (esp. the red fox, Vulpes vulpes)"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "きつね"
+      ],
+      "timestamp": 1754584056893
+    },
+    "既に": {
+      "word": "既に",
+      "definitions": [
+        "already"
+      ],
+      "partOfSpeech": [
+        "Adverb (fukushi)"
+      ],
+      "readings": [
+        "すでに"
+      ],
+      "timestamp": 1754584057358
+    },
+    "ウエスト": {
+      "word": "ウエスト",
+      "definitions": [
+        "waist",
+        "waistline",
+        "waist measurement"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ウエスト"
+      ],
+      "timestamp": 1754584057578
+    },
+    "め": {
+      "word": "め",
+      "definitions": [
+        "eye",
+        "eyeball"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "め"
+      ],
+      "timestamp": 1754584058179
+    },
+    "ゲスト": {
+      "word": "ゲスト",
+      "definitions": [
+        "guest"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ゲスト"
+      ],
+      "timestamp": 1754584058382
+    },
+    "尽くす": {
+      "word": "尽くす",
+      "definitions": [
+        "to use up",
+        "to exhaust",
+        "to run out of"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'su' ending",
+        "Transitive verb"
+      ],
+      "readings": [
+        "つくす"
+      ],
+      "timestamp": 1754584058587
+    },
+    "問わ": {
+      "word": "問わ",
+      "definitions": [
+        "regardless of",
+        "irrespective of",
+        "without distinction of",
+        "no matter (how, what, when, etc.)"
+      ],
+      "partOfSpeech": [
+        "Expressions (phrases, clauses, etc.)"
+      ],
+      "readings": [
+        "とわず"
+      ],
+      "timestamp": 1754584058600
+    },
+    "ベスト": {
+      "word": "ベスト",
+      "definitions": [
+        "best"
+      ],
+      "partOfSpeech": [
+        "Na-adjective (keiyodoshi)",
+        "Noun which may take the genitive case particle 'no'",
+        "Noun"
+      ],
+      "readings": [
+        "ベスト"
+      ],
+      "timestamp": 1754584058722
+    },
+    "ケツ": {
+      "word": "ケツ",
+      "definitions": [
+        "ass",
+        "arse",
+        "buttocks"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "けつ"
+      ],
+      "timestamp": 1754584059789
+    },
+    "撃ち合う": {
+      "word": "撃ち合う",
+      "definitions": [
+        "to exchange gunfire",
+        "to exchange shots"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'u' ending",
+        "Transitive verb"
+      ],
+      "readings": [
+        "うちあう"
+      ],
+      "timestamp": 1754584060750
+    },
+    "玉砕": {
+      "word": "玉砕",
+      "definitions": [
+        "honorable death",
+        "death without surrender",
+        "honorable defeat"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Suru verb",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "ぎょくさい"
+      ],
+      "timestamp": 1754584060941
+    },
+    "嘘": {
+      "word": "嘘",
+      "definitions": [
+        "lie",
+        "fib",
+        "falsehood",
+        "untruth"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Noun which may take the genitive case particle 'no'"
+      ],
+      "readings": [
+        "うそ"
+      ],
+      "timestamp": 1754584060963
+    },
+    "臭い": {
+      "word": "臭い",
+      "definitions": [
+        "stinking",
+        "smelly"
+      ],
+      "partOfSpeech": [
+        "I-adjective (keiyoushi)"
+      ],
+      "readings": [
+        "くさい"
+      ],
+      "timestamp": 1754584060993
+    },
+    "好か": {
+      "word": "好か",
+      "definitions": [
+        "probably good",
+        "fine, isn't it?",
+        "very well"
+      ],
+      "partOfSpeech": [
+        "Expressions (phrases, clauses, etc.)"
+      ],
+      "readings": [
+        "よかろう"
+      ],
+      "timestamp": 1754584061197
+    },
+    "ボクササイズ": {
+      "word": "ボクササイズ",
+      "definitions": [
+        "boxercise"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ボクササイズ"
+      ],
+      "timestamp": 1754584061380
+    },
+    "違い": {
+      "word": "違い",
+      "definitions": [
+        "difference",
+        "distinction",
+        "discrepancy"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ちがい"
+      ],
+      "timestamp": 1754584061667
+    },
+    "ロック": {
+      "word": "ロック",
+      "definitions": [
+        "lock"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Suru verb",
+        "Transitive verb"
+      ],
+      "readings": [
+        "ロック"
+      ],
+      "timestamp": 1754584061746
+    },
+    "大": {
+      "word": "大",
+      "definitions": [
+        "large",
+        "big",
+        "great",
+        "huge",
+        "vast",
+        "major",
+        "important",
+        "serious",
+        "severe"
+      ],
+      "partOfSpeech": [
+        "Prefix",
+        "Na-adjective (keiyodoshi)",
+        "Noun"
+      ],
+      "readings": [
+        "だい"
+      ],
+      "timestamp": 1754584061782
+    },
+    "スター": {
+      "word": "スター",
+      "definitions": [
+        "star (actor, athlete, etc.)",
+        "celebrity"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "スター"
+      ],
+      "timestamp": 1754584061810
+    },
+    "憧れ": {
+      "word": "憧れ",
+      "definitions": [
+        "yearning",
+        "longing",
+        "aspiration",
+        "adoration",
+        "admiration"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Noun which may take the genitive case particle 'no'"
+      ],
+      "readings": [
+        "あこがれ"
+      ],
+      "timestamp": 1754584062022
+    },
+    "飛びかかる": {
+      "word": "飛びかかる",
+      "definitions": [
+        "to spring at",
+        "to leap upon",
+        "to swoop down on",
+        "to throw oneself upon (e.g. an enemy)"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'ru' ending",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "とびかかる"
+      ],
+      "timestamp": 1754584062206
+    },
+    "ラップ": {
+      "word": "ラップ",
+      "definitions": [
+        "plastic wrap",
+        "cling film",
+        "cling wrap",
+        "food wrap"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ラップ"
+      ],
+      "timestamp": 1754584063290
+    },
+    "モンスター": {
+      "word": "モンスター",
+      "definitions": [
+        "monster",
+        "monstrosity"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "モンスター"
+      ],
+      "timestamp": 1754584063523
+    },
+    "シャンパン": {
+      "word": "シャンパン",
+      "definitions": [
+        "champagne"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "シャンパン"
+      ],
+      "timestamp": 1754584063740
+    },
+    "スパークリングワイン": {
+      "word": "スパークリングワイン",
+      "definitions": [
+        "sparkling wine"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "スパークリングワイン"
+      ],
+      "timestamp": 1754584064958
+    },
+    "歴然": {
+      "word": "歴然",
+      "definitions": [
+        "evident",
+        "plain",
+        "distinct",
+        "clear"
+      ],
+      "partOfSpeech": [
+        "'taru' adjective",
+        "Adverb taking the 'to' particle"
+      ],
+      "readings": [
+        "れきぜん"
+      ],
+      "timestamp": 1754584065273
+    },
+    "踏む": {
+      "word": "踏む",
+      "definitions": [
+        "to step on",
+        "to tread on",
+        "to trample on"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'mu' ending",
+        "Transitive verb"
+      ],
+      "readings": [
+        "ふむ"
+      ],
+      "timestamp": 1754584065307
+    },
+    "確実": {
+      "word": "確実",
+      "definitions": [
+        "certain",
+        "sure",
+        "definite",
+        "reliable",
+        "sound",
+        "solid",
+        "safe",
+        "secure"
+      ],
+      "partOfSpeech": [
+        "Na-adjective (keiyodoshi)",
+        "Noun"
+      ],
+      "readings": [
+        "かくじつ"
+      ],
+      "timestamp": 1754584065346
+    },
+    "韻": {
+      "word": "韻",
+      "definitions": [
+        "rhyme"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "いん"
+      ],
+      "timestamp": 1754584065392
+    },
+    "ぶつくさ": {
+      "word": "ぶつくさ",
+      "definitions": [
+        "moaning",
+        "muttering",
+        "complaining"
+      ],
+      "partOfSpeech": [
+        "Adverb (fukushi)"
+      ],
+      "readings": [
+        "ぶつくさ"
+      ],
+      "timestamp": 1754584065572
+    },
+    "暇": {
+      "word": "暇",
+      "definitions": [
+        "spare time",
+        "free time",
+        "leisure"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ひま"
+      ],
+      "timestamp": 1754584065845
+    },
+    "不満": {
+      "word": "不満",
+      "definitions": [
+        "dissatisfaction",
+        "discontent",
+        "displeasure",
+        "complaint",
+        "unhappiness"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Na-adjective (keiyodoshi)"
+      ],
+      "readings": [
+        "ふまん"
+      ],
+      "timestamp": 1754584065858
+    },
+    "不平": {
+      "word": "不平",
+      "definitions": [
+        "discontent",
+        "dissatisfaction",
+        "complaint",
+        "grievance"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Noun which may take the genitive case particle 'no'",
+        "Na-adjective (keiyodoshi)"
+      ],
+      "readings": [
+        "ふへい"
+      ],
+      "timestamp": 1754584066156
+    },
+    "あん": {
+      "word": "あん",
+      "definitions": [
+        "idea",
+        "plan",
+        "proposal",
+        "suggestion",
+        "(government) bill"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Noun, used as a suffix"
+      ],
+      "readings": [
+        "あん"
+      ],
+      "timestamp": 1754584066166
+    },
+    "切れ": {
+      "word": "切れ",
+      "definitions": [
+        "piece",
+        "slice",
+        "strip",
+        "scrap"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "きれ"
+      ],
+      "timestamp": 1754584066502
+    },
+    "テープ": {
+      "word": "テープ",
+      "definitions": [
+        "tape"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "テープ"
+      ],
+      "timestamp": 1754584066636
+    },
+    "ゴール": {
+      "word": "ゴール",
+      "definitions": [
+        "goal (in soccer, hockey, etc.)",
+        "basket (in basketball)"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Suru verb",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "ゴール"
+      ],
+      "timestamp": 1754584066648
+    },
+    "カッケー": {
+      "word": "カッケー",
+      "definitions": [
+        "cool",
+        "stylish",
+        "awesome",
+        "sick",
+        "sweet",
+        "dope"
+      ],
+      "partOfSpeech": [
+        "Expressions (phrases, clauses, etc.)"
+      ],
+      "readings": [
+        "かっけー"
+      ],
+      "timestamp": 1754584066823
+    },
+    "ー": {
+      "word": "ー",
+      "definitions": [
+        "long-vowel mark"
+      ],
+      "partOfSpeech": [
+        "Unclassified"
+      ],
+      "readings": [
+        "ー"
+      ],
+      "timestamp": 1754584068094
+    },
+    "だっせ": {
+      "word": "だっせ",
+      "definitions": [
+        "derailment"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Suru verb",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "だっせん"
+      ],
+      "timestamp": 1754584068328
+    },
+    "その": {
+      "word": "その",
+      "definitions": [
+        "that",
+        "the"
+      ],
+      "partOfSpeech": [
+        "Pre-noun adjectival (rentaishi)"
+      ],
+      "readings": [
+        "その"
+      ],
+      "timestamp": 1754584068644
+    },
+    "二つ": {
+      "word": "二つ",
+      "definitions": [
+        "two"
+      ],
+      "partOfSpeech": [
+        "Numeric"
+      ],
+      "readings": [
+        "ふたつ"
+      ],
+      "timestamp": 1754584068770
+    },
+    "ってな": {
+      "word": "ってな",
+      "definitions": [
+        "(apparently) that's what it's like, isn't it"
+      ],
+      "partOfSpeech": [
+        "Particle"
+      ],
+      "readings": [
+        "てな"
+      ],
+      "timestamp": 1754584068836
+    },
+    "待": {
+      "word": "待",
+      "definitions": [
+        "to wait"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'tsu' ending",
+        "Transitive verb",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "まつ"
+      ],
+      "timestamp": 1754584068971
+    },
+    "無し": {
+      "word": "無し",
+      "definitions": [
+        "without"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Noun, used as a suffix"
+      ],
+      "readings": [
+        "なし"
+      ],
+      "timestamp": 1754584069210
+    },
+    "成り上がり": {
+      "word": "成り上がり",
+      "definitions": [
+        "upstart",
+        "parvenu",
+        "jumped-up person"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "なりあがり"
+      ],
+      "timestamp": 1754584069413
+    },
+    "上がっ": {
+      "word": "上がっ",
+      "definitions": [
+        "doomed (business, trade, etc.)",
+        "in a bad state",
+        "poor"
+      ],
+      "partOfSpeech": [
+        "Na-adjective (keiyodoshi)",
+        "Noun"
+      ],
+      "readings": [
+        "あがったり"
+      ],
+      "timestamp": 1754584072494
+    },
+    "握り": {
+      "word": "握り",
+      "definitions": [
+        "grasping",
+        "gripping",
+        "grasp",
+        "grip",
+        "clutch"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "にぎり"
+      ],
+      "timestamp": 1754584072724
+    },
+    "ヤバイ": {
+      "word": "ヤバイ",
+      "definitions": [
+        "dangerous",
+        "risky"
+      ],
+      "partOfSpeech": [
+        "I-adjective (keiyoushi)"
+      ],
+      "readings": [
+        "やばい"
+      ],
+      "timestamp": 1754584072885
+    },
+    "かなり": {
+      "word": "かなり",
+      "definitions": [
+        "considerably",
+        "fairly",
+        "quite",
+        "rather",
+        "pretty"
+      ],
+      "partOfSpeech": [
+        "Adverb (fukushi)",
+        "Noun which may take the genitive case particle 'no'",
+        "Na-adjective (keiyodoshi)"
+      ],
+      "readings": [
+        "かなり"
+      ],
+      "timestamp": 1754584072983
+    },
+    "確率": {
+      "word": "確率",
+      "definitions": [
+        "probability",
+        "likelihood",
+        "chances"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "かくりつ"
+      ],
+      "timestamp": 1754584073260
+    },
+    "クギ": {
+      "word": "クギ",
+      "definitions": [
+        "nail",
+        "spike",
+        "tack",
+        "rivet",
+        "brad",
+        "(pachinko) pin"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "くぎ"
+      ],
+      "timestamp": 1754584073424
+    },
+    "床": {
+      "word": "床",
+      "definitions": [
+        "floor"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ゆか"
+      ],
+      "timestamp": 1754584073502
+    },
+    "底辺": {
+      "word": "底辺",
+      "definitions": [
+        "base (of a polygon)"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ていへん"
+      ],
+      "timestamp": 1754584073563
+    },
+    "済み": {
+      "word": "済み",
+      "definitions": [
+        "arranged",
+        "taken care of",
+        "settled",
+        "completed",
+        "finished"
+      ],
+      "partOfSpeech": [
+        "Noun, used as a suffix",
+        "Noun"
+      ],
+      "readings": [
+        "ずみ"
+      ],
+      "timestamp": 1754584074464
+    },
+    "ベストオブザベスト": {
+      "word": "ベストオブザベスト",
+      "definitions": [
+        "No definition available"
+      ],
+      "partOfSpeech": [
+        "unknown"
+      ],
+      "readings": [
+        "ベストオブザベスト"
+      ],
+      "timestamp": 1754584074618
+    },
+    "てっぺん": {
+      "word": "てっぺん",
+      "definitions": [
+        "iron scraps"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "てっぺん"
+      ],
+      "timestamp": 1754584074826
+    },
+    "つかみ": {
+      "word": "つかみ",
+      "definitions": [
+        "grip"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "つかみ"
+      ],
+      "timestamp": 1754584074901
+    },
+    "勢い": {
+      "word": "勢い",
+      "definitions": [
+        "force",
+        "vigor",
+        "vigour",
+        "energy",
+        "spirit",
+        "life"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "いきおい"
+      ],
+      "timestamp": 1754584075108
+    },
+    "タイミング": {
+      "word": "タイミング",
+      "definitions": [
+        "timing"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "タイミング"
+      ],
+      "timestamp": 1754584075310
+    },
+    "青空": {
+      "word": "青空",
+      "definitions": [
+        "blue sky"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "あおぞら"
+      ],
+      "timestamp": 1754584825544
+    },
+    "待っ": {
+      "word": "待っ",
+      "definitions": [
+        "false start of a bout"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "まった"
+      ],
+      "timestamp": 1754584825627
+    },
+    "下": {
+      "word": "下",
+      "definitions": [
+        "below",
+        "down",
+        "under",
+        "younger (e.g. daughter)"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "した"
+      ],
+      "timestamp": 1754584825675
+    },
+    "吹い": {
+      "word": "吹い",
+      "definitions": [
+        "conch (esp. Charonia tritonis)",
+        "trumpet shell"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ほらがい"
+      ],
+      "timestamp": 1754584825901
+    },
+    "正午": {
+      "word": "正午",
+      "definitions": [
+        "noon",
+        "midday"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Adverb (fukushi)"
+      ],
+      "readings": [
+        "しょうご"
+      ],
+      "timestamp": 1754584826139
+    },
+    "抜け出す": {
+      "word": "抜け出す",
+      "definitions": [
+        "to slip out",
+        "to sneak away",
+        "to break free",
+        "to get through (a difficult situation)"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'su' ending",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "ぬけだす"
+      ],
+      "timestamp": 1754584826147
+    },
+    "昼下がり": {
+      "word": "昼下がり",
+      "definitions": [
+        "early afternoon"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ひるさがり"
+      ],
+      "timestamp": 1754584827165
+    },
+    "進め方": {
+      "word": "進め方",
+      "definitions": [
+        "format",
+        "procedure",
+        "way of proceeding"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "すすめかた"
+      ],
+      "timestamp": 1754584827692
+    },
+    "教わら": {
+      "word": "教わら",
+      "definitions": [
+        "to be taught",
+        "to learn",
+        "to take lessons in"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'ru' ending",
+        "Transitive verb"
+      ],
+      "readings": [
+        "おそわる"
+      ],
+      "timestamp": 1754584828814
+    },
+    "歩い": {
+      "word": "歩い",
+      "definitions": [
+        "Still Walking (film)"
+      ],
+      "partOfSpeech": [
+        "Wikipedia definition"
+      ],
+      "readings": [
+        "歩いても 歩いても"
+      ],
+      "timestamp": 1754584829044
+    },
+    "青春": {
+      "word": "青春",
+      "definitions": [
+        "youth",
+        "adolescence",
+        "springtime of life"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "せいしゅん"
+      ],
+      "timestamp": 1754584829623
+    },
+    "つまらない": {
+      "word": "つまらない",
+      "definitions": [
+        "dull",
+        "uninteresting",
+        "boring",
+        "tedious"
+      ],
+      "partOfSpeech": [
+        "I-adjective (keiyoushi)"
+      ],
+      "readings": [
+        "つまらない"
+      ],
+      "timestamp": 1754584829733
+    },
+    "ピアノ": {
+      "word": "ピアノ",
+      "definitions": [
+        "piano (instrument)"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ピアノ"
+      ],
+      "timestamp": 1754584830081
+    },
+    "抜け": {
+      "word": "抜け",
+      "definitions": [
+        "omission",
+        "slip",
+        "error",
+        "fault"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ぬけ"
+      ],
+      "timestamp": 1754584830093
+    },
+    "筈": {
+      "word": "筈",
+      "definitions": [
+        "should (be)",
+        "bound (to be)",
+        "expected (to be)",
+        "must (be)"
+      ],
+      "partOfSpeech": [
+        "Auxiliary"
+      ],
+      "readings": [
+        "はず"
+      ],
+      "timestamp": 1754584830109
+    },
+    "辞め": {
+      "word": "辞め",
+      "definitions": [
+        "to resign",
+        "to retire",
+        "to quit",
+        "to leave (one's job, etc.)"
+      ],
+      "partOfSpeech": [
+        "Ichidan verb",
+        "Transitive verb"
+      ],
+      "readings": [
+        "やめる"
+      ],
+      "timestamp": 1754584830998
+    },
+    "弾く": {
+      "word": "弾く",
+      "definitions": [
+        "to play (a stringed or keyboard instrument)"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'ku' ending",
+        "Transitive verb"
+      ],
+      "readings": [
+        "ひく"
+      ],
+      "timestamp": 1754584831197
+    },
+    "困ら": {
+      "word": "困ら",
+      "definitions": [
+        "to trouble with questions",
+        "to embarrass",
+        "to put out",
+        "to put on the spot",
+        "to inconvenience"
+      ],
+      "partOfSpeech": [
+        "Ichidan verb"
+      ],
+      "readings": [
+        "こまらせる"
+      ],
+      "timestamp": 1754584831611
+    },
+    "どうしても": {
+      "word": "どうしても",
+      "definitions": [
+        "by all means",
+        "at any cost",
+        "no matter what",
+        "at any rate",
+        "surely"
+      ],
+      "partOfSpeech": [
+        "Expressions (phrases, clauses, etc.)",
+        "Adverb (fukushi)"
+      ],
+      "readings": [
+        "どうしても"
+      ],
+      "timestamp": 1754584832095
+    },
+    "今更": {
+      "word": "今更",
+      "definitions": [
+        "now (when it is already much too late)",
+        "at this stage"
+      ],
+      "partOfSpeech": [
+        "Adverb (fukushi)"
+      ],
+      "readings": [
+        "いまさら"
+      ],
+      "timestamp": 1754584833498
+    },
+    "なぁ": {
+      "word": "なぁ",
+      "definitions": [
+        "don't"
+      ],
+      "partOfSpeech": [
+        "Particle"
+      ],
+      "readings": [
+        "な"
+      ],
+      "timestamp": 1754584833714
+    },
+    "思い出す": {
+      "word": "思い出す",
+      "definitions": [
+        "to recall",
+        "to remember",
+        "to recollect"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'su' ending",
+        "Transitive verb"
+      ],
+      "readings": [
+        "おもいだす"
+      ],
+      "timestamp": 1754584833948
+    },
+    "間違っ": {
+      "word": "間違っ",
+      "definitions": [
+        "no matter what",
+        "whatever happens",
+        "under any circumstances",
+        "never"
+      ],
+      "partOfSpeech": [
+        "Expressions (phrases, clauses, etc.)"
+      ],
+      "readings": [
+        "まちがっても"
+      ],
+      "timestamp": 1754584834721
+    },
+    "人間": {
+      "word": "人間",
+      "definitions": [
+        "human being",
+        "human",
+        "person",
+        "man",
+        "mankind",
+        "humankind"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "にんげん"
+      ],
+      "timestamp": 1754584836191
+    },
+    "苦し": {
+      "word": "苦し",
+      "definitions": [
+        "painful",
+        "difficult",
+        "tough",
+        "hard"
+      ],
+      "partOfSpeech": [
+        "I-adjective (keiyoushi)"
+      ],
+      "readings": [
+        "くるしい"
+      ],
+      "timestamp": 1754584836411
+    },
+    "正しい": {
+      "word": "正しい",
+      "definitions": [
+        "right",
+        "correct"
+      ],
+      "partOfSpeech": [
+        "I-adjective (keiyoushi)"
+      ],
+      "readings": [
+        "ただしい"
+      ],
+      "timestamp": 1754584836671
+    },
+    "知り": {
+      "word": "知り",
+      "definitions": [
+        "acquaintance"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "しりあい"
+      ],
+      "timestamp": 1754584836958
+    },
+    "だって": {
+      "word": "だって",
+      "definitions": [
+        "after all",
+        "because"
+      ],
+      "partOfSpeech": [
+        "Conjunction"
+      ],
+      "readings": [
+        "だって"
+      ],
+      "timestamp": 1754584836993
+    },
+    "防衛": {
+      "word": "防衛",
+      "definitions": [
+        "defense",
+        "defence",
+        "protection"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Suru verb",
+        "Transitive verb"
+      ],
+      "readings": [
+        "ぼうえい"
+      ],
+      "timestamp": 1754584837018
+    },
+    "本能": {
+      "word": "本能",
+      "definitions": [
+        "instinct"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Noun which may take the genitive case particle 'no'"
+      ],
+      "readings": [
+        "ほんのう"
+      ],
+      "timestamp": 1754584837058
+    },
+    "あんた": {
+      "word": "あんた",
+      "definitions": [
+        "you"
+      ],
+      "partOfSpeech": [
+        "Pronoun"
+      ],
+      "readings": [
+        "あんた"
+      ],
+      "timestamp": 1754584837355
+    },
+    "本当に": {
+      "word": "本当に",
+      "definitions": [
+        "really",
+        "truly"
+      ],
+      "partOfSpeech": [
+        "Adverb (fukushi)"
+      ],
+      "readings": [
+        "ほんとうに"
+      ],
+      "timestamp": 1754584837799
+    },
+    "年老い": {
+      "word": "年老い",
+      "definitions": [
+        "old person"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "としおい"
+      ],
+      "timestamp": 1754584841124
+    },
+    "空っぽ": {
+      "word": "空っぽ",
+      "definitions": [
+        "empty",
+        "vacant",
+        "hollow"
+      ],
+      "partOfSpeech": [
+        "Noun which may take the genitive case particle 'no'",
+        "Na-adjective (keiyodoshi)",
+        "Noun"
+      ],
+      "readings": [
+        "からっぽ"
+      ],
+      "timestamp": 1754584841339
+    },
+    "大人": {
+      "word": "大人",
+      "definitions": [
+        "adult",
+        "grown-up"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Noun which may take the genitive case particle 'no'",
+        "Na-adjective (keiyodoshi)"
+      ],
+      "readings": [
+        "おとな"
+      ],
+      "timestamp": 1754584841705
+    },
+    "顔": {
+      "word": "顔",
+      "definitions": [
+        "face",
+        "visage"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "かお"
+      ],
+      "timestamp": 1754584842319
+    },
+    "憎い": {
+      "word": "憎い",
+      "definitions": [
+        "hateful",
+        "detestable",
+        "abominable",
+        "vexing",
+        "provoking"
+      ],
+      "partOfSpeech": [
+        "I-adjective (keiyoushi)"
+      ],
+      "readings": [
+        "にくい"
+      ],
+      "timestamp": 1754584842531
+    },
+    "割り切っ": {
+      "word": "割り切っ",
+      "definitions": [
+        "to find a clear solution",
+        "to come to a clean decision",
+        "to give a clear explanation",
+        "to reason out",
+        "to conclude",
+        "to be pragmatic",
+        "to be practical"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'ru' ending",
+        "Transitive verb"
+      ],
+      "readings": [
+        "わりきる"
+      ],
+      "timestamp": 1754584843504
+    },
+    "奥": {
+      "word": "奥",
+      "definitions": [
+        "inner part",
+        "interior",
+        "back (of a drawer, one's throat, etc.)",
+        "depths (e.g. of a forest)",
+        "recesses (e.g. of a cave)",
+        "heart",
+        "end (of a road, garden, etc.)"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "おく"
+      ],
+      "timestamp": 1754584843738
+    },
+    "化け物": {
+      "word": "化け物",
+      "definitions": [
+        "goblin",
+        "apparition",
+        "monster",
+        "ghost",
+        "phantom",
+        "spectre",
+        "specter"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ばけもの"
+      ],
+      "timestamp": 1754584843961
+    },
+    "劣等": {
+      "word": "劣等",
+      "definitions": [
+        "inferiority",
+        "low grade"
+      ],
+      "partOfSpeech": [
+        "Na-adjective (keiyodoshi)",
+        "Noun which may take the genitive case particle 'no'",
+        "Noun"
+      ],
+      "readings": [
+        "れっとう"
+      ],
+      "timestamp": 1754584844070
+    },
+    "何だかんだ": {
+      "word": "何だかんだ",
+      "definitions": [
+        "something or other",
+        "one thing or another",
+        "this or that"
+      ],
+      "partOfSpeech": [
+        "Adverb (fukushi)"
+      ],
+      "readings": [
+        "なんだかんだ"
+      ],
+      "timestamp": 1754584844594
+    },
+    "救い": {
+      "word": "救い",
+      "definitions": [
+        "help",
+        "rescue",
+        "aid",
+        "relief"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "すくい"
+      ],
+      "timestamp": 1754584844800
+    },
+    "気味が悪い": {
+      "word": "気味が悪い",
+      "definitions": [
+        "creepy (feeling)",
+        "uneasy (feeling)",
+        "bad (feeling)",
+        "giving one the creeps",
+        "hideous",
+        "scaring",
+        "weird"
+      ],
+      "partOfSpeech": [
+        "Expressions (phrases, clauses, etc.)",
+        "I-adjective (keiyoushi)"
+      ],
+      "readings": [
+        "きみがわるい"
+      ],
+      "timestamp": 1754584845107
+    },
+    "根拠": {
+      "word": "根拠",
+      "definitions": [
+        "basis",
+        "grounds",
+        "foundation",
+        "reason",
+        "authority"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "こんきょ"
+      ],
+      "timestamp": 1754584845258
+    },
+    "ラブソング": {
+      "word": "ラブソング",
+      "definitions": [
+        "love song"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ラブソング"
+      ],
+      "timestamp": 1754584845459
+    },
+    "痛い": {
+      "word": "痛い",
+      "definitions": [
+        "painful",
+        "sore"
+      ],
+      "partOfSpeech": [
+        "I-adjective (keiyoushi)"
+      ],
+      "readings": [
+        "いたい"
+      ],
+      "timestamp": 1754584845700
+    },
+    "なんか": {
+      "word": "なんか",
+      "definitions": [
+        "something like ...",
+        "things like ...",
+        "someone like ...",
+        "the likes of ..."
+      ],
+      "partOfSpeech": [
+        "Particle",
+        "Adverb (fukushi)"
+      ],
+      "readings": [
+        "なんか"
+      ],
+      "timestamp": 1754584845709
+    },
+    "苦しい": {
+      "word": "苦しい",
+      "definitions": [
+        "painful",
+        "difficult",
+        "tough",
+        "hard"
+      ],
+      "partOfSpeech": [
+        "I-adjective (keiyoushi)"
+      ],
+      "readings": [
+        "くるしい"
+      ],
+      "timestamp": 1754584846344
+    },
+    "儲から": {
+      "word": "儲から",
+      "definitions": [
+        "to be profitable",
+        "to yield a profit"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'ru' ending",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "もうかる"
+      ],
+      "timestamp": 1754584846541
+    },
+    "適当": {
+      "word": "適当",
+      "definitions": [
+        "suitable",
+        "proper",
+        "appropriate",
+        "adequate",
+        "fit",
+        "fair"
+      ],
+      "partOfSpeech": [
+        "Na-adjective (keiyodoshi)",
+        "Noun"
+      ],
+      "readings": [
+        "てきとう"
+      ],
+      "timestamp": 1754584847834
+    },
+    "あっ": {
+      "word": "あっ",
+      "definitions": [
+        "ah",
+        "oh"
+      ],
+      "partOfSpeech": [],
+      "readings": [
+        "あっ"
+      ],
+      "timestamp": 1754584849510
+    },
+    "塵": {
+      "word": "塵",
+      "definitions": [
+        "rubbish",
+        "trash",
+        "garbage",
+        "refuse",
+        "litter"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ゴミ"
+      ],
+      "timestamp": 1754584849799
+    },
+    "想い": {
+      "word": "想い",
+      "definitions": [
+        "thought"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "おもい"
+      ],
+      "timestamp": 1754584849955
+    },
+    "度": {
+      "word": "度",
+      "definitions": [
+        "time (three times, each time, etc.)",
+        "times"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Noun, used as a suffix",
+        "Counter"
+      ],
+      "readings": [
+        "たび"
+      ],
+      "timestamp": 1754584850205
+    },
+    "売れる": {
+      "word": "売れる",
+      "definitions": [
+        "to sell (well)"
+      ],
+      "partOfSpeech": [
+        "Ichidan verb",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "うれる"
+      ],
+      "timestamp": 1754584851563
+    },
+    "昔": {
+      "word": "昔",
+      "definitions": [
+        "the old days",
+        "the past",
+        "former times",
+        "a long time ago"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Noun which may take the genitive case particle 'no'",
+        "Adverb (fukushi)"
+      ],
+      "readings": [
+        "むかし"
+      ],
+      "timestamp": 1754584851782
+    },
+    "だから": {
+      "word": "だから",
+      "definitions": [
+        "so",
+        "therefore",
+        "accordingly",
+        "consequently",
+        "on those grounds",
+        "that is why",
+        "for that reason"
+      ],
+      "partOfSpeech": [
+        "Conjunction"
+      ],
+      "readings": [
+        "だから"
+      ],
+      "timestamp": 1754584851984
+    },
+    "オレ": {
+      "word": "オレ",
+      "definitions": [
+        "I",
+        "me"
+      ],
+      "partOfSpeech": [
+        "Pronoun"
+      ],
+      "readings": [
+        "おれ"
+      ],
+      "timestamp": 1754585190874
+    },
+    "イッテェ": {
+      "word": "イッテェ",
+      "definitions": [
+        "to go",
+        "to move (towards)",
+        "to head (towards)",
+        "to leave (for)"
+      ],
+      "partOfSpeech": [
+        "Godan verb - Iku/Yuku special class",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "いく"
+      ],
+      "timestamp": 1754585191284
+    },
+    "機嫌": {
+      "word": "機嫌",
+      "definitions": [
+        "humour",
+        "humor",
+        "temper",
+        "mood",
+        "spirits"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "きげん"
+      ],
+      "timestamp": 1754585191432
+    },
+    "斜め": {
+      "word": "斜め",
+      "definitions": [
+        "slanting",
+        "tilted",
+        "sloping",
+        "diagonal",
+        "oblique"
+      ],
+      "partOfSpeech": [
+        "Noun which may take the genitive case particle 'no'",
+        "Na-adjective (keiyodoshi)",
+        "Noun"
+      ],
+      "readings": [
+        "ななめ"
+      ],
+      "timestamp": 1754585191480
+    },
+    "ごめん": {
+      "word": "ごめん",
+      "definitions": [
+        "I'm sorry",
+        "my apologies",
+        "excuse me",
+        "pardon me"
+      ],
+      "partOfSpeech": [],
+      "readings": [
+        "ごめん"
+      ],
+      "timestamp": 1754585191686
+    },
+    "新鮮": {
+      "word": "新鮮",
+      "definitions": [
+        "fresh"
+      ],
+      "partOfSpeech": [
+        "Na-adjective (keiyodoshi)"
+      ],
+      "readings": [
+        "しんせん"
+      ],
+      "timestamp": 1754585192059
+    },
+    "ヴィンテージ": {
+      "word": "ヴィンテージ",
+      "definitions": [
+        "vintage (year, wine)"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ヴィンテージ"
+      ],
+      "timestamp": 1754585193301
+    },
+    "知っ": {
+      "word": "知っ",
+      "definitions": [
+        "pretending to know"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Suru verb"
+      ],
+      "readings": [
+        "しったかぶり"
+      ],
+      "timestamp": 1754585193574
+    },
+    "うっせ": {
+      "word": "うっせ",
+      "definitions": [
+        "accumulation (of discontent, frustration, etc.)",
+        "buildup",
+        "suppression (e.g. of anger)"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Suru verb",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "うっせき"
+      ],
+      "timestamp": 1754585193721
+    },
+    "しつけ": {
+      "word": "しつけ",
+      "definitions": [
+        "discipline",
+        "training",
+        "teaching manners"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "しつけ"
+      ],
+      "timestamp": 1754585195107
+    },
+    "引っ込ん": {
+      "word": "引っ込ん",
+      "definitions": [
+        "No definition available"
+      ],
+      "partOfSpeech": [
+        "unknown"
+      ],
+      "readings": [
+        "引っ込ん"
+      ],
+      "timestamp": 1754585195584
+    },
+    "めった": {
+      "word": "めった",
+      "definitions": [
+        "thoughtless",
+        "reckless",
+        "careless",
+        "rash"
+      ],
+      "partOfSpeech": [
+        "Na-adjective (keiyodoshi)"
+      ],
+      "readings": [
+        "めった"
+      ],
+      "timestamp": 1754585195990
+    },
+    "ら": {
+      "word": "ら",
+      "definitions": [
+        "pluralizing suffix"
+      ],
+      "partOfSpeech": [
+        "Suffix"
+      ],
+      "readings": [
+        "ら"
+      ],
+      "timestamp": 1754585196614
+    },
+    "ヤンデレ": {
+      "word": "ヤンデレ",
+      "definitions": [
+        "person with an unhealthy romantic obsession"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Noun or verb acting prenominally"
+      ],
+      "readings": [
+        "ヤンデレ"
+      ],
+      "timestamp": 1754585197961
+    },
+    "イキ": {
+      "word": "イキ",
+      "definitions": [
+        "orgasm",
+        "coming"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "イキ"
+      ],
+      "timestamp": 1754585198233
+    },
+    "青ざめ": {
+      "word": "青ざめ",
+      "definitions": [
+        "to become pale",
+        "to turn pale"
+      ],
+      "partOfSpeech": [
+        "Ichidan verb",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "あおざめる"
+      ],
+      "timestamp": 1754585198384
+    },
+    "真っ赤": {
+      "word": "真っ赤",
+      "definitions": [
+        "bright red",
+        "deep red",
+        "flushed (of face)"
+      ],
+      "partOfSpeech": [
+        "Na-adjective (keiyodoshi)",
+        "Noun"
+      ],
+      "readings": [
+        "まっか"
+      ],
+      "timestamp": 1754585198686
+    },
+    "どこ": {
+      "word": "どこ",
+      "definitions": [
+        "where",
+        "what place"
+      ],
+      "partOfSpeech": [
+        "Pronoun"
+      ],
+      "readings": [
+        "どこ"
+      ],
+      "timestamp": 1754585199319
+    },
+    "どっ": {
+      "word": "どっ",
+      "definitions": [
+        "which way",
+        "which direction",
+        "where"
+      ],
+      "partOfSpeech": [
+        "Pronoun"
+      ],
+      "readings": [
+        "どちら"
+      ],
+      "timestamp": 1754585200346
+    },
+    "アスタラビスタ": {
+      "word": "アスタラビスタ",
+      "definitions": [
+        "No definition available"
+      ],
+      "partOfSpeech": [
+        "unknown"
+      ],
+      "readings": [
+        "アスタラビスタ"
+      ],
+      "timestamp": 1754585200537
+    },
+    "似": {
+      "word": "似",
+      "definitions": [
+        "looking like (someone)",
+        "taking after (either of one's parents)"
+      ],
+      "partOfSpeech": [
+        "Suffix"
+      ],
+      "readings": [
+        "に"
+      ],
+      "timestamp": 1754585200881
+    },
+    "よく": {
+      "word": "よく",
+      "definitions": [
+        "nicely",
+        "properly",
+        "well",
+        "skillfully",
+        "skilfully"
+      ],
+      "partOfSpeech": [
+        "Adverb (fukushi)"
+      ],
+      "readings": [
+        "よく"
+      ],
+      "timestamp": 1754585201000
+    },
+    "ドッペルゲンガー": {
+      "word": "ドッペルゲンガー",
+      "definitions": [
+        "doppelgänger",
+        "doppelganger"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ドッペルゲンガー"
+      ],
+      "timestamp": 1754585201204
+    },
+    "働け": {
+      "word": "働け",
+      "definitions": [
+        "Arbeit macht frei"
+      ],
+      "partOfSpeech": [
+        "Wikipedia definition"
+      ],
+      "readings": [
+        "働けば自由になる"
+      ],
+      "timestamp": 1754585201633
+    },
+    "しゃにむに": {
+      "word": "しゃにむに",
+      "definitions": [
+        "desperately",
+        "recklessly",
+        "(rushing) headlong"
+      ],
+      "partOfSpeech": [
+        "Adverb (fukushi)"
+      ],
+      "readings": [
+        "しゃにむに"
+      ],
+      "timestamp": 1754585202440
+    },
+    "飯": {
+      "word": "飯",
+      "definitions": [
+        "cooked rice"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "めし"
+      ],
+      "timestamp": 1754585202806
+    },
+    "ガン": {
+      "word": "ガン",
+      "definitions": [
+        "gun"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ガン"
+      ],
+      "timestamp": 1754585203257
+    },
+    "バレ": {
+      "word": "バレ",
+      "definitions": [
+        "barrel"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "バレル"
+      ],
+      "timestamp": 1754585203489
+    },
+    "穿っ": {
+      "word": "穿っ",
+      "definitions": [
+        "shrewd",
+        "penetrating",
+        "keen"
+      ],
+      "partOfSpeech": [
+        "Noun or verb acting prenominally"
+      ],
+      "readings": [
+        "うがった"
+      ],
+      "timestamp": 1754585203673
+    },
+    "ーヘイター": {
+      "word": "ーヘイター",
+      "definitions": [
+        "No definition available"
+      ],
+      "partOfSpeech": [
+        "unknown"
+      ],
+      "readings": [
+        "ーヘイター"
+      ],
+      "timestamp": 1754585203885
+    },
+    "玉": {
+      "word": "玉",
+      "definitions": [
+        "ball",
+        "sphere",
+        "globe",
+        "orb"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "たま"
+      ],
+      "timestamp": 1754585204129
+    },
+    "目掛け": {
+      "word": "目掛け",
+      "definitions": [
+        "mistress",
+        "kept woman",
+        "concubine"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "めかけ"
+      ],
+      "timestamp": 1754585204598
+    },
+    "ビンタ": {
+      "word": "ビンタ",
+      "definitions": [
+        "slap (in the face)"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Suru verb",
+        "Transitive verb"
+      ],
+      "readings": [
+        "ビンタ"
+      ],
+      "timestamp": 1754585204986
+    },
+    "往復": {
+      "word": "往復",
+      "definitions": [
+        "making a round trip",
+        "going and returning",
+        "coming and going"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Suru verb",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "おうふく"
+      ],
+      "timestamp": 1754585206005
+    },
+    "ぶっ飛ばし": {
+      "word": "ぶっ飛ばし",
+      "definitions": [
+        "to knock (someone) off their feet",
+        "to knock down"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'su' ending",
+        "Transitive verb"
+      ],
+      "readings": [
+        "ぶっとばす"
+      ],
+      "timestamp": 1754585206358
+    },
+    "アンドロメダ": {
+      "word": "アンドロメダ",
+      "definitions": [
+        "Andromeda"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "アンドロメダ"
+      ],
+      "timestamp": 1754585206539
+    },
+    "とっくに": {
+      "word": "とっくに",
+      "definitions": [
+        "long ago",
+        "a long time ago",
+        "already"
+      ],
+      "partOfSpeech": [
+        "Adverb (fukushi)"
+      ],
+      "readings": [
+        "とっくに"
+      ],
+      "timestamp": 1754585206717
+    },
+    "権化": {
+      "word": "権化",
+      "definitions": [
+        "incarnation (of Buddha or bodhisattva)",
+        "avatar"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ごんげ"
+      ],
+      "timestamp": 1754585207328
+    },
+    "穢らわしい": {
+      "word": "穢らわしい",
+      "definitions": [
+        "filthy",
+        "unfair",
+        "dirty",
+        "untouchable",
+        "disgusting",
+        "nasty",
+        "foul",
+        "odious",
+        "repulsive"
+      ],
+      "partOfSpeech": [
+        "I-adjective (keiyoushi)"
+      ],
+      "readings": [
+        "けがらわしい"
+      ],
+      "timestamp": 1754585207615
+    },
+    "肯定": {
+      "word": "肯定",
+      "definitions": [
+        "affirmation"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Suru verb",
+        "Transitive verb"
+      ],
+      "readings": [
+        "こうてい"
+      ],
+      "timestamp": 1754585208694
+    },
+    "手放し": {
+      "word": "手放し",
+      "definitions": [
+        "not holding on",
+        "not using the hands",
+        "letting go one's hold"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "てばなし"
+      ],
+      "timestamp": 1754585209042
+    },
+    "覗い": {
+      "word": "覗い",
+      "definitions": [
+        "to peek (through a keyhole, gap, etc.)"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'ku' ending",
+        "Transitive verb"
+      ],
+      "readings": [
+        "のぞく"
+      ],
+      "timestamp": 1754585209285
+    },
+    "巷": {
+      "word": "巷",
+      "definitions": [
+        "the public",
+        "the street (e.g. \"word on the street\")"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ちまた"
+      ],
+      "timestamp": 1754585209520
+    },
+    "赤": {
+      "word": "赤",
+      "definitions": [
+        "red",
+        "crimson",
+        "scarlet"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Noun which may take the genitive case particle 'no'"
+      ],
+      "readings": [
+        "あか"
+      ],
+      "timestamp": 1754585209729
+    },
+    "匁": {
+      "word": "匁",
+      "definitions": [
+        "monme (unit of weight, 3.75 g)"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "もんめ"
+      ],
+      "timestamp": 1754585209812
+    },
+    "帽": {
+      "word": "帽",
+      "definitions": [
+        "hat",
+        "cap"
+      ],
+      "partOfSpeech": [
+        "Noun, used as a suffix",
+        "Noun"
+      ],
+      "readings": [
+        "ぼう"
+      ],
+      "timestamp": 1754585209835
+    },
+    "白": {
+      "word": "白",
+      "definitions": [
+        "white"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Noun which may take the genitive case particle 'no'"
+      ],
+      "readings": [
+        "しろ"
+      ],
+      "timestamp": 1754585209897
+    },
+    "アイツ": {
+      "word": "アイツ",
+      "definitions": [
+        "they",
+        "those guys",
+        "those fellows"
+      ],
+      "partOfSpeech": [
+        "Pronoun"
+      ],
+      "readings": [
+        "あいつら"
+      ],
+      "timestamp": 1754585210082
+    },
+    "止まり": {
+      "word": "止まり",
+      "definitions": [
+        "stop",
+        "stoppage",
+        "end"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "とまり"
+      ],
+      "timestamp": 1754585210320
+    },
+    "ニンゲン": {
+      "word": "ニンゲン",
+      "definitions": [
+        "human being",
+        "human",
+        "person",
+        "man",
+        "mankind",
+        "humankind"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "にんげん"
+      ],
+      "timestamp": 1754585210476
+    },
+    "モン": {
+      "word": "モン",
+      "definitions": [
+        "monster",
+        "monstrosity"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "モンスター"
+      ],
+      "timestamp": 1754585212003
+    },
+    "結局": {
+      "word": "結局",
+      "definitions": [
+        "after all",
+        "in the end",
+        "ultimately",
+        "eventually"
+      ],
+      "partOfSpeech": [
+        "Adverb (fukushi)"
+      ],
+      "readings": [
+        "けっきょく"
+      ],
+      "timestamp": 1754585212322
+    },
+    "あり": {
+      "word": "あり",
+      "definitions": [
+        "ant"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "あり"
+      ],
+      "timestamp": 1754585212656
+    },
+    "らい": {
+      "word": "らい",
+      "definitions": [
+        "next (year, spring, etc.)",
+        "coming"
+      ],
+      "partOfSpeech": [
+        "Prefix"
+      ],
+      "readings": [
+        "らい"
+      ],
+      "timestamp": 1754585213177
+    },
+    "一度": {
+      "word": "一度",
+      "definitions": [
+        "once",
+        "one time",
+        "on one occasion"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Adverb (fukushi)"
+      ],
+      "readings": [
+        "いちど"
+      ],
+      "timestamp": 1754585213445
+    },
+    "会っ": {
+      "word": "会っ",
+      "definitions": [
+        "to meet",
+        "to encounter",
+        "to see"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'u' ending",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "あう"
+      ],
+      "timestamp": 1754585213637
+    },
+    "すれ違っ": {
+      "word": "すれ違っ",
+      "definitions": [
+        "to pass (by) each other",
+        "to brush past"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'u' ending",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "すれちがう"
+      ],
+      "timestamp": 1754585213853
+    },
+    "がっ": {
+      "word": "がっ",
+      "definitions": [
+        "school"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "がっこう"
+      ],
+      "timestamp": 1754585215295
+    },
+    "入れ替わっ": {
+      "word": "入れ替わっ",
+      "definitions": [
+        "to change places (with)",
+        "to be replaced (with, by)",
+        "to be changed"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'ru' ending",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "いれかわる"
+      ],
+      "timestamp": 1754585215551
+    },
+    "わっ": {
+      "word": "わっ",
+      "definitions": [
+        "boo! (sound used to scare someone)"
+      ],
+      "partOfSpeech": [],
+      "readings": [
+        "わっ"
+      ],
+      "timestamp": 1754585216930
+    },
+    "随分": {
+      "word": "随分",
+      "definitions": [
+        "very",
+        "extremely",
+        "surprisingly",
+        "fairly",
+        "quite",
+        "considerably",
+        "awfully",
+        "terribly"
+      ],
+      "partOfSpeech": [
+        "Adverb (fukushi)",
+        "Adverb taking the 'to' particle"
+      ],
+      "readings": [
+        "ずいぶん"
+      ],
+      "timestamp": 1754585217206
+    },
+    "経っ": {
+      "word": "経っ",
+      "definitions": [
+        "to pass",
+        "to elapse",
+        "to go by"
+      ],
+      "partOfSpeech": [
+        "Ichidan verb",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "へる"
+      ],
+      "timestamp": 1754585217487
+    },
+    "合っ": {
+      "word": "合っ",
+      "definitions": [
+        "to come together",
+        "to merge",
+        "to unite",
+        "to meet"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'u' ending",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "あう"
+      ],
+      "timestamp": 1754585217716
+    },
+    "即死": {
+      "word": "即死",
+      "definitions": [
+        "instant death"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Suru verb",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "そくし"
+      ],
+      "timestamp": 1754585217944
+    },
+    "訳": {
+      "word": "訳",
+      "definitions": [
+        "reason",
+        "cause",
+        "grounds"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "わけ"
+      ],
+      "timestamp": 1754585218171
+    },
+    "直進": {
+      "word": "直進",
+      "definitions": [
+        "going straight on",
+        "going straight ahead"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Suru verb",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "ちょくしん"
+      ],
+      "timestamp": 1754585219742
+    },
+    "コッチ": {
+      "word": "コッチ",
+      "definitions": [
+        "fresh kimchi",
+        "fresh kimchi salad"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "コッチョリ"
+      ],
+      "timestamp": 1754585220252
+    },
+    "鎧": {
+      "word": "鎧",
+      "definitions": [
+        "armor",
+        "armour"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "よろい"
+      ],
+      "timestamp": 1754585220543
+    },
+    "ぐるみ": {
+      "word": "ぐるみ",
+      "definitions": [
+        "(together) with",
+        "-wide",
+        "including"
+      ],
+      "partOfSpeech": [
+        "Suffix"
+      ],
+      "readings": [
+        "ぐるみ"
+      ],
+      "timestamp": 1754585220744
+    },
+    "着": {
+      "word": "着",
+      "definitions": [
+        "arrival",
+        "arriving at ..."
+      ],
+      "partOfSpeech": [
+        "Noun, used as a suffix"
+      ],
+      "readings": [
+        "ちゃく"
+      ],
+      "timestamp": 1754585220800
+    },
+    "かつ": {
+      "word": "かつ",
+      "definitions": [
+        "to win",
+        "to gain victory"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'tsu' ending",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "かつ"
+      ],
+      "timestamp": 1754585220908
+    },
+    "戦闘": {
+      "word": "戦闘",
+      "definitions": [
+        "battle",
+        "fight",
+        "combat"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Suru verb",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "せんとう"
+      ],
+      "timestamp": 1754585220911
+    },
+    "仮面": {
+      "word": "仮面",
+      "definitions": [
+        "mask"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "かめん"
+      ],
+      "timestamp": 1754585221851
+    },
+    "機": {
+      "word": "機",
+      "definitions": [
+        "chance",
+        "opportunity"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "き"
+      ],
+      "timestamp": 1754585222069
+    },
+    "身代わり": {
+      "word": "身代わり",
+      "definitions": [
+        "substitution (for someone else)",
+        "substitute",
+        "stand-in",
+        "scapegoat",
+        "sacrifice"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "みがわり"
+      ],
+      "timestamp": 1754585222301
+    },
+    "ドルフィン": {
+      "word": "ドルフィン",
+      "definitions": [
+        "dolphin"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ドルフィン"
+      ],
+      "timestamp": 1754585222468
+    },
+    "生まれ変わり": {
+      "word": "生まれ変わり",
+      "definitions": [
+        "rebirth",
+        "reincarnation"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "うまれかわり"
+      ],
+      "timestamp": 1754585222510
+    },
+    "エン": {
+      "word": "エン",
+      "definitions": [
+        "pencil"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "えんぴつ"
+      ],
+      "timestamp": 1754585222827
+    },
+    "まぁ": {
+      "word": "まぁ",
+      "definitions": [
+        "just (e.g. \"just wait here\")",
+        "come now",
+        "now, now"
+      ],
+      "partOfSpeech": [
+        "Adverb (fukushi)"
+      ],
+      "readings": [
+        "まあ"
+      ],
+      "timestamp": 1754585223548
+    },
+    "オモテ": {
+      "word": "オモテ",
+      "definitions": [
+        "front side (of a piece of paper, coin, medal, etc.)",
+        "obverse"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "おもてめん"
+      ],
+      "timestamp": 1754585223725
+    },
+    "ウラ": {
+      "word": "ウラ",
+      "definitions": [
+        "the reverse (side)",
+        "back (side)",
+        "other side",
+        "hidden side",
+        "behind the scenes"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "うらがわ"
+      ],
+      "timestamp": 1754585224046
+    },
+    "どっち": {
+      "word": "どっち",
+      "definitions": [
+        "which way",
+        "which direction",
+        "where"
+      ],
+      "partOfSpeech": [
+        "Pronoun"
+      ],
+      "readings": [
+        "どちら"
+      ],
+      "timestamp": 1754585224342
+    },
+    "入れ替わり": {
+      "word": "入れ替わり",
+      "definitions": [
+        "substitution",
+        "replacement",
+        "shifting",
+        "change"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "いれかわり"
+      ],
+      "timestamp": 1754585224595
+    },
+    "好き": {
+      "word": "好き",
+      "definitions": [
+        "liking",
+        "being fond of",
+        "to one's liking",
+        "to one's taste",
+        "preferred",
+        "favourite"
+      ],
+      "partOfSpeech": [
+        "Na-adjective (keiyodoshi)",
+        "Noun"
+      ],
+      "readings": [
+        "すき"
+      ],
+      "timestamp": 1754585224621
+    },
+    "すっと": {
+      "word": "すっと",
+      "definitions": [
+        "straight",
+        "quickly",
+        "directly",
+        "all of a sudden"
+      ],
+      "partOfSpeech": [
+        "Adverb (fukushi)",
+        "Suru verb"
+      ],
+      "readings": [
+        "すっと"
+      ],
+      "timestamp": 1754585225603
+    },
+    "カマ": {
+      "word": "カマ",
+      "definitions": [
+        "barracuda (Sphyraena spp.)"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "かます"
+      ],
+      "timestamp": 1754585225956
+    },
+    "呼び名": {
+      "word": "呼び名",
+      "definitions": [
+        "popular name",
+        "common name",
+        "given name"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "よびな"
+      ],
+      "timestamp": 1754585228260
+    },
+    "いろいろ": {
+      "word": "いろいろ",
+      "definitions": [
+        "various",
+        "a variety of",
+        "all sorts of",
+        "many (different)"
+      ],
+      "partOfSpeech": [
+        "Na-adjective (keiyodoshi)",
+        "Noun which may take the genitive case particle 'no'"
+      ],
+      "readings": [
+        "いろいろ"
+      ],
+      "timestamp": 1754585228375
+    },
+    "担ぐ": {
+      "word": "担ぐ",
+      "definitions": [
+        "to shoulder",
+        "to carry on one's shoulder"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'gu' ending",
+        "Transitive verb"
+      ],
+      "readings": [
+        "かつぐ"
+      ],
+      "timestamp": 1754585228583
+    },
+    "御輿": {
+      "word": "御輿",
+      "definitions": [
+        "mikoshi",
+        "portable Shinto shrine carried through the streets during festivals"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "みこし"
+      ],
+      "timestamp": 1754585228661
+    },
+    "生き延びる": {
+      "word": "生き延びる",
+      "definitions": [
+        "to survive",
+        "to live long"
+      ],
+      "partOfSpeech": [
+        "Ichidan verb",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "いきのびる"
+      ],
+      "timestamp": 1754585228900
+    },
+    "諦め": {
+      "word": "諦め",
+      "definitions": [
+        "resignation",
+        "acceptance",
+        "consolation"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "あきらめ"
+      ],
+      "timestamp": 1754585229098
+    },
+    "悪": {
+      "word": "悪",
+      "definitions": [
+        "evil",
+        "wickedness"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "あく"
+      ],
+      "timestamp": 1754585229203
+    },
+    "タフ": {
+      "word": "タフ",
+      "definitions": [
+        "tough"
+      ],
+      "partOfSpeech": [
+        "Na-adjective (keiyodoshi)"
+      ],
+      "readings": [
+        "タフ"
+      ],
+      "timestamp": 1754585230138
+    },
+    "増し": {
+      "word": "増し",
+      "definitions": [
+        "better",
+        "preferable",
+        "less objectionable",
+        "least-worst"
+      ],
+      "partOfSpeech": [
+        "Na-adjective (keiyodoshi)"
+      ],
+      "readings": [
+        "まし"
+      ],
+      "timestamp": 1754585230397
+    },
+    "しのぎ": {
+      "word": "しのぎ",
+      "definitions": [
+        "(means of) enduring",
+        "tiding over",
+        "pulling through"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Suffix"
+      ],
+      "readings": [
+        "しのぎ"
+      ],
+      "timestamp": 1754585230562
+    },
+    "忍び込ま": {
+      "word": "忍び込ま",
+      "definitions": [
+        "to creep in",
+        "to steal in",
+        "to sneak in"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'mu' ending",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "しのびこむ"
+      ],
+      "timestamp": 1754585232039
+    },
+    "あっち": {
+      "word": "あっち",
+      "definitions": [
+        "that way",
+        "that direction",
+        "over there",
+        "yonder"
+      ],
+      "partOfSpeech": [
+        "Pronoun"
+      ],
+      "readings": [
+        "あちら"
+      ],
+      "timestamp": 1754585232256
+    },
+    "ゅ": {
+      "word": "ゅ",
+      "definitions": [
+        "No definition available"
+      ],
+      "partOfSpeech": [
+        "unknown"
+      ],
+      "readings": [
+        "ゅ"
+      ],
+      "timestamp": 1754585232416
+    },
+    "染まる": {
+      "word": "染まる",
+      "definitions": [
+        "to be dyed"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'ru' ending",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "そまる"
+      ],
+      "timestamp": 1754585232555
+    },
+    "色": {
+      "word": "色",
+      "definitions": [
+        "colour",
+        "color",
+        "hue",
+        "tint",
+        "tinge",
+        "shade"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "いろ"
+      ],
+      "timestamp": 1754585232601
+    },
+    "間": {
+      "word": "間",
+      "definitions": [
+        "space (between)",
+        "gap",
+        "interval",
+        "distance",
+        "stretch"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "あいだ"
+      ],
+      "timestamp": 1754585232617
+    },
+    "血": {
+      "word": "血",
+      "definitions": [
+        "blood"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ち"
+      ],
+      "timestamp": 1754585232747
+    },
+    "テメェ": {
+      "word": "テメェ",
+      "definitions": [
+        "you"
+      ],
+      "partOfSpeech": [
+        "Pronoun"
+      ],
+      "readings": [
+        "てめえ"
+      ],
+      "timestamp": 1754585232986
+    },
+    "身": {
+      "word": "身",
+      "definitions": [
+        "one's body",
+        "one's person"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "み"
+      ],
+      "timestamp": 1754585233211
+    },
+    "廻っ": {
+      "word": "廻っ",
+      "definitions": [
+        "to turn",
+        "to rotate",
+        "to revolve",
+        "to spin"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'ru' ending",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "まわる"
+      ],
+      "timestamp": 1754585233474
+    },
+    "命": {
+      "word": "命",
+      "definitions": [
+        "life",
+        "life force"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "いのち"
+      ],
+      "timestamp": 1754585233726
+    },
+    "サイクル": {
+      "word": "サイクル",
+      "definitions": [
+        "cycle"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "サイクル"
+      ],
+      "timestamp": 1754585234740
+    },
+    "漲る": {
+      "word": "漲る",
+      "definitions": [
+        "to rise high (of water)",
+        "to overflow",
+        "to swell"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'ru' ending",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "みなぎる"
+      ],
+      "timestamp": 1754585234929
+    },
+    "パワー": {
+      "word": "パワー",
+      "definitions": [
+        "power"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "パワー"
+      ],
+      "timestamp": 1754585236256
+    },
+    "わ": {
+      "word": "わ",
+      "definitions": [
+        "ring",
+        "circle",
+        "loop"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "わ"
+      ],
+      "timestamp": 1754585236920
+    },
+    "飛行": {
+      "word": "飛行",
+      "definitions": [
+        "flight",
+        "flying",
+        "aviation"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Suru verb",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "ひこう"
+      ],
+      "timestamp": 1754585237187
+    },
+    "夜中": {
+      "word": "夜中",
+      "definitions": [
+        "middle of the night",
+        "dead of night"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Adverb (fukushi)"
+      ],
+      "readings": [
+        "よなか"
+      ],
+      "timestamp": 1754585237589
+    },
+    "ワンツー": {
+      "word": "ワンツー",
+      "definitions": [
+        "one-two punch"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ワンツー"
+      ],
+      "timestamp": 1754585238106
+    },
+    "パパ": {
+      "word": "パパ",
+      "definitions": [
+        "dad",
+        "daddy",
+        "papa"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "パパ"
+      ],
+      "timestamp": 1754585238118
+    },
+    "昼間": {
+      "word": "昼間",
+      "definitions": [
+        "daytime",
+        "during the day",
+        "time from sunrise until sunset",
+        "diurnal period"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Adverb (fukushi)"
+      ],
+      "readings": [
+        "ひるま"
+      ],
+      "timestamp": 1754585238972
+    },
+    "着込ん": {
+      "word": "着込ん",
+      "definitions": [
+        "to wear extra clothes"
+      ],
+      "partOfSpeech": [
+        "Godan verb with 'mu' ending"
+      ],
+      "readings": [
+        "きこむ"
+      ],
+      "timestamp": 1754585239221
+    },
+    "迎え": {
+      "word": "迎え",
+      "definitions": [
+        "meeting",
+        "greeting",
+        "welcome"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "むかえ"
+      ],
+      "timestamp": 1754585242636
+    },
+    "テレビ": {
+      "word": "テレビ",
+      "definitions": [
+        "television",
+        "TV"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "テレビ"
+      ],
+      "timestamp": 1754585242882
+    },
+    "ミーム": {
+      "word": "ミーム",
+      "definitions": [
+        "meme (idea, behavior, etc. that spreads from person to person within a culture)"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "ミーム"
+      ],
+      "timestamp": 1754585243049
+    },
+    "越え": {
+      "word": "越え",
+      "definitions": [
+        "(crossing) over ..."
+      ],
+      "partOfSpeech": [
+        "Suffix"
+      ],
+      "readings": [
+        "ごえ"
+      ],
+      "timestamp": 1754585243164
+    },
+    "海": {
+      "word": "海",
+      "definitions": [
+        "sea",
+        "ocean",
+        "waters"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "うみ"
+      ],
+      "timestamp": 1754585243272
+    },
+    "世界中": {
+      "word": "世界中",
+      "definitions": [
+        "around the world",
+        "throughout the world"
+      ],
+      "partOfSpeech": [
+        "Noun which may take the genitive case particle 'no'",
+        "Noun"
+      ],
+      "readings": [
+        "せかいじゅう"
+      ],
+      "timestamp": 1754585243315
+    },
+    "紛れる": {
+      "word": "紛れる",
+      "definitions": [
+        "to disappear into",
+        "to be lost in",
+        "to slip into",
+        "to get mixed in among"
+      ],
+      "partOfSpeech": [
+        "Ichidan verb",
+        "Intransitive verb"
+      ],
+      "readings": [
+        "まぎれる"
+      ],
+      "timestamp": 1754585243721
+    },
+    "背後": {
+      "word": "背後",
+      "definitions": [
+        "back",
+        "rear"
+      ],
+      "partOfSpeech": [
+        "Noun",
+        "Noun which may take the genitive case particle 'no'"
+      ],
+      "readings": [
+        "はいご"
+      ],
+      "timestamp": 1754585243759
+    },
+    "しれっと": {
+      "word": "しれっと",
+      "definitions": [
+        "nonchalantly",
+        "calmly",
+        "as if nothing happened"
+      ],
+      "partOfSpeech": [
+        "Adverb (fukushi)",
+        "Suru verb"
+      ],
+      "readings": [
+        "しれっと"
+      ],
+      "timestamp": 1754585244596
+    },
+    "観衆": {
+      "word": "観衆",
+      "definitions": [
+        "spectators",
+        "onlookers",
+        "members of the audience"
+      ],
+      "partOfSpeech": [
+        "Noun"
+      ],
+      "readings": [
+        "かんしゅう"
+      ],
+      "timestamp": 1754585244810
     }
   },
-  "lastUpdated": 1754445371825
+  "lastUpdated": 1754585244810
 }
