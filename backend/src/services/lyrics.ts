@@ -302,9 +302,12 @@ class LyricsService {
                     stack: (lyricsError as Error).stack
                 });
 
-                // If it's a 404 error, try to get lyrics using a different approach
-                if ((lyricsError as Error).message.includes('404') || (lyricsError as Error).message.includes('NoResultError')) {
-                    logger.info('Attempting alternative lyrics fetching method', { songUrl: firstSong.url });
+                // If it's a 404 or 403 error, try to get lyrics using a different approach
+                if ((lyricsError as Error).message.includes('404') ||
+                    (lyricsError as Error).message.includes('NoResultError') ||
+                    (lyricsError as Error).message.includes('403') ||
+                    (lyricsError as Error).message.includes('ResponseStatusCodeError')) {
+                    logger.info('Attempting alternative lyrics fetching method due to access restriction', { songUrl: firstSong.url });
                     return await this.fetchLyricsAlternative(firstSong.url);
                 }
 
@@ -342,21 +345,29 @@ class LyricsService {
             logger.info('Attempting alternative lyrics fetching', { songUrl });
 
             // Try to fetch the page directly and parse it
+            // Add random delay to avoid rate limiting
+            await new Promise(resolve => setTimeout(resolve, Math.random() * 2000 + 1000));
+
             const response = await axios.get(songUrl, {
                 headers: {
-                    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-                    'Accept-Language': 'en-US,en;q=0.5',
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+                    'Accept-Language': 'en-US,en;q=0.9,ja;q=0.8',
                     'Accept-Encoding': 'gzip, deflate, br',
-                    'DNT': '1',
-                    'Connection': 'keep-alive',
-                    'Upgrade-Insecure-Requests': '1',
+                    'Cache-Control': 'no-cache',
+                    'Pragma': 'no-cache',
+                    'Sec-Ch-Ua': '"Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"',
+                    'Sec-Ch-Ua-Mobile': '?0',
+                    'Sec-Ch-Ua-Platform': '"Windows"',
                     'Sec-Fetch-Dest': 'document',
                     'Sec-Fetch-Mode': 'navigate',
                     'Sec-Fetch-Site': 'none',
-                    'Cache-Control': 'max-age=0',
+                    'Sec-Fetch-User': '?1',
+                    'Upgrade-Insecure-Requests': '1',
+                    'Referer': 'https://www.google.com/',
                 },
-                timeout: 15000
+                timeout: 20000,
+                maxRedirects: 5
             });
 
             const html = response.data;
