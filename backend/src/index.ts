@@ -11,10 +11,7 @@ import { generalRateLimit } from './middleware/rateLimiter';
 
 const app = express();
 
-// Security middleware
-app.use(helmet());
-
-// CORS configuration
+// CORS configuration - MUST come BEFORE Helmet
 const allowedOrigins = process.env.CORS_ORIGIN
     ? process.env.CORS_ORIGIN.split(',').map(origin => origin.trim())
     : ['https://cogodo.github.io', 'http://localhost:3000', 'http://localhost:5173'];
@@ -33,6 +30,12 @@ app.use(cors({
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
+}));
+
+// Security middleware - AFTER CORS
+app.use(helmet({
+    crossOriginResourcePolicy: { policy: "cross-origin" },
+    crossOriginEmbedderPolicy: false
 }));
 
 // Request logging
