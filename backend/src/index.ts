@@ -11,41 +11,16 @@ import { generalRateLimit } from './middleware/rateLimiter';
 
 const app = express();
 
-// CORS configuration - MUST come FIRST
-const allowedOrigins = process.env.CORS_ORIGIN
-    ? process.env.CORS_ORIGIN.split(',').map(origin => origin.trim())
-    : [
-        'https://cogodo.github.io',
-        'http://localhost:3000',
-        'http://localhost:5173'
-    ];
-
+// 1) CORS configuration - MUST come FIRST, before any routes or middleware
 app.use(cors({
-    origin: function (origin, callback) {
-        // Allow requests with no origin (like mobile apps or curl requests)
-        if (!origin) return callback(null, true);
-
-        if (allowedOrigins.indexOf(origin) !== -1) {
-            callback(null, true);
-        } else {
-            callback(new Error('Not allowed by CORS'));
-        }
-    },
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    origin: 'https://cogodo.github.io',
+    methods: ['GET', 'POST', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
-    credentials: false, // Set to false since we're not using cookies
-    preflightContinue: false,
-    optionsSuccessStatus: 204
+    credentials: false
 }));
 
-// Ensure you explicitly handle OPTIONS for every path
+// 2) Explicitly handle OPTIONS preflight for all routes
 app.options('*', cors());
-
-// Security middleware - AFTER CORS (TEMPORARILY DISABLED)
-// app.use(helmet({
-//     crossOriginResourcePolicy: { policy: "cross-origin" },
-//     crossOriginEmbedderPolicy: false
-// }));
 
 // Request logging - AFTER CORS
 if (config.server.nodeEnv !== 'test') {
@@ -81,7 +56,7 @@ app.get('/', (req, res) => {
         status: 'running',
         timestamp: new Date().toISOString(),
         corsEnabled: true,
-        corsOrigin: 'ALLOW_ALL_TEMPORARILY'
+        corsOrigin: 'https://cogodo.github.io'
     });
 });
 

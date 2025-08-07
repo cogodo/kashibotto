@@ -20,6 +20,21 @@ export const errorHandler = (
     const timestamp = new Date().toISOString();
     const path = req.originalUrl;
 
+    // Log the full error details for debugging
+    console.error('Request error:', {
+        error: error.message,
+        stack: error.stack,
+        path,
+        method: req.method,
+        ip: req.ip,
+        userAgent: req.get('User-Agent'),
+    });
+
+    // Ensure CORS headers are always present, even on errors
+    res.header('Access-Control-Allow-Origin', 'https://cogodo.github.io');
+    res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+    res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Requested-With');
+
     // Log the error
     logger.error('Request error', {
         error: error.message,
@@ -76,10 +91,10 @@ export const errorHandler = (
         return;
     }
 
-    // Handle unexpected errors
+    // Handle unexpected errors - return the actual error message for debugging
     const response: ErrorResponse = {
         error: {
-            message: 'An unexpected error occurred. Please try again later.',
+            message: error.message || 'An unexpected error occurred. Please try again later.',
             code: 'INTERNAL_ERROR',
             timestamp,
             path,

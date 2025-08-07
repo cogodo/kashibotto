@@ -38,12 +38,19 @@ router.get('/', async (req: Request, res: Response) => {
         if (config.apis.genius.accessToken) {
             try {
                 const searchUrl = `https://api.genius.com/search?q=${encodeURIComponent(query)}`;
+                logger.info('Making Genius API request', { searchUrl });
+
                 const response = await axios.get(searchUrl, {
                     headers: {
                         'Authorization': `Bearer ${config.apis.genius.accessToken}`,
                         'User-Agent': 'Kashibotto/1.0'
                     },
                     timeout: 5000 // 5 second timeout for live search
+                });
+
+                logger.info('Genius API response received', {
+                    status: response.status,
+                    dataKeys: Object.keys(response.data || {})
                 });
 
                 const data: GeniusSearchResponse = response.data;
@@ -64,10 +71,13 @@ router.get('/', async (req: Request, res: Response) => {
             } catch (error) {
                 logger.error('Genius search failed in live search', {
                     query,
-                    error: (error as Error).message
+                    error: (error as Error).message,
+                    stack: (error as Error).stack
                 });
                 // Fall through to mock suggestions
             }
+        } else {
+            logger.info('No Genius access token available, using mock data');
         }
 
         // Fallback: Generate mock suggestions for testing
