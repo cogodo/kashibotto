@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import { lyricsService } from '../services/lyrics';
+import { zyteAgent } from '../services/proxy';
 
 import { logger } from '../utils/logger';
 import { asyncHandler } from '../middleware/errorHandler';
@@ -112,7 +113,7 @@ router.get(
             const client = new Genius.Client(process.env.GENIUS_ACCESS_TOKEN || process.env.GENIUS_TOKEN || '', {
                 requestOptions: {
                     headers: { 'user-agent': process.env.SCRAPER_UA || 'Mozilla/5.0' },
-                    ...(require('../services/proxy').zyteAgent ? { httpsAgent: require('../services/proxy').zyteAgent, proxy: false } : {}),
+                    ...(zyteAgent ? { httpsAgent: zyteAgent, proxy: false } : {}),
                     timeout: 10_000
                 }
             });
