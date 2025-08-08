@@ -125,9 +125,12 @@ class ProcessorService {
                         // Do not append artificial spaces; preserve original segmentation
                         let segmentText = morpheme.surface;
 
+                        const readingSource = (dictionaryData && Array.isArray(dictionaryData.readings) && dictionaryData.readings[0])
+                            ? dictionaryData.readings[0]
+                            : (morpheme.reading || morpheme.surface);
                         const segment: Segment = {
                             text: segmentText,
-                            reading: this.toHiragana(morpheme.reading || morpheme.surface),
+                            reading: this.toHiragana(readingSource),
                             translation: translation,
                             dictionary: dictionaryData ? [dictionaryData.definitions[0] || 'No definition available'] : undefined,
                         };
@@ -143,9 +146,12 @@ class ProcessorService {
                         // Create basic segment on error without artificial spacing
                         let fallbackText = morpheme.surface;
 
+                        const fallbackReadingSource = (dictionaryData && Array.isArray(dictionaryData.readings) && dictionaryData.readings[0])
+                            ? dictionaryData.readings[0]
+                            : (morpheme.reading || morpheme.surface);
                         const fallbackSegment: Segment = {
                             text: fallbackText,
-                            reading: this.toHiragana(morpheme.reading || morpheme.surface),
+                            reading: this.toHiragana(fallbackReadingSource),
                             translation: morpheme.surface, // Use surface form as fallback
                             dictionary: dictionaryData ? [dictionaryData.definitions[0] || 'No definition available'] : undefined,
                         };
