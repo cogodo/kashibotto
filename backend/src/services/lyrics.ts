@@ -193,24 +193,46 @@ class LyricsService {
         const { data: html } = await axios.get(url, axiosConfig);
         const $ = cheerio.load(html);
 
-        // Method 1: Look for data-lyrics-container elements
+        // Method 1: Look for data-lyrics-container elements and preserve <br> as newlines
         const blocks = $('[data-lyrics-container="true"]')
             .toArray()
-            .map(el => $(el).text().trim())
-            .filter(Boolean);
+            .map(el => {
+                const rawHtml = $(el).html() || '';
+                // Convert line breaks to newlines before stripping tags
+                const withBreaks = rawHtml.replace(/<br\s*\/?>(\s*)/gi, '\n');
+                const blockText = cheerio.load(withBreaks).root().text();
+                return blockText
+                    .replace(/\u00A0/g, ' ')      // non-breaking space → normal space
+                    .replace(/\r\n?/g, '\n')     // normalize CRLF
+                    .replace(/\n{3,}/g, '\n\n') // cap empty lines
+                    .trimEnd();                     // keep leading spaces if any
+            })
+            .filter(t => t && t.length > 0);
 
         if (blocks.length) {
             return blocks.join('\n\n');
         }
 
-        // Method 2: Look for lyrics-root container
-        const lyricsRoot = $('#lyrics-root').text().trim();
+        // Method 2: Look for lyrics-root container, preserving <br>
+        const rootHtml = $('#lyrics-root').html() || '';
+        const lyricsRoot = rootHtml
+            ? cheerio.load(rootHtml.replace(/<br\s*\/?>(\s*)/gi, '\n')).root().text().replace(/\u00A0/g, ' ').replace(/\r\n?/g, '\n').replace(/\n{3,}/g, '\n\n').trimEnd()
+            : '';
         if (lyricsRoot) {
             return lyricsRoot;
         }
 
-        // Method 3: Look for common lyrics containers
-        const lyricsContainers = $('.Lyrics__Root, [class*="Lyrics"], .lyrics').text().trim();
+        // Method 3: Look for common lyrics containers, preserving <br>
+        let lyricsContainers = '';
+        const candidates = $('.Lyrics__Root, [class*="Lyrics"], .lyrics').toArray();
+        if (candidates.length) {
+            const htmlJoined = candidates.map(el => $(el).html() || '').join('\n');
+            lyricsContainers = cheerio.load(htmlJoined.replace(/<br\s*\/?>(\s*)/gi, '\n')).root().text()
+                .replace(/\u00A0/g, ' ')
+                .replace(/\r\n?/g, '\n')
+                .replace(/\n{3,}/g, '\n\n')
+                .trimEnd();
+        }
         if (lyricsContainers) {
             return lyricsContainers;
         }

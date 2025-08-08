@@ -1,4 +1,5 @@
 import { tokenize } from '@enjoyjs/node-mecab';
+import TinySegmenter from 'tiny-segmenter';
 import { config } from '../config';
 import { logger } from '../utils/logger';
 import { MorphemeData } from '../types';
@@ -55,6 +56,15 @@ class SegmentationService {
             });
             return null;
         }
+    }
+
+    // Fallback segmenter for Japanese when MeCab is unavailable (no mecab on host)
+    private segmentWithTiny(text: string): MorphemeData[] {
+        const segmenter = new TinySegmenter();
+        const words: string[] = segmenter.segment(text);
+        return words
+            .filter(w => w && w.trim().length > 0)
+            .map(w => ({ surface: w, reading: w, pos: 'unknown' } as MorphemeData));
     }
 
     // Detect if text contains no Japanese characters (likely English/romanized)
@@ -130,22 +140,27 @@ class SegmentationService {
             textLength: cleanText.length
         });
 
-        // For pure romanized/English text, use simple tokenizer to avoid char-by-char fallback
+        // For pure romanized/English lines, return a single segment preserving full spacing
         if (this.isRomanizedText(cleanText)) {
-            const romanized = this.tokenizeRomanized(cleanText);
-            if (romanized.length > 0) {
-                return romanized;
-            }
+            return [{ surface: cleanText, reading: cleanText, pos: 'latin' } as MorphemeData];
         }
 
         // Try MeCab first
         let morphemes = await this.analyzeWithMeCab(cleanText);
 
+        // If MeCab failed (e.g., mecab not installed), fallback to TinySegmenter for Japanese
         if (!morphemes || morphemes.length === 0) {
-            throw new ApiError(
-                'Failed to segment text with available methods',
-                'SEGMENTATION_FAILED'
-            );
+            if (!this.isRomanizedText(cleanText)) {
+                const tiny = this.segmentWithTiny(cleanText);
+                if (tiny.length > 0) {
+                    logger.info('Falling back to TinySegmenter for Japanese text', { count: tiny.length });
+                    morphemes = tiny;
+                }
+            }
+        }
+
+        if (!morphemes || morphemes.length === 0) {
+            throw new ApiError('Failed to segment text with available methods', 'SEGMENTATION_FAILED');
         }
 
         // Filter out empty morphemes and validate
@@ -209,10 +224,10 @@ class SegmentationService {
                     error: (error as Error).message
                 });
 
-                // Fallback: if romanized, use romanized tokenizer; else split into characters
+                // Fallback: if romanized, return the full line as one segment; else split into characters
                 let fallbackSegments: MorphemeData[];
                 if (this.isRomanizedText(line)) {
-                    fallbackSegments = this.tokenizeRomanized(line);
+                    fallbackSegments = [{ surface: line, reading: line, pos: 'latin' } as MorphemeData];
                 } else {
                     fallbackSegments = line.split('').map(char => ({
                         surface: char,
