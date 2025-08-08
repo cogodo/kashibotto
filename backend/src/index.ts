@@ -11,6 +11,14 @@ import { generalRateLimit } from './middleware/rateLimiter';
 
 const app = express();
 
+// Optional TLS bypass for proxy environments lacking system CAs.
+// Enable only by setting ZYTE_INSECURE_TLS=1 in environment.
+if (process.env.ZYTE_INSECURE_TLS === '1') {
+    // eslint-disable-next-line no-process-env
+    process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+    logger.warn('TLS verification disabled due to ZYTE_INSECURE_TLS=1');
+}
+
 // Trust proxy configuration for deployed environments (needed for rate limiting with X-Forwarded-For headers)
 // Enable for both production and development since Render always uses proxies
 if (config.server.nodeEnv === 'production' || config.server.nodeEnv === 'development') {

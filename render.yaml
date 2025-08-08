@@ -2,7 +2,7 @@ services:
   - type: web
     name: kashibotto
     env: node
-    buildCommand: nvm use 20 && npm install && npm run build
+    buildCommand: npm install && npm run build:backend
     startCommand: npm start
     rootDir: backend
     envVars:
@@ -15,6 +15,6 @@ services:
       - key: DICTIONARY_STORAGE
         value: memory
       - key: NODE_OPTIONS
-        value: --use-system-ca --no-deprecation
+        value: --no-deprecation
       - key: ZYTE_INSECURE_TLS
         value: "0"
