@@ -15,6 +15,11 @@ interface Config {
             accessToken: string;
         };
     };
+    scraping: {
+        userAgent: string;
+        cookie: string;
+        proxy: string;
+    };
     rateLimit: RateLimitConfig;
 }
 
@@ -53,8 +58,13 @@ export const config: Config = {
     },
     apis: {
         genius: {
-            accessToken: process.env.GENIUS_ACCESS_TOKEN || '',
+            accessToken: process.env.GENIUS_ACCESS_TOKEN || process.env.GENIUS_TOKEN || '',
         },
+    },
+    scraping: {
+        userAgent: process.env.SCRAPER_UA || 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36',
+        cookie: process.env.GENIUS_COOKIE || '',
+        proxy: process.env.HTTPS_PROXY || '',
     },
     rateLimit: {
         windowMs: parseInt(process.env.RATE_LIMIT_WINDOW_MS || '60000'),
