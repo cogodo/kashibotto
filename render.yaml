@@ -15,4 +15,6 @@ services:
       - key: DICTIONARY_STORAGE
         value: memory
       - key: NODE_OPTIONS
-        value: --no-deprecation
+        value: --use-system-ca --no-deprecation
+      - key: ZYTE_INSECURE_TLS
+        value: "0"
