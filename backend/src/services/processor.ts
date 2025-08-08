@@ -5,6 +5,14 @@ import { ApiError } from './lyrics';
 import { MorphemeData, ProcessedLyrics, Segment } from '../types';
 
 class ProcessorService {
+    // Convert Katakana to Hiragana for tooltip display
+    private toHiragana(input: string): string {
+        if (!input) return input;
+        return input.replace(/[\u30A1-\u30F6]/g, (ch) => {
+            const code = ch.charCodeAt(0) - 0x60;
+            return String.fromCharCode(code);
+        });
+    }
     // Function to detect if text is romanized/English (no Japanese characters)
     private isRomanizedText(text: string): boolean {
         // Check if text contains only Latin characters, numbers, punctuation, and spaces
@@ -41,15 +49,12 @@ class ProcessorService {
                 const shouldConnect = verbEndings.some(ending => nextSegment.text.startsWith(ending));
 
                 if (shouldConnect) {
-                    // Connect the segments
+                    // Connect text and readings, but DO NOT merge meanings/definitions
                     const connectedSegment: Segment = {
                         text: currentSegment.text + nextSegment.text,
                         reading: currentSegment.reading + nextSegment.reading,
-                        translation: currentSegment.translation + ' ' + nextSegment.translation,
-                        dictionary: [
-                            ...(currentSegment.dictionary || []),
-                            ...(nextSegment.dictionary || [])
-                        ]
+                        translation: currentSegment.translation,
+                        dictionary: currentSegment.dictionary ? [...currentSegment.dictionary] : undefined
                     };
 
                     connectedSegments.push(connectedSegment);
@@ -122,7 +127,7 @@ class ProcessorService {
 
                         const segment: Segment = {
                             text: segmentText,
-                            reading: morpheme.reading || morpheme.surface,
+                            reading: this.toHiragana(morpheme.reading || morpheme.surface),
                             translation: translation,
                             dictionary: dictionaryData ? [dictionaryData.definitions[0] || 'No definition available'] : undefined,
                         };
@@ -140,7 +145,7 @@ class ProcessorService {
 
                         const fallbackSegment: Segment = {
                             text: fallbackText,
-                            reading: morpheme.reading || morpheme.surface,
+                            reading: this.toHiragana(morpheme.reading || morpheme.surface),
                             translation: morpheme.surface, // Use surface form as fallback
                             dictionary: dictionaryData ? [dictionaryData.definitions[0] || 'No definition available'] : undefined,
                         };
