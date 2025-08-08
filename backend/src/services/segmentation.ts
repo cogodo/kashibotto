@@ -57,6 +57,25 @@ class SegmentationService {
         }
     }
 
+    // Detect if text contains no Japanese characters (likely English/romanized)
+    private isRomanizedText(text: string): boolean {
+        const japaneseRegex = /[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FAF]/;
+        return !japaneseRegex.test(text);
+    }
+
+    // Simple tokenizer for English/romanized text preserving spaces and punctuation
+    private tokenizeRomanized(text: string): MorphemeData[] {
+        // Split into words, whitespace, and punctuation; capture delimiters
+        const parts = text.split(/(\s+|[.,!?;:\"()\[\]\-])/).filter(p => p !== '');
+        const morphemes: MorphemeData[] = parts.map(p => {
+            let pos = 'latin';
+            if (/^\s+$/.test(p)) pos = 'whitespace';
+            else if (/^[.,!?;:\"()\[\]\-]$/.test(p)) pos = 'punct';
+            return { surface: p, reading: p, pos } as MorphemeData;
+        });
+        return morphemes;
+    }
+
     private mapMeCabPosToSimple(mecabPos: string): string {
         // Map MeCab POS tags to simplified categories
         const posMap: { [key: string]: string } = {
@@ -110,6 +129,14 @@ class SegmentationService {
         logger.info('Starting text segmentation with MeCab', {
             textLength: cleanText.length
         });
+
+        // For pure romanized/English text, use simple tokenizer to avoid char-by-char fallback
+        if (this.isRomanizedText(cleanText)) {
+            const romanized = this.tokenizeRomanized(cleanText);
+            if (romanized.length > 0) {
+                return romanized;
+            }
+        }
 
         // Try MeCab first
         let morphemes = await this.analyzeWithMeCab(cleanText);
@@ -182,12 +209,17 @@ class SegmentationService {
                     error: (error as Error).message
                 });
 
-                // For individual line failures, create fallback segments
-                const fallbackSegments: MorphemeData[] = line.split('').map(char => ({
-                    surface: char,
-                    pos: 'unknown',
-                    reading: char,
-                }));
+                // Fallback: if romanized, use romanized tokenizer; else split into characters
+                let fallbackSegments: MorphemeData[];
+                if (this.isRomanizedText(line)) {
+                    fallbackSegments = this.tokenizeRomanized(line);
+                } else {
+                    fallbackSegments = line.split('').map(char => ({
+                        surface: char,
+                        pos: 'unknown',
+                        reading: char,
+                    } as MorphemeData));
+                }
 
                 segmentedLines.push(fallbackSegments);
             }

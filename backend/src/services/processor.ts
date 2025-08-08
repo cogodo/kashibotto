@@ -117,13 +117,8 @@ class ProcessorService {
                             translation = morpheme.surface;
                         }
 
-                        // Create segment with trailing space for romanized text
+                        // Do not append artificial spaces; preserve original segmentation
                         let segmentText = morpheme.surface;
-
-                        // Add trailing space to romanized/English segments to preserve word boundaries
-                        if (this.isRomanizedText(segmentText)) {
-                            segmentText = segmentText + ' ';
-                        }
 
                         const segment: Segment = {
                             text: segmentText,
@@ -140,13 +135,8 @@ class ProcessorService {
                             error: (error as Error).message,
                         });
 
-                        // Create basic segment on error with trailing space for romanized text
+                        // Create basic segment on error without artificial spacing
                         let fallbackText = morpheme.surface;
-
-                        // Add trailing space to romanized/English segments to preserve word boundaries
-                        if (this.isRomanizedText(fallbackText)) {
-                            fallbackText = fallbackText + ' ';
-                        }
 
                         const fallbackSegment: Segment = {
                             text: fallbackText,
